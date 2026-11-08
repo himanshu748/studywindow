@@ -13,6 +13,8 @@ This is an original local build for TinyFish Bounty Drop 002’s **Site to MCP**
 Requires Node.js 22 or later and npm. The recorded local preview needs no API key or account. Live tools additionally require an existing TinyFish API key and TinyFish beta access for the enforced Agent step cap. No public deployment or database is needed.
 
 ```sh
+git clone https://github.com/himanshu748/studywindow.git
+cd studywindow
 npm ci
 npm run build
 npm test
@@ -22,7 +24,7 @@ npm run demo
 
 Open [the landing page](http://127.0.0.1:4387), then use **Explore a recorded example** to inspect genuine saved receipts. Each section retains its original evidence time. With no live configuration, actions that would call TinyFish are disabled.
 
-`verify:mcp` connects a real SDK client over stdio, advertises the four schemas, and exercises disabled-live failure paths. It makes no TinyFish calls. It is a protocol test, **not** a model-driven conversation. The GitHub Actions workflow runs offline checks on Node.js 22 and 24; it is not a live-provider check.
+`verify:mcp` connects a real SDK client over stdio, advertises the four schemas, and exercises disabled-live failure paths. It makes no TinyFish calls. It is a protocol test, **not** a model-driven conversation. Offline CI is configured for Node.js 22 and 24, but hosted jobs have not executed because of an account restriction. The recorded local checks are separate evidence; neither is a live-provider check.
 
 Keep the existing API key in a private file outside this directory, readable only by your account. The parser accepts unquoted `KEY=value` lines:
 
@@ -134,6 +136,6 @@ Recorded live receipts cover psychology and history searches, pagination, inspec
 
 [Verification](evidence/VERIFICATION.md) distinguishes implementation, offline tests, genuine TinyFish live calls, actual MCP conversation evidence, public deployment, and claim/submission state. [Submission notes](docs/SUBMISSION.md) map the bounty requirements to evidence and outstanding gates. [Showcase drafts](docs/SHOWCASE-DRAFTS.md) are prepared text, not posted announcements.
 
-The bounty was claimed through the authenticated platform during the build; it has **not** been submitted. Submissions are final. A working public link, required LinkedIn and Discord posts, all mandatory live evidence, and a final review are submission gates. Repository creation, commit and push were authorized on 8 November 2026. Deployment and social posting remain separate actions.
+The bounty was claimed through the authenticated platform during the build; it has **not** been submitted. Submissions are final. A working public link, required LinkedIn and Discord posts, all mandatory live evidence, and a final review are submission gates. The reviewed source is published in [this GitHub repository](https://github.com/himanshu748/studywindow). Deployment and social posting remain separate actions.
 
 No source-code license has been selected. The [MIT proposal](docs/PROPOSED-LICENSE.txt) is a draft for review, not an applied license. Cambridge content, TinyFish services, and their names and trademarks retain their respective rights.

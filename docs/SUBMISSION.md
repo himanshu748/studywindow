@@ -1,6 +1,6 @@
 # Site to MCP submission preparation
 
-**Claimed, not submitted.** This is a review package for TinyFish Bounty Drop 002. The successful individual live calls and redesigned local product are documented in [verification](../evidence/VERIFICATION.md). A complete successful autonomous shortlist remains a gate; GitHub publication was authorized on 8 November 2026; deployment and promotion remain separate actions.
+**Claimed, not submitted.** This is a review package for TinyFish Bounty Drop 002. The successful individual live calls and redesigned local product are documented in [verification](../evidence/VERIFICATION.md). A complete successful autonomous shortlist remains a gate; [Public source](https://github.com/himanshu748/studywindow) is available following authorization on 8 November 2026; deployment and promotion remain separate actions.
 
 ## Product and meaningful endpoints
 
@@ -23,7 +23,7 @@ Three TinyFish endpoint families have substantive roles: Agent operates the cata
 | Loud failure                                  | Explicit errors for unsupported contracts, provider/auth/quota failures, off-domain URLs, cancellation and exhausted allowance. No fixture fallback.                                                                                                                                                      |
 | Original useful product                       | New learner-specific MCP implementation, dedicated interactive landing and compact workspace. [Design study](DESIGN.md) records principles from comparable products without copying branding or claims.                                                                                                   |
 | Easy setup                                    | Locked installation, build/test/protocol commands exercised; host configuration in README. Live use requires an existing TinyFish account/key and beta step-cap access.                                                                                                                                   |
-| Accessible build and promotion                | GitHub publication authorized on 8 November. Source license remains unselected; deployment, LinkedIn mention and Discord showcase posting still need authorization.                                                                                                                                       |
+| Accessible build and promotion                | [Public repository](https://github.com/himanshu748/studywindow). Source license remains unselected; deployment, LinkedIn mention and Discord showcase posting still need authorization.                                                                                                                   |
 
 ## Proposed submission copy
 
