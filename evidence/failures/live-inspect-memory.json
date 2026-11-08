@@ -1,0 +1,8 @@
+{
+  "ok": false,
+  "error": {
+    "code": "SITE_CHANGED",
+    "message": "The source no longer satisfies the structured observation contract. No fields were guessed.",
+    "retryable": false
+  }
+}

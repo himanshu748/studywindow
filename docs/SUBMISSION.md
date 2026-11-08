@@ -1,0 +1,44 @@
+# Site to MCP submission preparation
+
+**Claimed, not submitted.** This is a review package for TinyFish Bounty Drop 002. The successful individual live calls and redesigned local product are documented in [verification](../evidence/VERIFICATION.md). A complete successful autonomous shortlist remains a gate; GitHub publication was authorized on 8 November 2026; deployment and promotion remain separate actions.
+
+## Product and meaningful endpoints
+
+StudyWindow helps working learners explore Cambridge PACE courses and compare tuition, application windows and published commitments with their practical limits. Typed outputs preserve offering-specific fees, dates, matches, conflicts, missing information and provenance. Online delivery never establishes schedule compatibility.
+
+Three TinyFish endpoint families have substantive roles: Agent operates the catalogue form; Fetch supplies fresh page evidence; isolated Browser sessions expand course panels and read literal fields. Comparison is deterministic after fresh retrieval of every course. Health checks exercise source contracts. These are three meaningful endpoint families under the observed scoring schedule; points, acceptance and placement remain organizer decisions.
+
+## Requirement evidence
+
+| Requirement                                   | Current evidence and limits                                                                                                                                                                                                                                                                               |
+| --------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Real website without public course API        | [Source suitability](../evidence/SOURCE-SUITABILITY.md): no documented public API supplying required fields found in bounded research; internal status-only AJAX exists. Owner confirmation and organizer acceptance remain unverified.                                                                   |
+| At least three typed tools                    | Four official-SDK tools with strict runtime input/output schemas; [protocol check](../evidence/offline-mcp-protocol.json).                                                                                                                                                                                |
+| Actual client conversation with several tools | [Authentic autonomous conversation](../evidence/MCP-CONVERSATION.md): 5 November search continuation and inspection passed; comparison failed at Browser navigation. The continuation retained the completed Agent receipt and fetched new HTML. Complete successful autonomous shortlist still required. |
+| Breakage detection                            | Structural and semantic canaries; [current live health success](../evidence/live-health-current.json); parser and failure regressions.                                                                                                                                                                    |
+| Agent and Fetch explanation                   | README, [tools](TOOLS.md), [architecture](ARCHITECTURE.md), exact endpoint receipts.                                                                                                                                                                                                                      |
+| TinyFish performs real web work               | Genuine searches, three course pages, two-course comparisons and health. Saved examples are explicit and retain timestamps.                                                                                                                                                                               |
+| Clean structured output                       | Bounded typed facts and findings; no raw panel dumps in current successful tool results.                                                                                                                                                                                                                  |
+| Different inputs                              | Psychology, history pagination and different course IDs passed. Empty-state source/parser check passed; full empty-result MCP search is not established.                                                                                                                                                  |
+| Loud failure                                  | Explicit errors for unsupported contracts, provider/auth/quota failures, off-domain URLs, cancellation and exhausted allowance. No fixture fallback.                                                                                                                                                      |
+| Original useful product                       | New learner-specific MCP implementation, dedicated interactive landing and compact workspace. [Design study](DESIGN.md) records principles from comparable products without copying branding or claims.                                                                                                   |
+| Easy setup                                    | Locked installation, build/test/protocol commands exercised; host configuration in README. Live use requires an existing TinyFish account/key and beta step-cap access.                                                                                                                                   |
+| Accessible build and promotion                | GitHub publication authorized on 8 November. Source license remains unselected; deployment, LinkedIn mention and Discord showcase posting still need authorization.                                                                                                                                       |
+
+## Proposed submission copy
+
+StudyWindow gives working learners a clearer next step when choosing continuing education. An agent can search the live Cambridge PACE catalogue, inspect offering-specific fees and application deadlines, and compare a shortlist against budget, delivery and availability constraints. Findings separate matches, conflicts and questions, with source links and retrieval times.
+
+TinyFish Agent operates search; Fetch retrieves fresh page evidence; isolated Browser sessions expand and read course details. Typed contracts and a live health canary detect missing or contradictory source structures. The local web experience includes an interactive landing preview, shortlisting, an inspection drawer and compact offering comparisons. Recorded examples are clearly labelled.
+
+Verification and supported limits accompany the build. The current autonomous conversation preserves successful search and inspection plus explicit provider failures; it must not be presented as a fully successful end-to-end shortlist. Admission, fee eligibility, a place on a course, and complete schedules are not guaranteed.
+
+## Final submission gates
+
+1. Close the successful autonomous-comparison gap after ordinary source navigation recovers. The 5 November retry retained $0.414, bringing the total to $5.784 under the $5.80 ceiling. All cumulative operation caps are exhausted; the consumed grant authorizes no further live verification or allowance reset. The [provider follow-up](PROVIDER-ISSUE.md) records support response T-1827, the local validation repair and the later `ERR_EMPTY_RESPONSE` comparison failure.
+2. Recheck the authenticated brief, rulebook and source-suitability rationale before submission. The preserved rules were observed on 3 November 2026.
+3. Review the unselected source license and obtain authorization for required LinkedIn/Discord posts. GitHub repository creation and commit/push were separately authorized on 8 November. No deployment is necessary if a runnable public repository satisfies the current form.
+4. Verify the public build, setup, conversation and post links as a judge would. Drafts are in [showcase copy](SHOWCASE-DRAFTS.md); they are not posted.
+5. Submit through TinyBounties only after all mandatory requirements genuinely pass. Submission is final; read back and record the resulting state.
+
+The observed rulebook closes the drop on November 17, 2026, 11:59 PM Pacific Time; claims do not reserve a bounty, and only the top three builds are approved. LinkedIn tagging TinyFish and Discord #showcase sharing are required; X is optional. No approval, reward or placement is guaranteed.

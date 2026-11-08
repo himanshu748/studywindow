@@ -1,0 +1,14 @@
+{
+  "run_id": "ee16d35f-c920-4039-a091-8297567b4a9d",
+  "status": "COMPLETED",
+  "num_of_steps": 10,
+  "created_at": "2026-11-05T08:21:58Z",
+  "finished_at": "2026-11-05T08:23:11Z",
+  "result": {
+    "title": "Course search | Professional and Continuing Education",
+    "blocked": false,
+    "page_url": "https://www.pace.cam.ac.uk/course-search?search_api_fulltext=psychology&field_subject_categories=All&field_course_type=All&field_method=31#main-content",
+    "search_operated": true
+  },
+  "interpretation": "The Agent operated the form, but the original adapter rejected a document-title suffix before Fetch. Its returned main-content anchor was also unsupported by the original URL check. The historical failed MCP result remains unchanged."
+}

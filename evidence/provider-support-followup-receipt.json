@@ -1,0 +1,21 @@
+{
+  "kind": "provider_support_followup",
+  "reference": "T-1827",
+  "sent_at": "2026-11-06T08:21:42.000Z",
+  "destination": "TinyFish Support, support@tinyfish.io",
+  "channel": "Gmail reply in the existing support conversation",
+  "user_authorization": "Explicit instruction to send the prepared November 5 failure follow-up.",
+  "verified_sent_label": true,
+  "verified_reply_reference": true,
+  "verified_message_body": true,
+  "readback_note": "The sent message begins with the exact prepared report and includes the previous support response as a normal quoted reply.",
+  "message_file": "provider-support-followup-message.txt",
+  "scope": "Failed and preceding successful Browser session IDs, public source URLs, UTC reservation/observation times and related Agent run. Investigation of existing records only.",
+  "new_provider_work": {
+    "agent_runs": 0,
+    "browser_sessions": 0,
+    "fetch_urls": 0
+  },
+  "limits": "SENT confirms sender-side dispatch, not that TinyFish has read or resolved the report. Private Gmail/account metadata are kept outside this package.",
+  "message_sha256": "d94485602c98a0db9f4227cd17b89519ed37ae0222c89bb23485c64f1abe5f8f"
+}

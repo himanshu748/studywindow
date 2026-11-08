@@ -1,0 +1,8 @@
+{
+  "ok": false,
+  "error": {
+    "code": "SITE_CHANGED",
+    "message": "A required information panel was not observed after interaction.",
+    "retryable": false
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "kind": "redesigned_ui_browser_qa",
+  "started_at": "2026-11-04T16:11:23.828Z",
+  "browser": "156.0.8078.4",
+  "provider_calls": 0,
+  "checks": [
+    "no-preference: landing slider, day selection, keyboard tabs, tour and FAQ",
+    "no-preference: landing subject prefill makes no paid call",
+    "no-preference: layouts, current-page sorting, duplicate shortlisting, drawer, focus return, offering tabs, attention filter, stale preferences",
+    "no-preference: landing and workspace fit 390px",
+    "no-preference: landing and workspace fit 320px",
+    "reduce: landing slider, day selection, keyboard tabs, tour and FAQ",
+    "reduce: landing subject prefill makes no paid call",
+    "reduce: layouts, current-page sorting, duplicate shortlisting, drawer, focus return, offering tabs, attention filter, stale preferences",
+    "reduce: landing and workspace fit 390px",
+    "reduce: landing and workspace fit 320px",
+    "Reduced motion preference disables running UI animation"
+  ],
+  "errors": [],
+  "passed": true,
+  "finished_at": "2026-11-04T16:11:29.204Z"
+}

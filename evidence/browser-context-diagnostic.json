@@ -1,0 +1,11 @@
+{
+  "kind": "live_browser_context_diagnostic",
+  "target": "https://www.pace.cam.ac.uk/course-search?search_api_fulltext=psychology",
+  "contexts": [
+    {
+      "name": "provider_isolated_default",
+      "error": "page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at [url redacted]"
+    }
+  ],
+  "termination_http": 204
+}

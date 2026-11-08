@@ -1,0 +1,32 @@
+{
+  "kind": "build_allowance_authorizations",
+  "original_ceiling_usd": 5,
+  "agent_tool_step_cap": 20,
+  "additional_authorization": {
+    "date": "2026-11-04",
+    "amount_usd": 0.5,
+    "purpose": "One final bounded autonomous conversation attempt using existing credits",
+    "result": "Search failed; no retry or later calls",
+    "reservation_usd": 0.384
+  },
+  "final_total_ceiling_usd": 5.8,
+  "historical_reservations_retained": true,
+  "billing_or_auto_reload_changed": false,
+  "retry_authorization": {
+    "date": "2026-11-05",
+    "amount_usd": 0.3,
+    "purpose": "One later autonomous conversation retry, as recommended by TinyFish Support T-1827, using existing credits",
+    "maximum_new_reservation_usd": 0.414,
+    "max_new_agent_runs": 1,
+    "max_new_browser_sessions": 3,
+    "max_new_fetch_urls": 4,
+    "status": "Ended; no further live verification authorized by this grant",
+    "result": "One Agent search operated the form. After local validation repair, explicit continuation and inspection succeeded; comparison failed at course navigation with ERR_EMPTY_RESPONSE. No second Agent run.",
+    "reservation_usd": 0.414,
+    "counts_added": {
+      "agent_runs": 1,
+      "browser_sessions": 3,
+      "fetch_urls": 4
+    }
+  }
+}

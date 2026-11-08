@@ -1,0 +1,61 @@
+{
+  "ok": true,
+  "data": {
+    "status": "healthy",
+    "checked_at": "2026-11-03T10:29:01.337Z",
+    "checks": [
+      {
+        "name": "catalogue",
+        "passed": true,
+        "detail": "Expected form, supported mode values, count/rows, applied topic and pagination agree."
+      },
+      {
+        "name": "course_details",
+        "passed": true,
+        "detail": "Fetch identity/dates and Browser-expanded offering count, fees, application deadlines and study mode agree with their typed contracts."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "128f5117-9b47-4eb1-af88-98ffc2cc90f7",
+        "endpoint": "fetch",
+        "source_url": "https://www.pace.cam.ac.uk/course-search?search_api_fulltext=psychology",
+        "checked_at": "2026-11-03T10:28:23.938Z",
+        "sha256": "7ca023f96c049ca12739b0b79c106adf00314440f721ed371affdbe1dc8abf9e",
+        "run_id": null,
+        "session_id": null,
+        "steps": null,
+        "reserved_usd": 0,
+        "estimated_usd": 0,
+        "fresh": true
+      },
+      {
+        "id": "976037c9-6233-4dbd-81e3-3dca55c380f9",
+        "endpoint": "fetch",
+        "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain",
+        "checked_at": "2026-11-03T10:28:26.061Z",
+        "sha256": "c37bed9f1179662c61982a62a44f351823d146cb4337633f3d7ffeba8d731e9c",
+        "run_id": null,
+        "session_id": null,
+        "steps": null,
+        "reserved_usd": 0,
+        "estimated_usd": 0,
+        "fresh": true
+      },
+      {
+        "id": "3fb0ebe3-69d6-4cce-8518-093fdcd41197",
+        "endpoint": "browser",
+        "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain",
+        "checked_at": "2026-11-03T10:28:59.510Z",
+        "sha256": "85467eb896434176324b82da4b8868453f3feacb86fbe7b0a9d3de062507bba3",
+        "run_id": null,
+        "session_id": "tf-1d59741d-8bf3-458a-9658-e81f760c3fb0",
+        "steps": null,
+        "reserved_usd": 0.01,
+        "estimated_usd": 0.001115,
+        "fresh": true
+      }
+    ],
+    "coverage": "Canaries validate the supported Cambridge adapter. They detect structural/semantic loss; they do not prove every source field is accurate or every catalogue course is supported."
+  }
+}

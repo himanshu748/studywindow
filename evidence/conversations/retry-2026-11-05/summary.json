@@ -1,0 +1,13 @@
+{
+  "kind": "actual_autonomous_mcp_retry",
+  "date": "2026-11-05",
+  "complete_search_inspect_compare_success": false,
+  "successful_calls": 0,
+  "completed_calls": 1,
+  "tools": [
+    "search_courses"
+  ],
+  "course_identity_checks": {},
+  "unexpected_completed_item_types": [],
+  "not_a_scripted_tool_sequence": "The model selected the arguments and course identifiers. The controller supplied a learner scenario and cost bounds only."
+}

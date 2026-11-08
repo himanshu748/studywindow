@@ -1,0 +1,41 @@
+{
+  "client": "Codex CLI 0.164.0-alpha.11.1",
+  "kind": "genuine_agent_mcp_conversation",
+  "scenario": "Constructed learner request; autonomous model-selected tool inputs",
+  "started_at": "2026-11-04T16:19:01.470583+00:00",
+  "scenario_prompt": "As of 4 November 2026, I am a working learner in the UK looking for a short online psychology course, especially memory and how people make decisions. I do not want a qualification or executive coaching. My tuition budget is GBP 500 using the Home fee category. I can make at most five hours a week available, and Fridays are unavailable. I want a future offering with an application deadline that has not passed.\n\nPlease use StudyWindow to discover relevant courses, give me a detailed read of your strongest candidate, and compare it with one other course before giving a small sourced shortlist. For this cost-bounded conversation, make exactly one broad subject search with online delivery and a limit of 15 to cover the first source page. Do not run another search. Use at most one standalone inspection and one two-course comparison. Do not run health checks or retries. Choose the course identifiers yourself from the results.\n\nExplain matches, conflicts and unknowns. Keep classroom-equivalent activity and self-study guidance separate; do not present them as a certified total workload. Online does not establish schedule compatibility. Use only StudyWindow MCP tools, no shell, other web tools, or file changes. If a tool fails, explain the blocker and preserve the original retrieval times of earlier evidence.\n",
+  "raw_event_sha256": "37e5623283b9d3fb1c6b8bb4897af82d2a8e5263733cdac2da0637113fb3ae9f",
+  "omitted": "Reasoning, environment diagnostics, usage totals and transport logs are excluded; visible messages and completed MCP arguments/results retained.",
+  "events": [
+    {
+      "type": "assistant_message",
+      "text": "I\u2019ll use one broad online psychology search, inspect the strongest candidate, then compare it with one alternative. I\u2019ll check fees, deadlines and scheduling separately, and flag where workload evidence is incomplete.\n"
+    },
+    {
+      "type": "mcp_tool_call",
+      "id": "item_1",
+      "server": "studywindow",
+      "tool": "search_courses",
+      "arguments": {
+        "limit": 15,
+        "page": 0,
+        "study_mode": "online",
+        "topic": "psychology"
+      },
+      "result": {
+        "ok": false,
+        "error": {
+          "code": "SITE_BLOCKED",
+          "message": "The source blocked the live catalogue workflow.",
+          "retryable": false
+        }
+      },
+      "status": "failed"
+    },
+    {
+      "type": "assistant_message",
+      "text": "StudyWindow\u2019s single search failed with **`SITE_BLOCKED`**: \u201cThe source blocked the live catalogue workflow.\u201d\n\nI used the requested broad search\u2014**psychology**, **online**, **page 0**, **limit 15**. No course results, source links or retrieval timestamps were returned. There is therefore no earlier course evidence to preserve.\n\nWithout results, I cannot choose course identifiers, inspect a strongest candidate, run a grounded two-course comparison or provide a sourced shortlist. I made **no retries, additional searches or health checks**, and used no other sources.\n\nYour criteria remain unverified: a future short course with an unpassed application deadline, Home tuition of **\u00a3500 or less**, no qualification or executive coaching, and compatibility with **five hours weekly and no Fridays**. Classroom-equivalent activity and self-study guidance would need separate assessment; online delivery alone would not establish schedule compatibility."
+    }
+  ],
+  "unexpected_completed_item_types": []
+}

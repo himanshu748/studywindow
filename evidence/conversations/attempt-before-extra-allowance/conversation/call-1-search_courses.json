@@ -1,0 +1,115 @@
+{
+  "type": "mcp_tool_call",
+  "id": "item_1",
+  "server": "studywindow",
+  "tool": "search_courses",
+  "arguments": {
+    "topic": "psychology",
+    "limit": 5,
+    "page": 0
+  },
+  "result": {
+    "ok": true,
+    "data": {
+      "topic": "psychology",
+      "study_mode": null,
+      "source_url": "https://www.pace.cam.ac.uk/course-search?search_api_fulltext=psychology&field_subject_categories=All&field_course_type=All&field_method=All",
+      "checked_at": "2026-11-04T15:39:25.117Z",
+      "courses": [
+        {
+          "id": "undergraduate-award-certificate-cognitive-psychology",
+          "title": "Undergraduate award: Certificate in Cognitive Psychology",
+          "url": "https://www.pace.cam.ac.uk/courses/undergraduate-award-certificate-cognitive-psychology",
+          "start_date": "2026-10-09",
+          "end_date": "2027-06-09",
+          "date_quote": "09 Oct 2026 to 09 Jun 2027",
+          "study_mode": null,
+          "course_type": "Undergraduate courses"
+        },
+        {
+          "id": "undergraduate-award-certificate-sociology-politics-and-psychology",
+          "title": "Undergraduate award: Certificate in Sociology, Politics and Psychology",
+          "url": "https://www.pace.cam.ac.uk/courses/undergraduate-award-certificate-sociology-politics-and-psychology",
+          "start_date": "2026-10-09",
+          "end_date": "2027-06-09",
+          "date_quote": "09 Oct 2026 to 09 Jun 2027",
+          "study_mode": null,
+          "course_type": "Undergraduate courses"
+        },
+        {
+          "id": "introduction-cognitive-psychology-and-neuropsychology",
+          "title": "Introduction to Cognitive Psychology and Neuropsychology",
+          "url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology",
+          "start_date": "2026-10-26",
+          "end_date": "2026-12-13",
+          "date_quote": "26 Oct 2026 to 13 Dec 2026",
+          "study_mode": null,
+          "course_type": "Short online courses"
+        },
+        {
+          "id": "psychological-approaches-executive-coaching",
+          "title": "Psychological approaches for executive coaching",
+          "url": "https://www.pace.cam.ac.uk/courses/psychological-approaches-executive-coaching",
+          "start_date": "2027-01-11",
+          "end_date": "2027-02-28",
+          "date_quote": "11 Jan 2027 to 28 Feb 2027",
+          "study_mode": null,
+          "course_type": "Short online courses"
+        },
+        {
+          "id": "learning-and-memory-brain",
+          "title": "Learning and memory in the brain",
+          "url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain",
+          "start_date": "2027-01-11",
+          "end_date": "2027-02-28",
+          "date_quote": "11 Jan 2027 to 28 Feb 2027",
+          "study_mode": null,
+          "course_type": "Short online courses"
+        }
+      ],
+      "pagination": {
+        "page": 0,
+        "page_size": 15,
+        "total_results": 8,
+        "returned": 5,
+        "omitted_on_page": 3,
+        "next_page": null,
+        "catalogue_complete": false
+      },
+      "evidence": [
+        {
+          "id": "6b9128ea-561c-4c9d-a39a-2bf5d4eeacf0",
+          "endpoint": "agent",
+          "source_url": "https://www.pace.cam.ac.uk/course-search?search_api_fulltext=psychology",
+          "checked_at": "2026-11-04T15:39:11.911Z",
+          "sha256": "868743c2a8c2c0e6e82a5e8e6cd7cc7ee237ca2f8a2b6625951f533aa8d2717e",
+          "run_id": "34cf30f0-7d6e-46b8-83db-594be1ee7297",
+          "session_id": null,
+          "steps": 8,
+          "reserved_usd": 0.384,
+          "estimated_usd": 0.128,
+          "fresh": true
+        },
+        {
+          "id": "03e8fb6e-c0d3-464d-849f-00c315686795",
+          "endpoint": "fetch",
+          "source_url": "https://www.pace.cam.ac.uk/course-search?search_api_fulltext=psychology&field_subject_categories=All&field_course_type=All&field_method=All",
+          "checked_at": "2026-11-04T15:39:25.085Z",
+          "sha256": "7901b6b5acb1660728ec19a9e0bb7769d571d05a4123d0075613e88173efb4f6",
+          "run_id": null,
+          "session_id": null,
+          "steps": null,
+          "reserved_usd": 0,
+          "estimated_usd": 0,
+          "fresh": true
+        }
+      ],
+      "warnings": [
+        "Catalogue rows can represent different offerings of the same course; repeated ids refer to the same course page.",
+        "Search returns a bounded source page. Inspect each course before relying on fees, application windows or teaching commitments.",
+        "Some rows on this page were omitted by the requested limit; raise limit to 15 to see them."
+      ]
+    }
+  },
+  "status": "completed"
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "provider_support_submission",
+  "observed_at": "2026-11-04T17:10:12.957331+00:00",
+  "destination": "TinyFish authenticated Support form",
+  "page_url": "https://agent.tinyfish.ai/home",
+  "user_authorization": "Explicit approval to send the prepared report through the Support form.",
+  "observed_confirmation": "Message sent",
+  "reply_channel": "Account email; address excluded from the publication package.",
+  "ticket_id": null,
+  "ticket_id_note": "No ticket ID or ticket URL was shown.",
+  "message_file": "provider-support-message.txt",
+  "message_sha256": "98ba3408da6b7b5c913d41f22a21b5ded3fc301280643b84503964a863ebf4d0",
+  "confirmation_image": "provider-support-confirmation.png",
+  "status": "Sent and acknowledged; support response T-1827 received. Root cause and live recovery are not established by the response.",
+  "new_provider_work": {
+    "agent_runs": 0,
+    "browser_sessions": 0,
+    "fetch_urls": 0
+  },
+  "reserved_usd_unchanged": 5.37,
+  "ceiling_usd_unchanged": 5.5,
+  "reply": {
+    "received_at": "2026-11-05T08:09:10Z",
+    "reference": "T-1827",
+    "summary": "Provider reports healthy browser worker and intermittent source-connection failures; recommends retrying ordinary public navigation later. Root cause remains unestablished."
+  }
+}

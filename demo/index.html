@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#f7f9f7" />
+    <title>Explore courses — StudyWindow</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="/base.css" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body class="workspace-page">
+    <a class="skip-link" href="#course-finder">Skip to course finder</a>
+    <header class="app-header">
+      <a class="app-brand" href="/" aria-label="StudyWindow home"
+        ><span class="window-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span
+        >StudyWindow</a
+      >
+      <nav class="app-nav" aria-label="Main navigation">
+        <a href="/app" aria-current="page">Explore</a
+        ><a href="#study-brief">Shortlist <span id="nav-selection-count">0</span></a
+        ><a href="/#how-it-works">How it works</a>
+      </nav>
+      <button type="button" id="saved-button" class="button button-light">
+        Explore recorded example <span aria-hidden="true">↗</span>
+      </button>
+    </header>
+    <main class="app-shell">
+      <div class="workspace-heading">
+        <div>
+          <p class="eyebrow">YOUR NEXT CHAPTER</p>
+          <h1>Let’s find your study window.</h1>
+          <p>Explore your interests. Make room for the practical details.</p>
+        </div>
+        <div class="catalogue-tag">
+          <span class="tiny-window" aria-hidden="true">⌑</span
+          ><span>Cambridge PACE<small>Continuing education catalogue</small></span>
+        </div>
+      </div>
+      <div class="connection-strip">
+        <span
+          ><i id="connection-dot" class="status-dot" aria-hidden="true"></i
+          ><span id="connection-label">Checking connection…</span></span
+        >
+        <details class="usage-details">
+          <summary>Retrieval controls <span aria-hidden="true">⌄</span></summary>
+          <div>
+            <p id="usage-label">Usage not loaded</p>
+            <button type="button" class="text-button" id="health-button">
+              Check source health ↗
+            </button>
+            <p>
+              Calls use existing TinyFish credits through the local MCP server. Saved examples make
+              no provider calls.
+            </p>
+          </div>
+        </details>
+      </div>
+      <div class="saved-notice" id="saved-notice" hidden>
+        <span class="notice-icon" aria-hidden="true">◷</span>
+        <div>
+          <strong>Recorded evidence is on screen</strong>
+          <p>Each result keeps its original retrieval time. Live actions retrieve fresh details.</p>
+        </div>
+        <button type="button" class="text-button" id="leave-saved">Clear recorded results ×</button>
+      </div>
+      <div class="message" id="message" hidden role="status" aria-live="polite"></div>
+      <div class="request-progress" id="request-progress" hidden role="status">
+        <span class="progress-orbit" aria-hidden="true"></span>
+        <div>
+          <strong id="request-label">Reading the live website…</strong
+          ><span>Checking the source. You can cancel this request.</span>
+        </div>
+        <button type="button" id="cancel-button" class="button button-light">Cancel</button>
+      </div>
+      <div class="workspace-layout">
+        <div class="discovery">
+          <section class="finder panel" id="course-finder" aria-labelledby="finder-title">
+            <div class="finder-label">
+              <h2 id="finder-title">What sparks your curiosity?</h2>
+              <span class="subtle-label">01 / DISCOVER</span>
+            </div>
+            <form id="search-form">
+              <div class="search-field">
+                <span aria-hidden="true" class="search-icon">⌕</span
+                ><label class="sr-only" for="topic">Course topic</label
+                ><input
+                  id="topic"
+                  name="topic"
+                  type="search"
+                  placeholder="Search a subject, like psychology"
+                  minlength="3"
+                  maxlength="100"
+                  required
+                  autocomplete="off"
+                /><button class="button button-primary" type="submit">
+                  Find courses <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+              <div class="search-filters">
+                <label for="search-mode"
+                  >Study mode
+                  <select id="search-mode" name="study_mode">
+                    <option value="">Any mode</option>
+                    <option value="online">Online learning</option>
+                    <option value="in_person">In person teaching</option>
+                    <option value="face_to_face">Face to face teaching</option>
+                    <option value="hybrid">Hybrid</option>
+                    <option value="remote">Remote delivery</option>
+                  </select></label
+                ><label for="limit"
+                  >Results per page
+                  <select id="limit">
+                    <option value="6">6</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                  </select></label
+                >
+              </div>
+            </form>
+            <p id="allowance-hint" class="allowance-hint" hidden></p>
+            <div class="suggested-topics">
+              <span>Try a subject</span
+              ><button type="button" data-topic="psychology">Psychology ↗</button
+              ><button type="button" data-topic="history">History ↗</button
+              ><button type="button" data-topic="creative writing">Creative writing ↗</button>
+            </div>
+          </section>
+          <section
+            id="results-section"
+            class="results-section"
+            aria-labelledby="results-title"
+            aria-busy="false"
+          >
+            <div class="results-toolbar">
+              <div>
+                <h2 id="results-title" tabindex="-1">Your possibilities</h2>
+                <p id="results-meta">Start with a subject</p>
+              </div>
+              <div class="result-tools">
+                <label class="sort-control"
+                  >Sort this page
+                  <select id="sort-results">
+                    <option value="source">Source order</option>
+                    <option value="start">Start date</option>
+                    <option value="title">Course title</option>
+                  </select></label
+                >
+                <div class="view-switch" role="group" aria-label="Result layout">
+                  <button type="button" id="grid-view" aria-label="Grid view" aria-pressed="true">
+                    ▦</button
+                  ><button type="button" id="list-view" aria-label="List view" aria-pressed="false">
+                    ☰
+                  </button>
+                </div>
+              </div>
+            </div>
+            <p class="result-time" id="search-time" hidden></p>
+            <div id="search-results">
+              <div class="empty-state initial-empty">
+                <div class="empty-art" aria-hidden="true">
+                  <div class="empty-arch"><span>↗</span></div>
+                  <i class="empty-note">a little curiosity</i><i class="empty-spark">✳</i>
+                </div>
+                <h3>A new chapter starts here.</h3>
+                <p>Find a subject you love, then check how it fits your budget, dates and week.</p>
+                <button type="button" class="text-button" id="empty-example">
+                  See a recorded example ↗
+                </button>
+              </div>
+            </div>
+            <nav class="pagination" id="pagination" aria-label="Course search pages" hidden>
+              <button type="button" class="button button-light" id="previous-page">
+                ← Previous</button
+              ><span id="page-label"></span
+              ><button type="button" class="button button-light" id="next-page">Next →</button>
+            </nav>
+            <details class="evidence-details" id="search-evidence" hidden>
+              <summary>Source receipts</summary>
+              <div id="search-receipts"></div>
+            </details>
+          </section>
+        </div>
+        <aside class="study-brief panel" id="study-brief" aria-labelledby="brief-title">
+          <div class="brief-heading">
+            <span class="brief-symbol" aria-hidden="true">⌑</span
+            ><span class="subtle-label">02 / YOUR STUDY WINDOW</span>
+          </div>
+          <h2 id="brief-title" tabindex="-1">Make it work for you.</h2>
+          <p class="aside-description">A shortlist with room for real life.</p>
+          <div class="selection-heading">
+            <h3>Shortlist</h3>
+            <span id="selection-count">0 / 3</span>
+          </div>
+          <div id="selected-courses" class="selected-courses">
+            <div class="selection-empty">
+              <span aria-hidden="true">＋</span>
+              <p>Save two or three courses<br />to see how they compare.</p>
+            </div>
+          </div>
+          <form id="compare-form">
+            <fieldset>
+              <legend class="sr-only">Comparison preferences</legend>
+              <div class="brief-section-label">YOUR PRACTICAL DETAILS</div>
+              <label for="budget">Tuition budget</label>
+              <div class="budget-row">
+                <input
+                  id="budget"
+                  type="number"
+                  min="0"
+                  max="1000000"
+                  step="0.01"
+                  placeholder="500"
+                  required
+                /><label for="currency" class="sr-only">Budget currency</label
+                ><input
+                  id="currency"
+                  type="text"
+                  value="GBP"
+                  maxlength="3"
+                  pattern="[A-Z]{3}"
+                  required
+                />
+              </div>
+              <div class="two-fields">
+                <div>
+                  <label for="fee-category">Fee category</label
+                  ><select id="fee-category">
+                    <option value="">Not sure</option>
+                    <option value="standard">Standard</option>
+                    <option value="home">Home</option>
+                    <option value="overseas">Overseas</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="preferred-mode">Study mode</label
+                  ><select id="preferred-mode">
+                    <option value="">Any mode</option>
+                    <option value="online">Online</option>
+                    <option value="in_person">In person</option>
+                    <option value="face_to_face">Face to face</option>
+                    <option value="hybrid">Hybrid</option>
+                    <option value="remote">Remote</option>
+                  </select>
+                </div>
+              </div>
+              <label for="hours"
+                >Hours you can make each week <span class="optional">optional</span></label
+              >
+              <div class="hours-field">
+                <input
+                  id="hours"
+                  type="number"
+                  min="0.5"
+                  max="168"
+                  step="0.5"
+                  placeholder="e.g. 5"
+                /><span>hours / week</span>
+              </div>
+              <details class="availability-details">
+                <summary>Add dates & unavailable days <span aria-hidden="true">＋</span></summary>
+                <label for="earliest-date">Earliest start</label
+                ><input id="earliest-date" type="date" /><label for="latest-date"
+                  >Latest finish</label
+                ><input id="latest-date" type="date" />
+                <fieldset class="weekdays">
+                  <legend>Days you cannot attend</legend>
+                  <div>
+                    <label
+                      ><input
+                        aria-label="Monday unavailable"
+                        type="checkbox"
+                        name="unavailable"
+                        value="monday"
+                      /><span>M</span></label
+                    ><label
+                      ><input
+                        aria-label="Tuesday unavailable"
+                        type="checkbox"
+                        name="unavailable"
+                        value="tuesday"
+                      /><span>T</span></label
+                    ><label
+                      ><input
+                        aria-label="Wednesday unavailable"
+                        type="checkbox"
+                        name="unavailable"
+                        value="wednesday"
+                      /><span>W</span></label
+                    ><label
+                      ><input
+                        aria-label="Thursday unavailable"
+                        type="checkbox"
+                        name="unavailable"
+                        value="thursday"
+                      /><span>T</span></label
+                    ><label
+                      ><input
+                        aria-label="Friday unavailable"
+                        type="checkbox"
+                        name="unavailable"
+                        value="friday"
+                      /><span>F</span></label
+                    ><label
+                      ><input
+                        aria-label="Saturday unavailable"
+                        type="checkbox"
+                        name="unavailable"
+                        value="saturday"
+                      /><span>S</span></label
+                    ><label
+                      ><input
+                        aria-label="Sunday unavailable"
+                        type="checkbox"
+                        name="unavailable"
+                        value="sunday"
+                      /><span>S</span></label
+                    >
+                  </div>
+                </fieldset>
+              </details>
+            </fieldset>
+            <button
+              class="button button-primary compare-button"
+              id="compare-button"
+              type="submit"
+              disabled
+            >
+              Compare practical fit <span aria-hidden="true">↗</span>
+            </button>
+          </form>
+          <p class="aside-footnote">
+            Fresh source checks for each comparison.<br />Missing information stays a question.
+          </p>
+        </aside>
+      </div>
+      <section
+        id="comparison-section"
+        class="comparison-section panel"
+        aria-labelledby="comparison-title"
+        hidden
+      >
+        <div class="comparison-heading">
+          <div>
+            <p class="eyebrow">03 / A CLEARER NEXT STEP</p>
+            <h2 id="comparison-title" tabindex="-1">The practical picture.</h2>
+            <p id="comparison-time" class="small-meta"></p>
+          </div>
+          <div class="comparison-key">
+            <span class="badge badge-match">Match</span
+            ><span class="badge badge-conflict">Conflict</span
+            ><span class="badge badge-unknown">Unknown</span>
+          </div>
+        </div>
+        <div id="comparison-stale" class="comparison-stale" hidden role="status">
+          Your shortlist or preferences changed. Compare again for a fresh assessment.
+        </div>
+        <div class="comparison-controls">
+          <p>Switch offerings to explore each set of dates. Open a finding for its evidence.</p>
+          <label
+            ><input id="attention-only" type="checkbox" /> Only show questions and conflicts</label
+          >
+        </div>
+        <div id="comparison-results"></div>
+        <details class="comparison-caveats-wrap">
+          <summary>What this comparison can establish</summary>
+          <div id="comparison-caveats" class="caveats"></div>
+        </details>
+      </section>
+      <section
+        id="health-section"
+        class="health-section panel"
+        aria-labelledby="health-title"
+        hidden
+      >
+        <h2 id="health-title" tabindex="-1">Source health</h2>
+        <div id="health-results"></div>
+      </section>
+      <footer class="app-footer">
+        <a href="/">← Back to StudyWindow</a
+        ><span
+          >Live web work by TinyFish <span aria-hidden="true">·</span> Source evidence, clear
+          questions.</span
+        ><a
+          href="https://www.pace.cam.ac.uk/course-search"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Original catalogue ↗</a
+        >
+      </footer>
+    </main>
+    <dialog id="detail-dialog" class="detail-dialog" aria-labelledby="detail-title">
+      <section id="detail-section" aria-label="Course inspection">
+        <div class="drawer-top">
+          <span class="eyebrow">A CLOSER LOOK</span
+          ><button
+            type="button"
+            class="icon-button"
+            id="close-details"
+            aria-label="Close course details"
+          >
+            ×
+          </button>
+        </div>
+        <h2 id="detail-title" tabindex="-1">Course details</h2>
+        <div id="course-detail"></div>
+      </section>
+    </dialog>
+  </body>
+</html>

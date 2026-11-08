@@ -1,0 +1,6 @@
+Manual source check observed 3 November 2026 in the authenticated in-app browser.
+Source: https://www.pace.cam.ac.uk/courses/learning-and-memory-brain
+Course identity: Learning and memory in the brain. Two course-date panels opened.
+Offering 1: 11 January to 28 February 2027; application deadline 11 January 2027; Home course fee GBP 435.
+Offering 2: 12 April to 30 May 2027; application deadline 12 April 2027; Home course fee GBP 435.
+The original verbose panel observation is retained outside the publication package. This note records a manual factual comparison, not a provider transcript, a fresh retrieval, or an eligibility decision. Later typed details are in live-compare-short-courses.json.

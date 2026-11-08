@@ -1,0 +1,8 @@
+{
+  "ok": false,
+  "error": {
+    "code": "PROVIDER_TIMEOUT",
+    "message": "TinyFish Agent polling limit reached.",
+    "retryable": false
+  }
+}

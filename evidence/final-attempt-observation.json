@@ -1,0 +1,25 @@
+{
+  "kind": "last_authorized_agent_observation",
+  "run_id": "7c799bb6-24f7-4e12-9e65-fe382750b28c",
+  "provider_status": "COMPLETED",
+  "reported_steps": 5,
+  "created_at": "2026-11-04T16:19:20Z",
+  "finished_at": "2026-11-04T16:19:48Z",
+  "observation": {
+    "title": "This page isn't working",
+    "page_url": "https://www.pace.cam.ac.uk/course-search?search_api_fulltext=psychology&field_method=31",
+    "search_operated": false,
+    "blocked": true
+  },
+  "interpretation": "The Agent reported a blocked catalogue workflow. A provider COMPLETED status means its run ended, not that the StudyWindow search succeeded. No direct HTTP status is inferred from this observation.",
+  "capture_diagnosis": {
+    "step_id": "518310b3-0682-443e-bd6f-e961df966557",
+    "network_error": "ERR_EMPTY_RESPONSE",
+    "visible_heading": "This page isn\u2019t working",
+    "visible_detail": "www.pace.cam.ac.uk didn\u2019t send any data.",
+    "snapshot_bytes": 216035,
+    "snapshot_sha256": "1ccc2de0bced1d404842914f20faa7b3a4ea49dfb5e36e86edf76cadc6bdb374",
+    "retrieval": "Read-only GET of the existing run\u2019s captured step HTML; no new Agent, Browser or Fetch execution.",
+    "limits": "The error identifies a failed navigation, not its root cause, an HTTP status, or proof of a site access prohibition. The raw snapshot stays outside the review package."
+  }
+}

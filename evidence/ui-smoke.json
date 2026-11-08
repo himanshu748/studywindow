@@ -1,0 +1,37 @@
+{
+  "kind": "real_browser_local_ui_verification",
+  "origin": "http://127.0.0.1:4387",
+  "browser": "isolated Chromium",
+  "automation": "Playwright; Browser surface unavailable and native CUA connection timed out",
+  "checks": [
+    {
+      "check": "page identity and meaningful screen",
+      "pass": true
+    },
+    {
+      "check": "real study mode and fee category select options",
+      "pass": true
+    },
+    {
+      "check": "keyboard navigation and disclosure",
+      "pass": true
+    },
+    {
+      "check": "reduced motion, no continuous animation",
+      "pass": true
+    },
+    {
+      "check": "responsive width 390",
+      "pass": true
+    },
+    {
+      "check": "responsive width 320",
+      "pass": true
+    },
+    {
+      "check": "console and runtime errors",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

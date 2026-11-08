@@ -1,0 +1,29 @@
+Hi Slowey,
+
+Following up on T-1827. We retried ordinary public navigation on 5 November. Search and a standalone course inspection succeeded, but the two-course comparison still failed with ERR_EMPTY_RESPONSE.
+
+Failed TinyFish Browser session:
+Session ID: tf-255f526d-2f24-4753-b086-3e51961c8aef
+URL: https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology
+Reservation requested: 2026-11-05 08:35:31.265 UTC
+Local diagnostic recorded: 2026-11-05 08:35:43.214 UTC
+Stage: navigate_course
+Observed network error: ERR_EMPTY_RESPONSE
+The comparison returned no partial result.
+
+For comparison, the preceding course in the same comparison succeeded:
+Session ID: tf-a1fb71b9-c8cd-4c9a-95aa-01b0ee99beed
+URL: https://www.pace.cam.ac.uk/courses/learning-and-memory-brain
+Reservation requested: 2026-11-05 08:34:42.740 UTC
+Successful receipt time: 2026-11-05 08:35:20.986 UTC
+
+The related search Agent run was ee16d35f-c920-4039-a091-8297567b4a9d (created 08:21:58 UTC, finished 08:23:11 UTC on 5 November; COMPLETED, 10 reported steps). It operated the form. We corrected our own title/content-anchor validation and explicitly continued that completed result with fresh Fetch HTML; no second Agent run was started.
+
+The isolated Browser sessions used proxy_config.enabled=false, normal TLS, a 120-second local operation bound and a 30-second provider inactivity timeout. Navigation permits at most three bounded GET attempts inside the same session. We used no login, CAPTCHA solving, stealth settings or access workaround.
+
+Could you inspect these existing Browser session/network records together and advise on a supported resolution for normal public navigation? We cannot determine the underlying source/network cause from this error alone.
+
+Please investigate existing records only: do not start a new billable run or change billing, auto-reload or account security settings. No API keys, Browser connection credentials, wallet balances or raw private traces are included.
+
+Thanks,
+Himanshu

@@ -1,0 +1,6 @@
+
+> studywindow@0.1.0 format:check
+> prettier --check "src/**/*.ts" "test/**/*.ts" "demo/*.{html,css,js}" "docs/**/*.md" README.md package.json tsconfig.json .prettierrc.json
+
+Checking formatting...
+All matched files use Prettier code style!

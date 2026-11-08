@@ -1,0 +1,46 @@
+{
+  "kind": "targeted_live_fetch_parser_verification",
+  "complete_mcp_search_call": false,
+  "input": {
+    "topic": "memory and decision making",
+    "study_mode": "online",
+    "page": 0,
+    "limit": 6
+  },
+  "result": {
+    "topic": "memory and decision making",
+    "study_mode": "online",
+    "source_url": "https://www.pace.cam.ac.uk/course-search?search_api_fulltext=memory+and+decision+making&field_method=31",
+    "checked_at": "2026-11-04T15:59:42.242Z",
+    "courses": [],
+    "pagination": {
+      "page": 0,
+      "page_size": 15,
+      "total_results": 0,
+      "returned": 0,
+      "omitted_on_page": 0,
+      "next_page": null,
+      "catalogue_complete": true
+    },
+    "evidence": [
+      {
+        "id": "ffcf0cc1-4dd3-4596-a228-3a7ff833730a",
+        "endpoint": "fetch",
+        "source_url": "https://www.pace.cam.ac.uk/course-search?search_api_fulltext=memory+and+decision+making&field_method=31",
+        "checked_at": "2026-11-04T15:59:42.214Z",
+        "sha256": "e8af203e7a6810d6c8eeefb974699e7c6d865ea02c1d63a588d0db2f948503a3",
+        "run_id": null,
+        "session_id": null,
+        "steps": null,
+        "reserved_usd": 0,
+        "estimated_usd": 0,
+        "fresh": true
+      }
+    ],
+    "warnings": [
+      "Catalogue rows can represent different offerings of the same course; repeated ids refer to the same course page.",
+      "Search returns a bounded source page. Inspect each course before relying on fees, application windows or teaching commitments."
+    ]
+  },
+  "note": "A fresh TinyFish Fetch of the current zero-result page was parsed by the production parser. This is not a complete search_courses MCP call; no new Agent run was made."
+}

@@ -1,0 +1,8 @@
+{
+  "ok": false,
+  "error": {
+    "code": "PROVIDER_FAILURE",
+    "message": "TinyFish Browser session contract changed.",
+    "retryable": false
+  }
+}

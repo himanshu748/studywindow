@@ -1,0 +1,18 @@
+Please investigate intermittent ordinary browser navigation failures for the public Cambridge PACE catalogue in StudyWindow, our TinyFish Site to MCP build.
+
+Failed Agent run: 7c799bb6-24f7-4e12-9e65-fe382750b28c
+Created: 4 November 2026, 16:19:20 UTC. Finished: 16:19:48 UTC.
+Provider status: COMPLETED; five reported steps. The returned observation was search_operated=false, blocked=true, with a browser error-page heading. COMPLETED means the run ended; the search form was never operated.
+
+Target URL:
+https://www.pace.cam.ac.uk/course-search?search_api_fulltext=psychology&field_method=31
+
+Configuration: proxy_config.enabled=false; agent_config.mode=strict, max_steps=20 (beta enabled), max_duration_seconds=150; no saved profile or vault credentials. Normal TLS was retained. No login, CAPTCHA solving, stealth settings or access workaround was used.
+
+The existing captured HTML for step 518310b3-0682-443e-bd6f-e961df966557 confirms Chromium ERR_EMPTY_RESPONSE, with “This page isn’t working” and “www.pace.cam.ac.uk didn’t send any data.” We retrieved that existing snapshot through a read-only GET, without starting new Agent, Browser or Fetch work. The error alone does not identify its underlying network cause or a target HTTP status.
+
+Earlier genuine Agent searches and Fetch/Browser course inspections succeeded. Other isolated Browser sessions also encountered ERR_EMPTY_RESPONSE. These observations do not establish a global outage or a Cambridge access prohibition.
+
+Could you inspect this existing run and determine whether the failure occurs in the browser worker, provider egress or target connection, and advise on a supported resolution for normal public navigation? Please investigate existing records only: do not start a new billable run or change billing, auto-reload or account security settings.
+
+No API keys, connection credentials, balances or raw private traces are included. Thank you.

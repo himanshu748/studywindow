@@ -1,0 +1,21 @@
+{
+  "type": "mcp_tool_call",
+  "id": "item_1",
+  "server": "studywindow",
+  "tool": "search_courses",
+  "arguments": {
+    "limit": 15,
+    "page": 0,
+    "study_mode": "online",
+    "topic": "psychology"
+  },
+  "result": {
+    "ok": false,
+    "error": {
+      "code": "SITE_BLOCKED",
+      "message": "The source blocked the live catalogue workflow.",
+      "retryable": false
+    }
+  },
+  "status": "failed"
+}

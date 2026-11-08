@@ -1,0 +1,110 @@
+{
+  "ok": true,
+  "data": {
+    "topic": "psychology",
+    "study_mode": "online",
+    "source_url": "https://www.pace.cam.ac.uk/course-search?search_api_fulltext=psychology&field_subject_categories=All&field_course_type=All&field_method=31",
+    "checked_at": "2026-11-03T09:17:28.389Z",
+    "courses": [
+      {
+        "id": "undergraduate-award-certificate-cognitive-psychology",
+        "title": "Undergraduate award: Certificate in Cognitive Psychology",
+        "url": "https://www.pace.cam.ac.uk/courses/undergraduate-award-certificate-cognitive-psychology",
+        "start_date": "2026-10-09",
+        "end_date": "2027-06-09",
+        "date_quote": "09 Oct 2026 to 09 Jun 2027",
+        "study_mode": "Online learning",
+        "course_type": "Undergraduate courses"
+      },
+      {
+        "id": "undergraduate-award-certificate-sociology-politics-and-psychology",
+        "title": "Undergraduate award: Certificate in Sociology, Politics and Psychology",
+        "url": "https://www.pace.cam.ac.uk/courses/undergraduate-award-certificate-sociology-politics-and-psychology",
+        "start_date": "2026-10-09",
+        "end_date": "2027-06-09",
+        "date_quote": "09 Oct 2026 to 09 Jun 2027",
+        "study_mode": "Online learning",
+        "course_type": "Undergraduate courses"
+      },
+      {
+        "id": "introduction-cognitive-psychology-and-neuropsychology",
+        "title": "Introduction to Cognitive Psychology and Neuropsychology",
+        "url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology",
+        "start_date": "2026-10-26",
+        "end_date": "2026-12-13",
+        "date_quote": "26 Oct 2026 to 13 Dec 2026",
+        "study_mode": "Online learning",
+        "course_type": "Short online courses"
+      },
+      {
+        "id": "psychological-approaches-executive-coaching",
+        "title": "Psychological approaches for executive coaching",
+        "url": "https://www.pace.cam.ac.uk/courses/psychological-approaches-executive-coaching",
+        "start_date": "2027-01-11",
+        "end_date": "2027-02-28",
+        "date_quote": "11 Jan 2027 to 28 Feb 2027",
+        "study_mode": "Online learning",
+        "course_type": "Short online courses"
+      },
+      {
+        "id": "learning-and-memory-brain",
+        "title": "Learning and memory in the brain",
+        "url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain",
+        "start_date": "2027-01-11",
+        "end_date": "2027-02-28",
+        "date_quote": "11 Jan 2027 to 28 Feb 2027",
+        "study_mode": "Online learning",
+        "course_type": "Short online courses"
+      },
+      {
+        "id": "introduction-cognitive-psychology-and-neuropsychology",
+        "title": "Introduction to Cognitive Psychology and Neuropsychology",
+        "url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology",
+        "start_date": "2027-02-22",
+        "end_date": "2027-04-11",
+        "date_quote": "22 Feb 2027 to 11 Apr 2027",
+        "study_mode": "Online learning",
+        "course_type": "Short online courses"
+      }
+    ],
+    "pagination": {
+      "page": 0,
+      "page_size": 15,
+      "total_results": 8,
+      "returned": 6,
+      "omitted_on_page": 2,
+      "next_page": null,
+      "catalogue_complete": false
+    },
+    "evidence": [
+      {
+        "id": "da843150-aa6e-4489-a6ad-29426447b385",
+        "endpoint": "agent",
+        "source_url": "https://www.pace.cam.ac.uk/course-search?search_api_fulltext=psychology&field_method=31",
+        "checked_at": "2026-11-03T09:17:15.624Z",
+        "sha256": "1d953cb7d8546e94e850d7593c5725eeb47e98f45767830a82c0994b5673ac0e",
+        "run_id": "04d80bdb-05a9-449a-afc9-00f6f792bd21",
+        "steps": 13,
+        "reserved_usd": 0.256,
+        "estimated_usd": 0.208,
+        "fresh": true
+      },
+      {
+        "id": "0f729535-5371-4f94-b9a0-0a0a8738d678",
+        "endpoint": "fetch",
+        "source_url": "https://www.pace.cam.ac.uk/course-search?search_api_fulltext=psychology&field_subject_categories=All&field_course_type=All&field_method=31",
+        "checked_at": "2026-11-03T09:17:27.374Z",
+        "sha256": "d127edcf69da89f7f355f44ad8abd6871c3ebe43698dc9b420f8ed48cea85689",
+        "run_id": null,
+        "steps": null,
+        "reserved_usd": 0,
+        "estimated_usd": 0,
+        "fresh": true
+      }
+    ],
+    "warnings": [
+      "Search returns a bounded source page. Inspect each course before relying on fees, application windows or teaching commitments.",
+      "Some rows on this page were omitted by the requested limit; raise limit to 15 to see them."
+    ]
+  }
+}

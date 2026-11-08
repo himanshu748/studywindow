@@ -1,0 +1,36 @@
+{
+  "type": "mcp_tool_call",
+  "id": "item_3",
+  "server": "studywindow",
+  "tool": "compare_courses",
+  "arguments": {
+    "courses": [
+      "learning-and-memory-brain",
+      "introduction-cognitive-psychology-and-neuropsychology"
+    ],
+    "budget": {
+      "amount": 500,
+      "currency": "GBP",
+      "fee_category": "home"
+    },
+    "study_modes": [
+      "online"
+    ],
+    "availability": {
+      "earliest_start_date": "2026-11-06",
+      "max_hours_per_week": 5,
+      "unavailable_weekdays": [
+        "friday"
+      ]
+    }
+  },
+  "result": {
+    "ok": false,
+    "error": {
+      "code": "PROVIDER_FAILURE",
+      "message": "The isolated Browser could not complete the public course interaction. No Agent retry or saved-data fallback was made.",
+      "retryable": false
+    }
+  },
+  "status": "failed"
+}

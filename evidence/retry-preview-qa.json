@@ -1,0 +1,105 @@
+{
+  "kind": "post-retry-browser-readback",
+  "checked_at": "2026-11-05T08:43:54.186Z",
+  "entrypoint": "http://127.0.0.1:4387/app?recorded=1",
+  "provider_calls": 0,
+  "readback": {
+    "controls": [
+      {
+        "disabled": true,
+        "label": "Check source health ↗"
+      },
+      {
+        "disabled": true,
+        "label": "Find courses ↗"
+      },
+      {
+        "disabled": true,
+        "label": "Inspect details ↗"
+      },
+      {
+        "disabled": true,
+        "label": "Inspect details ↗"
+      },
+      {
+        "disabled": true,
+        "label": "Inspect details ↗"
+      },
+      {
+        "disabled": false,
+        "label": "Recorded inspection"
+      },
+      {
+        "disabled": true,
+        "label": "Inspect details ↗"
+      },
+      {
+        "disabled": true,
+        "label": "Inspect details ↗"
+      },
+      {
+        "disabled": false,
+        "label": "Recorded inspection"
+      },
+      {
+        "disabled": true,
+        "label": "Inspect details ↗"
+      },
+      {
+        "disabled": false,
+        "label": "Recorded inspection"
+      },
+      {
+        "disabled": true,
+        "label": "Inspect details ↗"
+      },
+      {
+        "disabled": false,
+        "label": "Recorded inspection"
+      },
+      {
+        "disabled": true,
+        "label": "Inspect details ↗"
+      },
+      {
+        "disabled": false,
+        "label": "Recorded inspection"
+      },
+      {
+        "disabled": true,
+        "label": "Compare practical fit ↗"
+      }
+    ],
+    "editableInputs": [
+      {
+        "disabled": false,
+        "id": "topic"
+      },
+      {
+        "disabled": false,
+        "id": "budget"
+      },
+      {
+        "disabled": false,
+        "id": "hours"
+      }
+    ],
+    "results": [
+      "Courses for “psychology”",
+      "",
+      "8 shown · 8 catalogue results · recorded",
+      "",
+      "Sort this page"
+    ],
+    "retrievalControls": "Retrieval controls ⌄\n\n17 Agent · 28 Browser sessions · $5.784 / $5.80 reserved\n\nCheck source health ↗\n\nCalls use existing TinyFish credits through the local MCP server. Saved examples make no provider calls."
+  },
+  "checks": {
+    "all_live_actions_disabled": true,
+    "recorded_inspection_enabled": true,
+    "preferences_remain_editable": true,
+    "newest_recorded_search_visible": true,
+    "latest_recorded_memory_inspection_visible": true
+  },
+  "inspection_observation": "Recorded inspection label 5 Nov 2026, 14:04 GMT+5:30; Home fee GBP435 per course, Jan and Apr 2027 offerings, total workload and complete schedule explicitly unestablished.",
+  "limits": "This browser readback uses saved genuine receipts and does not establish a successful new live comparison."
+}

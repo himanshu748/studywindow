@@ -1,0 +1,20 @@
+{
+  "type": "mcp_tool_call",
+  "id": "item_5",
+  "server": "studywindow",
+  "tool": "search_courses",
+  "arguments": {
+    "topic": "psychology",
+    "limit": 8,
+    "page": 0
+  },
+  "result": {
+    "ok": false,
+    "error": {
+      "code": "SITE_CHANGED",
+      "message": "The Agent could not confirm the expected course-search form.",
+      "retryable": false
+    }
+  },
+  "status": "failed"
+}

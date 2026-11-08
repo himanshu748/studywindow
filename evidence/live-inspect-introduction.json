@@ -1,0 +1,200 @@
+{
+  "ok": true,
+  "data": {
+    "id": "introduction-cognitive-psychology-and-neuropsychology",
+    "title": "Introduction to Cognitive Psychology and Neuropsychology",
+    "url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology",
+    "checked_at": "2026-11-03T10:48:06.855Z",
+    "offerings": [
+      {
+        "id": "2627NOE029",
+        "start_date": "2026-10-26",
+        "end_date": "2026-12-13",
+        "date_quote": "26 Oct 2026 to 13 Dec 2026",
+        "deadline": {
+          "value": "26 Oct 2026",
+          "quote": "application deadline: 26 Oct 2026",
+          "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+        },
+        "deadline_date": "2026-10-26",
+        "status": {
+          "value": "NO LONGER AVAILABLE",
+          "quote": "NO LONGER AVAILABLE",
+          "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+        },
+        "fees": [
+          {
+            "amount": 435,
+            "currency": "GBP",
+            "category": "home",
+            "basis": "course",
+            "quote": "Home: £435",
+            "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+          }
+        ],
+        "study_mode": {
+          "value": "Online learning",
+          "quote": "study mode: Online learning",
+          "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+        },
+        "duration": {
+          "value": "7 Weeks",
+          "quote": "duration: 7 Weeks",
+          "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+        },
+        "location": {
+          "value": null,
+          "quote": null,
+          "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+        },
+        "missing_fields": [
+          "location"
+        ],
+        "conflicts": []
+      },
+      {
+        "id": "2627NOE067",
+        "start_date": "2027-02-22",
+        "end_date": "2027-04-11",
+        "date_quote": "22 Feb 2027 to 11 Apr 2027",
+        "deadline": {
+          "value": "22 Feb 2027",
+          "quote": "application deadline: 22 Feb 2027",
+          "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+        },
+        "deadline_date": "2027-02-22",
+        "status": {
+          "value": "AVAILABLE",
+          "quote": "AVAILABLE",
+          "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+        },
+        "fees": [
+          {
+            "amount": 435,
+            "currency": "GBP",
+            "category": "home",
+            "basis": "course",
+            "quote": "Home: £435",
+            "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+          }
+        ],
+        "study_mode": {
+          "value": "Online learning",
+          "quote": "study mode: Online learning",
+          "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+        },
+        "duration": {
+          "value": "7 Weeks",
+          "quote": "duration: 7 Weeks",
+          "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+        },
+        "location": {
+          "value": null,
+          "quote": null,
+          "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+        },
+        "missing_fields": [
+          "location"
+        ],
+        "conflicts": []
+      },
+      {
+        "id": "2627NOE107",
+        "start_date": "2027-05-24",
+        "end_date": "2027-07-11",
+        "date_quote": "24 May 2027 to 11 Jul 2027",
+        "deadline": {
+          "value": "24 May 2027",
+          "quote": "application deadline: 24 May 2027",
+          "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+        },
+        "deadline_date": "2027-05-24",
+        "status": {
+          "value": "AVAILABLE",
+          "quote": "AVAILABLE",
+          "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+        },
+        "fees": [
+          {
+            "amount": 435,
+            "currency": "GBP",
+            "category": "home",
+            "basis": "course",
+            "quote": "Home: £435",
+            "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+          }
+        ],
+        "study_mode": {
+          "value": "Online learning",
+          "quote": "study mode: Online learning",
+          "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+        },
+        "duration": {
+          "value": "7 Weeks",
+          "quote": "duration: 7 Weeks",
+          "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+        },
+        "location": {
+          "value": null,
+          "quote": null,
+          "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+        },
+        "missing_fields": [
+          "location"
+        ],
+        "conflicts": []
+      }
+    ],
+    "requirements": {
+      "value": "The published description states open entry. No prior subject knowledge or experience is stated as necessary. Teaching is in English. Near-native English is advised. Full entry conditions and individual eligibility remain unassessed.",
+      "quote": "This course is open to everyone",
+      "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+    },
+    "teaching": {
+      "value": "Weekly classroom-time equivalent: about 2–3 hours; this is not a confirmed total workload. Separate self-study guidance: about 2–3 hours per week; individual needs vary. Normally no fixed online day/time is required; the full timetable remains unconfirmed. Web seminars are stated to be recorded.",
+      "quote": "equivalent to 2-3 hours of classroom time",
+      "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+    },
+    "weekly_hours": null,
+    "scheduled_weekdays": [],
+    "schedule_complete": false,
+    "missing_fields": [
+      "full_entry_conditions",
+      "complete_teaching_schedule",
+      "total_weekly_study_hours"
+    ],
+    "warnings": [
+      "Teaching evidence does not establish a complete schedule. Online delivery does not imply compatible hours.",
+      "Course panels were opened through TinyFish; the public page identity and dates were separately retrieved by TinyFish Fetch.",
+      "Interaction observations are validated structurally; receipts record provider observations, not independent certification."
+    ],
+    "evidence": [
+      {
+        "id": "b7dd3f3b-fcc3-4da1-89d0-b55ca8be5318",
+        "endpoint": "fetch",
+        "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology",
+        "checked_at": "2026-11-03T10:47:24.808Z",
+        "sha256": "977114d74b2f3dee54ffe4e9c258de0d801383f06b2a9d643bc26fc295efee53",
+        "run_id": null,
+        "session_id": null,
+        "steps": null,
+        "reserved_usd": 0,
+        "estimated_usd": 0,
+        "fresh": true
+      },
+      {
+        "id": "7426add9-59eb-4007-aa86-8205ec080f94",
+        "endpoint": "browser",
+        "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology",
+        "checked_at": "2026-11-03T10:48:05.163Z",
+        "sha256": "4e8ddd847f04d00b5a3195e0a542c1db6cc9b49e7e5299f39e09682e082224bc",
+        "run_id": null,
+        "session_id": "tf-f8a402f0-a04f-4f23-b9e2-5bfbcb52def5",
+        "steps": null,
+        "reserved_usd": 0.01,
+        "estimated_usd": 0.001345,
+        "fresh": true
+      }
+    ]
+  }
+}

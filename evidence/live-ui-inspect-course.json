@@ -1,0 +1,154 @@
+{
+  "ok": true,
+  "data": {
+    "id": "learning-and-memory-brain",
+    "title": "Learning and memory in the brain",
+    "url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain",
+    "checked_at": "2026-11-04T09:35:09.444Z",
+    "offerings": [
+      {
+        "id": "2627NOE053",
+        "start_date": "2027-01-11",
+        "end_date": "2027-02-28",
+        "date_quote": "11 Jan 2027 to 28 Feb 2027",
+        "deadline": {
+          "value": "11 Jan 2027",
+          "quote": "application deadline: 11 Jan 2027",
+          "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+        },
+        "deadline_date": "2027-01-11",
+        "status": {
+          "value": "AVAILABLE",
+          "quote": "AVAILABLE",
+          "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+        },
+        "fees": [
+          {
+            "amount": 435,
+            "currency": "GBP",
+            "category": "home",
+            "basis": "course",
+            "quote": "Home: \u00a3435",
+            "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+          }
+        ],
+        "study_mode": {
+          "value": "Online learning",
+          "quote": "study mode: Online learning",
+          "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+        },
+        "duration": {
+          "value": "7 Weeks",
+          "quote": "duration: 7 Weeks",
+          "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+        },
+        "location": {
+          "value": null,
+          "quote": null,
+          "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+        },
+        "missing_fields": [
+          "location"
+        ],
+        "conflicts": []
+      },
+      {
+        "id": "2627NOE093",
+        "start_date": "2027-04-12",
+        "end_date": "2027-05-30",
+        "date_quote": "12 Apr 2027 to 30 May 2027",
+        "deadline": {
+          "value": "12 Apr 2027",
+          "quote": "application deadline: 12 Apr 2027",
+          "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+        },
+        "deadline_date": "2027-04-12",
+        "status": {
+          "value": "AVAILABLE",
+          "quote": "AVAILABLE",
+          "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+        },
+        "fees": [
+          {
+            "amount": 435,
+            "currency": "GBP",
+            "category": "home",
+            "basis": "course",
+            "quote": "Home: \u00a3435",
+            "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+          }
+        ],
+        "study_mode": {
+          "value": "Online learning",
+          "quote": "study mode: Online learning",
+          "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+        },
+        "duration": {
+          "value": "7 Weeks",
+          "quote": "duration: 7 Weeks",
+          "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+        },
+        "location": {
+          "value": null,
+          "quote": null,
+          "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+        },
+        "missing_fields": [
+          "location"
+        ],
+        "conflicts": []
+      }
+    ],
+    "requirements": {
+      "value": "The published description states open entry. No prior subject knowledge or experience is stated as necessary. Teaching is in English. Near-native English is advised. Full entry conditions and individual eligibility remain unassessed.",
+      "quote": "This course is open to everyone",
+      "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+    },
+    "teaching": {
+      "value": "Weekly classroom-time equivalent: about 2\u20133 hours; this is not a confirmed total workload. Separate self-study guidance: about 2\u20133 hours per week; individual needs vary. Normally no fixed online day/time is required; the full timetable remains unconfirmed. Web seminars are stated to be recorded.",
+      "quote": "equivalent to 2-3 hours of classroom time",
+      "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+    },
+    "weekly_hours": null,
+    "scheduled_weekdays": [],
+    "schedule_complete": false,
+    "missing_fields": [
+      "full_entry_conditions",
+      "complete_teaching_schedule",
+      "total_weekly_study_hours"
+    ],
+    "warnings": [
+      "Teaching evidence does not establish a complete schedule. Online delivery does not imply compatible hours.",
+      "Course panels were opened through TinyFish; the public page identity and dates were separately retrieved by TinyFish Fetch.",
+      "Interaction observations are validated structurally; receipts record provider observations, not independent certification."
+    ],
+    "evidence": [
+      {
+        "id": "12d5d7b0-02db-4d20-a56e-327f681a4a2b",
+        "endpoint": "fetch",
+        "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain",
+        "checked_at": "2026-11-04T09:34:00.886Z",
+        "sha256": "8f00d14ea96cb6f624dd9d2172ee47c66ee9c6436bda4fd0c803b3e0dd2a749c",
+        "run_id": null,
+        "session_id": null,
+        "steps": null,
+        "reserved_usd": 0,
+        "estimated_usd": 0,
+        "fresh": true
+      },
+      {
+        "id": "8145ff55-9d8d-4bc9-825d-8c079a794bc5",
+        "endpoint": "browser",
+        "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain",
+        "checked_at": "2026-11-04T09:35:07.059Z",
+        "sha256": "85467eb896434176324b82da4b8868453f3feacb86fbe7b0a9d3de062507bba3",
+        "run_id": null,
+        "session_id": "tf-392480db-3a1b-4c22-8ae3-62b2d4b6c9a1",
+        "steps": null,
+        "reserved_usd": 0.01,
+        "estimated_usd": 0.002199,
+        "fresh": true
+      }
+    ]
+  }
+}

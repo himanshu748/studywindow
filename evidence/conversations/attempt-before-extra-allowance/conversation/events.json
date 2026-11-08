@@ -1,0 +1,367 @@
+{
+  "client": "Codex CLI 0.164.0-alpha.11.1",
+  "kind": "genuine_agent_mcp_conversation",
+  "scenario": "Constructed learner request; autonomous model-selected tool inputs",
+  "started_at": "2026-11-04T15:37:23.526180+00:00",
+  "scenario_prompt": "As of 4 November 2026, I am a working learner in the UK looking for a short online psychology course, especially memory and how people make decisions. I do not want a qualification or executive coaching. My tuition budget is GBP 500 using the Home fee category. I can make at most five hours a week available, and Fridays are unavailable. I want a future offering with an application deadline that has not passed.\n\nPlease use StudyWindow to discover relevant options, give me a detailed read of your most promising candidate, and compare it with another before presenting a small sourced shortlist. Keep retrievals small: start with one broad subject search. Explain which constraints fit, which conflict, and what I still need to confirm. Online does not establish schedule compatibility.\n\nUse only the StudyWindow MCP tools. Do not use shell, other web tools, or modify files. Do not automatically retry a failed tool call. Report any blocker and retain the retrieval times of earlier evidence.\n",
+  "raw_event_sha256": "d0e670af30b31090b3e1c97161ee1ffa5795bee8de0d65320b068d4eaa76d2c1",
+  "omitted": "Reasoning, environment diagnostics, usage totals and transport logs are excluded. Visible assistant messages and completed MCP call arguments/results are retained.",
+  "events": [
+    {
+      "type": "assistant_message",
+      "text": "I\u2019ll start with one broad psychology search in StudyWindow, then examine the strongest match and a comparison option against your budget, workload, dates and Friday restriction.\n"
+    },
+    {
+      "type": "assistant_message",
+      "text": "StudyWindow\u2019s search is still running. Its coverage is limited to Cambridge PACE, so the shortlist will reflect that catalogue rather than all UK providers.\n"
+    },
+    {
+      "type": "mcp_tool_call",
+      "id": "item_1",
+      "server": "studywindow",
+      "tool": "search_courses",
+      "arguments": {
+        "topic": "psychology",
+        "limit": 5,
+        "page": 0
+      },
+      "result": {
+        "ok": true,
+        "data": {
+          "topic": "psychology",
+          "study_mode": null,
+          "source_url": "https://www.pace.cam.ac.uk/course-search?search_api_fulltext=psychology&field_subject_categories=All&field_course_type=All&field_method=All",
+          "checked_at": "2026-11-04T15:39:25.117Z",
+          "courses": [
+            {
+              "id": "undergraduate-award-certificate-cognitive-psychology",
+              "title": "Undergraduate award: Certificate in Cognitive Psychology",
+              "url": "https://www.pace.cam.ac.uk/courses/undergraduate-award-certificate-cognitive-psychology",
+              "start_date": "2026-10-09",
+              "end_date": "2027-06-09",
+              "date_quote": "09 Oct 2026 to 09 Jun 2027",
+              "study_mode": null,
+              "course_type": "Undergraduate courses"
+            },
+            {
+              "id": "undergraduate-award-certificate-sociology-politics-and-psychology",
+              "title": "Undergraduate award: Certificate in Sociology, Politics and Psychology",
+              "url": "https://www.pace.cam.ac.uk/courses/undergraduate-award-certificate-sociology-politics-and-psychology",
+              "start_date": "2026-10-09",
+              "end_date": "2027-06-09",
+              "date_quote": "09 Oct 2026 to 09 Jun 2027",
+              "study_mode": null,
+              "course_type": "Undergraduate courses"
+            },
+            {
+              "id": "introduction-cognitive-psychology-and-neuropsychology",
+              "title": "Introduction to Cognitive Psychology and Neuropsychology",
+              "url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology",
+              "start_date": "2026-10-26",
+              "end_date": "2026-12-13",
+              "date_quote": "26 Oct 2026 to 13 Dec 2026",
+              "study_mode": null,
+              "course_type": "Short online courses"
+            },
+            {
+              "id": "psychological-approaches-executive-coaching",
+              "title": "Psychological approaches for executive coaching",
+              "url": "https://www.pace.cam.ac.uk/courses/psychological-approaches-executive-coaching",
+              "start_date": "2027-01-11",
+              "end_date": "2027-02-28",
+              "date_quote": "11 Jan 2027 to 28 Feb 2027",
+              "study_mode": null,
+              "course_type": "Short online courses"
+            },
+            {
+              "id": "learning-and-memory-brain",
+              "title": "Learning and memory in the brain",
+              "url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain",
+              "start_date": "2027-01-11",
+              "end_date": "2027-02-28",
+              "date_quote": "11 Jan 2027 to 28 Feb 2027",
+              "study_mode": null,
+              "course_type": "Short online courses"
+            }
+          ],
+          "pagination": {
+            "page": 0,
+            "page_size": 15,
+            "total_results": 8,
+            "returned": 5,
+            "omitted_on_page": 3,
+            "next_page": null,
+            "catalogue_complete": false
+          },
+          "evidence": [
+            {
+              "id": "6b9128ea-561c-4c9d-a39a-2bf5d4eeacf0",
+              "endpoint": "agent",
+              "source_url": "https://www.pace.cam.ac.uk/course-search?search_api_fulltext=psychology",
+              "checked_at": "2026-11-04T15:39:11.911Z",
+              "sha256": "868743c2a8c2c0e6e82a5e8e6cd7cc7ee237ca2f8a2b6625951f533aa8d2717e",
+              "run_id": "34cf30f0-7d6e-46b8-83db-594be1ee7297",
+              "session_id": null,
+              "steps": 8,
+              "reserved_usd": 0.384,
+              "estimated_usd": 0.128,
+              "fresh": true
+            },
+            {
+              "id": "03e8fb6e-c0d3-464d-849f-00c315686795",
+              "endpoint": "fetch",
+              "source_url": "https://www.pace.cam.ac.uk/course-search?search_api_fulltext=psychology&field_subject_categories=All&field_course_type=All&field_method=All",
+              "checked_at": "2026-11-04T15:39:25.085Z",
+              "sha256": "7901b6b5acb1660728ec19a9e0bb7769d571d05a4123d0075613e88173efb4f6",
+              "run_id": null,
+              "session_id": null,
+              "steps": null,
+              "reserved_usd": 0,
+              "estimated_usd": 0,
+              "fresh": true
+            }
+          ],
+          "warnings": [
+            "Catalogue rows can represent different offerings of the same course; repeated ids refer to the same course page.",
+            "Search returns a bounded source page. Inspect each course before relying on fees, application windows or teaching commitments.",
+            "Some rows on this page were omitted by the requested limit; raise limit to 15 to see them."
+          ]
+        }
+      },
+      "status": "completed"
+    },
+    {
+      "type": "mcp_tool_call",
+      "id": "item_3",
+      "server": "studywindow",
+      "tool": "inspect_course",
+      "arguments": {
+        "course": "learning-and-memory-brain"
+      },
+      "result": {
+        "ok": true,
+        "data": {
+          "id": "learning-and-memory-brain",
+          "title": "Learning and memory in the brain",
+          "url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain",
+          "checked_at": "2026-11-04T15:40:26.285Z",
+          "offerings": [
+            {
+              "id": "2627NOE053",
+              "start_date": "2027-01-11",
+              "end_date": "2027-02-28",
+              "date_quote": "11 Jan 2027 to 28 Feb 2027",
+              "deadline": {
+                "value": "11 Jan 2027",
+                "quote": "application deadline: 11 Jan 2027",
+                "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+              },
+              "deadline_date": "2027-01-11",
+              "status": {
+                "value": "AVAILABLE",
+                "quote": "AVAILABLE",
+                "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+              },
+              "fees": [
+                {
+                  "amount": 435,
+                  "currency": "GBP",
+                  "category": "home",
+                  "basis": "course",
+                  "quote": "Home: \u00a3435",
+                  "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+                }
+              ],
+              "study_mode": {
+                "value": "Online learning",
+                "quote": "study mode: Online learning",
+                "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+              },
+              "duration": {
+                "value": "7 Weeks",
+                "quote": "duration: 7 Weeks",
+                "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+              },
+              "location": {
+                "value": null,
+                "quote": null,
+                "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+              },
+              "missing_fields": [
+                "location"
+              ],
+              "conflicts": []
+            },
+            {
+              "id": "2627NOE093",
+              "start_date": "2027-04-12",
+              "end_date": "2027-05-30",
+              "date_quote": "12 Apr 2027 to 30 May 2027",
+              "deadline": {
+                "value": "12 Apr 2027",
+                "quote": "application deadline: 12 Apr 2027",
+                "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+              },
+              "deadline_date": "2027-04-12",
+              "status": {
+                "value": "AVAILABLE",
+                "quote": "AVAILABLE",
+                "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+              },
+              "fees": [
+                {
+                  "amount": 435,
+                  "currency": "GBP",
+                  "category": "home",
+                  "basis": "course",
+                  "quote": "Home: \u00a3435",
+                  "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+                }
+              ],
+              "study_mode": {
+                "value": "Online learning",
+                "quote": "study mode: Online learning",
+                "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+              },
+              "duration": {
+                "value": "7 Weeks",
+                "quote": "duration: 7 Weeks",
+                "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+              },
+              "location": {
+                "value": null,
+                "quote": null,
+                "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+              },
+              "missing_fields": [
+                "location"
+              ],
+              "conflicts": []
+            }
+          ],
+          "requirements": {
+            "value": "The published description states open entry. No prior subject knowledge or experience is stated as necessary. Teaching is in English. Near-native English is advised. Full entry conditions and individual eligibility remain unassessed.",
+            "quote": "This course is open to everyone",
+            "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+          },
+          "teaching": {
+            "value": "Weekly classroom-time equivalent: about 2\u20133 hours; this is not a confirmed total workload. Separate self-study guidance: about 2\u20133 hours per week; individual needs vary. Normally no fixed online day/time is required; the full timetable remains unconfirmed. Web seminars are stated to be recorded.",
+            "quote": "equivalent to 2-3 hours of classroom time",
+            "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+          },
+          "weekly_hours": null,
+          "scheduled_weekdays": [],
+          "schedule_complete": false,
+          "missing_fields": [
+            "full_entry_conditions",
+            "complete_teaching_schedule",
+            "total_weekly_study_hours"
+          ],
+          "warnings": [
+            "Teaching evidence does not establish a complete schedule. Online delivery does not imply compatible hours.",
+            "Course panels were opened through TinyFish; the public page identity and dates were separately retrieved by TinyFish Fetch.",
+            "Interaction observations are validated structurally; receipts record provider observations, not independent certification."
+          ],
+          "evidence": [
+            {
+              "id": "b0647179-cc4b-4b45-8333-d157fa271276",
+              "endpoint": "fetch",
+              "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain",
+              "checked_at": "2026-11-04T15:39:41.567Z",
+              "sha256": "8f00d14ea96cb6f624dd9d2172ee47c66ee9c6436bda4fd0c803b3e0dd2a749c",
+              "run_id": null,
+              "session_id": null,
+              "steps": null,
+              "reserved_usd": 0,
+              "estimated_usd": 0,
+              "fresh": true
+            },
+            {
+              "id": "3e6c28a7-8c8c-418b-8e72-5d31f25780fc",
+              "endpoint": "browser",
+              "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain",
+              "checked_at": "2026-11-04T15:40:24.756Z",
+              "sha256": "85467eb896434176324b82da4b8868453f3feacb86fbe7b0a9d3de062507bba3",
+              "run_id": null,
+              "session_id": "tf-7d76f739-2d2b-4048-b7dd-a69f15a00246",
+              "steps": null,
+              "reserved_usd": 0.01,
+              "estimated_usd": 0.001439,
+              "fresh": true
+            }
+          ]
+        }
+      },
+      "status": "completed"
+    },
+    {
+      "type": "assistant_message",
+      "text": "\u201cLearning and memory in the brain\u201d has future offerings at \u00a3435 Home tuition. The main concern is workload: the guidance gives 2\u20133 hours of classroom-equivalent activity plus 2\u20133 hours of self-study, potentially exceeding your five-hour limit. Friday compatibility remains unconfirmed. I\u2019ll retrieve the three omitted catalogue results to identify the best comparison.\n"
+    },
+    {
+      "type": "mcp_tool_call",
+      "id": "item_5",
+      "server": "studywindow",
+      "tool": "search_courses",
+      "arguments": {
+        "topic": "psychology",
+        "limit": 8,
+        "page": 0
+      },
+      "result": {
+        "ok": false,
+        "error": {
+          "code": "SITE_CHANGED",
+          "message": "The Agent could not confirm the expected course-search form.",
+          "retryable": false
+        }
+      },
+      "status": "failed"
+    },
+    {
+      "type": "assistant_message",
+      "text": "The expanded search failed with `SITE_CHANGED`: StudyWindow could not confirm the expected search form. I won\u2019t retry it. The earlier search and memory-course evidence remain available with their original retrieval times. I\u2019ll compare the memory course with the already-discovered cognitive psychology introduction, checking whether its detail page lists a future offering.\n"
+    },
+    {
+      "type": "mcp_tool_call",
+      "id": "item_7",
+      "server": "studywindow",
+      "tool": "compare_courses",
+      "arguments": {
+        "courses": [
+          "learning-and-memory-brain",
+          "introduction-cognitive-psychology-and-neuropsychology"
+        ],
+        "budget": {
+          "amount": 500,
+          "currency": "GBP",
+          "fee_category": "home"
+        },
+        "study_modes": [
+          "online"
+        ],
+        "availability": {
+          "earliest_start_date": "2026-11-05",
+          "max_hours_per_week": 5,
+          "unavailable_weekdays": [
+            "friday"
+          ]
+        }
+      },
+      "result": {
+        "ok": false,
+        "error": {
+          "code": "PROVIDER_FAILURE",
+          "message": "The isolated Browser could not complete the public course interaction. No Agent retry or saved-data fallback was made.",
+          "retryable": false
+        }
+      },
+      "status": "failed"
+    },
+    {
+      "type": "assistant_message",
+      "text": "**\u201cLearning and memory in the brain\u201d is the strongest evidenced candidate, but I cannot confirm a course that meets all your constraints.** StudyWindow failed during further discovery and comparison; I did not retry either failed call.\n\nStudyWindow covers Cambridge PACE only. These findings use **4 November 2026** as your reference date.\n\n### Most promising: Learning and memory in the brain\n\nThe [course page](https://www.pace.cam.ac.uk/courses/learning-and-memory-brain) lists two available online offerings:\n\n| Offering | Application deadline | Home tuition |\n|---|---|---:|\n| 11 January\u201328 February 2027 | 11 January 2027 | \u00a3435 |\n| 12 April\u201330 May 2027 | 12 April 2027 | \u00a3435 |\n\nBoth are seven weeks long, start in the future and have deadlines that had not passed on your reference date. Tuition is **\u00a365 below budget**.\n\nIt is the strongest subject match because it explicitly concerns learning and memory. The retrieved evidence does **not** establish how much decision-making content it includes. The catalogue classifies it as a short online course, rather than an undergraduate qualification or executive-coaching course.\n\nThe main limitation is time commitment. Teaching guidance describes approximately **2\u20133 hours of classroom-equivalent activity plus 2\u20133 hours of self-study weekly**. That suggests roughly **4\u20136 hours**, rather than a confirmed total workload. Your strict five-hour ceiling therefore cannot be assured.\n\nFriday compatibility is also **unconfirmed**. The evidence says there is normally no fixed online day or time and web seminars are recorded, but the full schedule was not established. An empty list of scheduled weekdays is missing information, not proof that Fridays are free.\n\nEntry is described as open to everyone, with no prior subject knowledge stated as necessary. Teaching is in English and near-native English is advised; full entry conditions and individual eligibility were not assessed.\n\nBefore booking, confirm:\n\n- Whether all required activity can be completed within five hours every week.\n- Whether any compulsory attendance, participation or submission is required on Fridays, and whether recordings fully replace live attendance.\n- Whether the syllabus covers decision-making sufficiently for your interests.\n- Your Home-fee eligibility, any required extra costs, and the non-qualification nature of participation.\n\n### Small shortlist and comparison\n\n| Candidate | Why consider it | Fit and unresolved issues |\n|---|---|---|\n| **[Learning and memory in the brain](https://www.pace.cam.ac.uk/courses/learning-and-memory-brain)** | Direct memory focus; two future offerings | \u00a3435 Home and online confirmed. Workload may exceed five hours; Fridays and decision-making coverage unresolved. **Conditional first choice.** |\n| **[Introduction to Cognitive Psychology and Neuropsychology](https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology)** | Broader cognitive subject area worth comparing | Catalogue lists a short online course running **26 October\u201313 December 2026**, already underway on your reference date. No future offering, fee, deadline or schedule was verified. **Reserve lead only.** |\n\nThe memory course has substantially stronger evidence for your requirements. The introduction cannot presently satisfy your future-start requirement on the evidence retrieved. Neither is a confirmed all-constraints match.\n\nThe initial [psychology catalogue search](https://www.pace.cam.ac.uk/course-search?search_api_fulltext=psychology&field_subject_categories=All&field_course_type=All&field_method=All) returned five of eight results. I excluded the two undergraduate certificates and executive-coaching course in line with your preferences. The three omitted results remain unknown.\n\n### Evidence times and blockers\n\nAll times below are **UTC on 4 November 2026**:\n\n- **Initial search:** receipt `15:39:25.117`; underlying Agent evidence `15:39:11.911`, Fetch evidence `15:39:25.085`.\n- **Memory-course inspection:** receipt `15:40:26.285`; page Fetch `15:39:41.567`, panel Browser evidence `15:40:24.756`.\n\nThe expanded search failed with **`SITE_CHANGED`** because the expected search form could not be confirmed. The two-course comparison then failed with **`PROVIDER_FAILURE`** during public-page interaction. Neither failure returned a retrieval timestamp or usable new evidence. The times above remain the original evidence times; the failed comparison did not refresh them."
+    }
+  ],
+  "unexpected_completed_item_types": []
+}

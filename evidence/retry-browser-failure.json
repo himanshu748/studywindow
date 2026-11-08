@@ -1,0 +1,10 @@
+{
+  "kind": "retry_browser_failure",
+  "agent_run_id": "ee16d35f-c920-4039-a091-8297567b4a9d",
+  "session_id": "tf-255f526d-2f24-4753-b086-3e51961c8aef",
+  "stage": "navigate_course",
+  "network_errors": [
+    "ERR_EMPTY_RESPONSE"
+  ],
+  "interpretation": "Comparison returned no partial result. Existing successful search and inspection remain separate evidence; source/network root cause is not inferred."
+}

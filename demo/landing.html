@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#f7f9f7" />
+    <meta
+      name="description"
+      content="Discover Cambridge continuing-education courses and compare fees, application windows and study commitments with the life you have."
+    />
+    <title>StudyWindow — Your next chapter, with room for life</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="/base.css" />
+    <link rel="stylesheet" href="/landing.css" />
+    <script src="/landing.js" defer></script>
+  </head>
+  <body class="landing">
+    <a class="lp-skip" href="#main">Skip to content</a>
+    <header class="lp-header">
+      <a class="lp-brand" href="/" aria-label="StudyWindow home"
+        ><span class="sw-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span
+        >StudyWindow<span class="lp-brand-dot">.</span></a
+      >
+      <nav class="lp-nav" aria-label="Main navigation">
+        <a href="#how-it-works">How it works</a><a href="#why-studywindow">Why StudyWindow</a
+        ><a href="#questions">Questions</a>
+      </nav>
+      <a class="lp-button lp-button-small lp-button-dark" href="/app"
+        >Open workspace <span aria-hidden="true">↗</span></a
+      >
+    </header>
+    <main id="main">
+      <section class="lp-hero lp-wrap" aria-labelledby="hero-title">
+        <div class="lp-hero-copy" data-enter>
+          <p class="lp-eyebrow"><span></span> BIG CURIOSITY. REAL-LIFE CONSTRAINTS.</p>
+          <h1 id="hero-title">Your next chapter.<br /><span>Room for life.</span></h1>
+          <p class="lp-lead">
+            Find a course you’re excited about.<br />See how the cost, deadlines, and study
+            commitments line up with your life.
+          </p>
+          <div class="lp-hero-actions">
+            <a class="lp-button lp-button-dark" href="/app"
+              >Find my course <span aria-hidden="true">↗</span></a
+            ><a class="lp-link" href="/app?recorded=1"
+              ><span class="lp-play" aria-hidden="true">▷</span> Explore a recorded example</a
+            >
+          </div>
+          <p class="lp-hero-note">
+            Cambridge PACE courses · Sources you can check · No account needed locally
+          </p>
+          <div class="lp-subjects">
+            <span>Follow your curiosity</span><a href="/app?topic=psychology">Psychology ↗</a
+            ><a href="/app?topic=history">History ↗</a
+            ><a href="/app?topic=creative%20writing">Creative writing ↗</a>
+          </div>
+        </div>
+        <div class="lp-stage" data-enter id="try-it">
+          <div class="lp-stage-grid" aria-hidden="true"></div>
+          <span class="lp-orbit-label" aria-hidden="true">A LITTLE SPACE FOR WHAT’S NEXT</span>
+          <div class="lp-preview">
+            <div class="lp-preview-top">
+              <span class="lp-mini-mark" aria-hidden="true">▦</span
+              ><strong>Your study window</strong><span class="lp-preview-live">Try it</span>
+            </div>
+            <div class="lp-preview-tabs" role="tablist" aria-label="Interactive preview">
+              <button
+                role="tab"
+                aria-selected="true"
+                aria-controls="week-panel"
+                id="week-tab"
+                tabindex="0"
+              >
+                Your week</button
+              ><button
+                role="tab"
+                aria-selected="false"
+                aria-controls="facts-panel"
+                id="facts-tab"
+                tabindex="-1"
+              >
+                Course facts
+              </button>
+            </div>
+            <div id="week-panel" role="tabpanel" aria-labelledby="week-tab">
+              <p class="lp-label">Days you could make room</p>
+              <div class="lp-week" aria-label="Your available days">
+                <button aria-label="Monday available" aria-pressed="true">M</button
+                ><button aria-label="Tuesday available" aria-pressed="true">T</button
+                ><button aria-label="Wednesday available" aria-pressed="false">W</button
+                ><button aria-label="Thursday available" aria-pressed="true">T</button
+                ><button aria-label="Friday available" aria-pressed="false" data-friday>F</button
+                ><button aria-label="Saturday available" aria-pressed="true">S</button
+                ><button aria-label="Sunday available" aria-pressed="false">S</button>
+              </div>
+              <p class="lp-week-note" id="week-note">
+                4 possible days. Teaching times still need confirmation.
+              </p>
+            </div>
+            <div id="facts-panel" role="tabpanel" aria-labelledby="facts-tab" hidden>
+              <dl class="lp-preview-facts">
+                <div>
+                  <dt>Delivery</dt>
+                  <dd id="preview-mode">Not loaded</dd>
+                </div>
+                <div>
+                  <dt>Course window</dt>
+                  <dd id="preview-dates">Not loaded</dd>
+                </div>
+                <div>
+                  <dt>Application deadline</dt>
+                  <dd id="preview-deadline">Not loaded</dd>
+                </div>
+              </dl>
+            </div>
+            <div class="lp-budget">
+              <div>
+                <label for="preview-budget">Your tuition budget</label
+                ><output id="budget-value" for="preview-budget">£500</output>
+              </div>
+              <input
+                type="range"
+                id="preview-budget"
+                min="200"
+                max="1000"
+                step="25"
+                value="500"
+                aria-describedby="budget-hint"
+              />
+              <div class="lp-range-labels"><span>£200</span><span>£1,000</span></div>
+            </div>
+            <div class="lp-course-preview">
+              <div class="lp-course-art" aria-hidden="true">
+                <svg viewBox="0 0 64 64" fill="none">
+                  <path
+                    d="M16 35c-9-4-9-17 1-20 3-9 15-10 20-3 11-1 17 10 12 18 6 9-1 19-10 18l-6 7-7-8c-8 2-15-4-10-12Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="m20 23 11 6 9-9M31 29l-7 11m7-11 12 9M31 29l1-13"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                  <circle cx="31" cy="29" r="4" fill="currentColor" />
+                </svg>
+              </div>
+              <div>
+                <span class="lp-label">RECORDED COURSE EXAMPLE</span>
+                <h2 id="preview-title">Loading recorded evidence…</h2>
+                <p id="preview-course-meta">The preview uses saved source observations.</p>
+              </div>
+            </div>
+            <div class="lp-fit-feedback" id="budget-feedback" aria-live="polite">
+              <span class="lp-fit-icon" aria-hidden="true">↗</span>
+              <div>
+                <strong id="budget-result">Reading the recorded fee</strong>
+                <p id="budget-hint">This interaction makes no live provider call.</p>
+              </div>
+            </div>
+            <p class="lp-record-note" id="preview-source">
+              Recorded evidence · not a current availability guarantee.
+            </p>
+          </div>
+          <div class="lp-floating-note" aria-hidden="true">
+            <span>✳</span>
+            <div>More than interesting.<br /><strong>Worth a closer look.</strong></div>
+          </div>
+        </div>
+      </section>
+      <div class="lp-source-strip lp-wrap">
+        <span>YOUR NEXT STEP, GROUNDED IN</span>
+        <div><span>↗</span> Published course details</div>
+        <div><span>◷</span> Real application windows</div>
+        <div><span>◇</span> Honest unknowns</div>
+        <a href="https://www.pace.cam.ac.uk/course-search" target="_blank" rel="noopener noreferrer"
+          >Explore the source ↗</a
+        >
+      </div>
+      <section class="lp-tour lp-wrap" id="how-it-works" aria-labelledby="tour-title">
+        <div class="lp-section-intro" data-reveal>
+          <p class="lp-eyebrow">FROM CURIOUS TO A CLEARER NEXT STEP</p>
+          <h2 id="tour-title">A little clarity.<br />A lot less tab juggling.</h2>
+          <p>Bring your interests. Set your limits. Keep the questions that matter in view.</p>
+        </div>
+        <div class="lp-tour-layout">
+          <div
+            class="lp-tour-tabs"
+            role="tablist"
+            aria-label="How StudyWindow works"
+            aria-orientation="vertical"
+          >
+            <button
+              role="tab"
+              id="discover-tab"
+              aria-controls="tour-panel"
+              aria-selected="true"
+              tabindex="0"
+              data-tour="discover"
+            >
+              <span>01</span>
+              <div>
+                <strong>Discover your possibilities</strong>
+                <p>Search a subject and choose how you want to learn.</p>
+              </div>
+              <b aria-hidden="true">↗</b></button
+            ><button
+              role="tab"
+              id="inspect-tab"
+              aria-controls="tour-panel"
+              aria-selected="false"
+              tabindex="-1"
+              data-tour="inspect"
+            >
+              <span>02</span>
+              <div>
+                <strong>Look beyond the title</strong>
+                <p>Check dates, fee categories, and the teaching evidence.</p>
+              </div>
+              <b aria-hidden="true">↗</b></button
+            ><button
+              role="tab"
+              id="compare-tab"
+              aria-controls="tour-panel"
+              aria-selected="false"
+              tabindex="-1"
+              data-tour="compare"
+            >
+              <span>03</span>
+              <div>
+                <strong>Put your shortlist to work</strong>
+                <p>See matches, conflicts, and what you still need to ask.</p>
+              </div>
+              <b aria-hidden="true">↗</b>
+            </button>
+          </div>
+          <div
+            class="lp-tour-canvas"
+            role="tabpanel"
+            id="tour-panel"
+            aria-labelledby="discover-tab"
+            data-reveal
+          >
+            <div class="lp-browser-bar">
+              <i></i><i></i><i></i><span>StudyWindow / a closer look</span><span>↗</span>
+            </div>
+            <div class="lp-tour-content" id="tour-content"></div>
+            <div class="lp-tour-foot">
+              <span>Recorded example · no live request</span
+              ><a href="/app?recorded=1">Open the workspace ↗</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="lp-reasons lp-wrap" id="why-studywindow" aria-labelledby="reason-title">
+        <div class="lp-section-head" data-reveal>
+          <div>
+            <p class="lp-eyebrow">A COURSE HAS TO WORK IN THE REAL WORLD</p>
+            <h2 id="reason-title">Make the important<br />details impossible to miss.</h2>
+          </div>
+          <p>
+            Designed for people fitting learning around work, family, and everything in between.
+          </p>
+        </div>
+        <div class="lp-feature-grid">
+          <article class="lp-feature" data-reveal>
+            <div class="lp-feature-visual lp-fee-art" aria-hidden="true">
+              <div><span>Tuition budget</span><b>£500</b></div>
+              <div>
+                <span>Published Home fee</span><b>£435 <i>✓</i></b>
+              </div>
+              <span class="lp-saved-tag">Recorded example</span>
+            </div>
+            <span class="lp-feature-no">01 / THE COST</span>
+            <h3>Your budget, clearly considered.</h3>
+            <p>
+              Fee categories and charging basis stay visible. Different currencies and missing costs
+              stay unresolved.
+            </p>
+          </article>
+          <article class="lp-feature" data-reveal>
+            <div class="lp-feature-visual lp-date-art" aria-hidden="true">
+              <div class="lp-mini-calendar">
+                <span>JANUARY 2027</span><b>11</b><small>Application deadline</small>
+              </div>
+              <span class="lp-calendar-dot"></span
+              ><span class="lp-saved-tag">Recorded example</span>
+            </div>
+            <span class="lp-feature-no">02 / THE WINDOW</span>
+            <h3>A date you can act on.</h3>
+            <p>
+              Separate application deadlines from start dates. Spot closed offerings before you make
+              a plan around them.
+            </p>
+          </article>
+          <article class="lp-feature" data-reveal>
+            <div class="lp-feature-visual lp-time-art" aria-hidden="true">
+              <div class="lp-question-card">
+                <span>Online learning</span><strong>Does it fit my Friday?</strong>
+                <div><i>?</i> Confirm the teaching schedule</div>
+              </div>
+            </div>
+            <span class="lp-feature-no">03 / THE COMMITMENT</span>
+            <h3>Room for the honest answer.</h3>
+            <p>
+              Online doesn’t establish schedule compatibility. Missing teaching times become a
+              question to ask.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="lp-trust lp-wrap" data-reveal>
+        <span class="lp-trust-mark" aria-hidden="true">↗</span>
+        <div>
+          <p class="lp-eyebrow">FOLLOW EVERY FINDING BACK TO ITS SOURCE</p>
+          <h2>Clarity includes knowing<br />what we don’t know.</h2>
+          <p>
+            StudyWindow uses TinyFish to read the live Cambridge PACE website. Course facts come
+            with source links and checked-at times. Saved examples keep their original timestamps.
+            There’s no application or enrolment inside StudyWindow.
+          </p>
+          <a class="lp-link" href="/app?recorded=1"
+            >See the evidence in an example <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div class="lp-receipt-card">
+          <span class="lp-label">A FINDING YOU CAN TRACE</span>
+          <div>
+            <span class="lp-evidence-dot"></span><strong>Published course fee</strong
+            ><span class="lp-evidence-badge">Source evidence</span>
+          </div>
+          <p>Home fee · GBP · per course</p>
+          <hr />
+          <div class="lp-receipt-lines">
+            <span>↗ Original course page</span><span>◷ Retrieval timestamp</span
+            ><span>◇ Fields kept separate</span>
+          </div>
+        </div>
+      </section>
+      <section class="lp-faq lp-wrap" id="questions">
+        <div data-reveal>
+          <p class="lp-eyebrow">BEFORE YOUR NEXT CHAPTER</p>
+          <h2>A few good questions.</h2>
+          <p>For everything else, the original course page is your next stop.</p>
+        </div>
+        <div class="lp-faq-list">
+          <details>
+            <summary>Which courses can I explore?<span aria-hidden="true">+</span></summary>
+            <p>
+              StudyWindow currently supports the public Cambridge Professional and Continuing
+              Education catalogue. It is an independent local tool and is not affiliated with the
+              University of Cambridge.
+            </p>
+          </details>
+          <details>
+            <summary>Does a match mean I can enrol?<span aria-hidden="true">+</span></summary>
+            <p>
+              A match applies to a specific published fact, such as the listed Home fee fitting your
+              budget. Admission, fee-status eligibility, complete schedules, and a place on the
+              course require confirmation with the provider.
+            </p>
+          </details>
+          <details>
+            <summary>Are the examples live?<span aria-hidden="true">+</span></summary>
+            <p>
+              The interactive landing preview and “recorded example” use genuine saved retrievals
+              with their original timestamps. In the workspace, explicit search, inspection,
+              comparison, and health actions make new TinyFish calls when live access is enabled.
+            </p>
+          </details>
+          <details>
+            <summary>Can I use it from my AI assistant?<span aria-hidden="true">+</span></summary>
+            <p>
+              The local MCP server exposes typed search, inspection, comparison, and health tools.
+              Installation and host configuration are included in the project README. The web
+              workspace calls the same MCP server.
+            </p>
+          </details>
+        </div>
+      </section>
+      <section class="lp-final lp-wrap" data-reveal>
+        <div>
+          <p class="lp-eyebrow">CURIOSITY DESERVES A WORKABLE PLAN</p>
+          <h2>There’s room for<br />something new.</h2>
+        </div>
+        <div>
+          <a class="lp-button lp-button-dark" href="/app"
+            >Find my study window <span aria-hidden="true">↗</span></a
+          >
+          <p>Start with a subject. Keep your real life in view.</p>
+        </div>
+        <span class="lp-final-window" aria-hidden="true">↗</span>
+      </section>
+    </main>
+    <footer class="lp-footer lp-wrap">
+      <a class="lp-brand" href="/"
+        ><span class="sw-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span
+        >StudyWindow<span class="lp-brand-dot">.</span></a
+      >
+      <p>Independent course discovery. Built with TinyFish.</p>
+      <a href="/app">Open workspace ↗</a><span>Local edition · Cambridge PACE</span>
+    </footer>
+  </body>
+</html>

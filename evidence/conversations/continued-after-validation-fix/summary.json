@@ -1,0 +1,15 @@
+{
+  "kind": "actual_autonomous_mcp_retry",
+  "date": "2026-11-05",
+  "complete_search_inspect_compare_success": false,
+  "successful_calls": 2,
+  "completed_calls": 3,
+  "tools": [
+    "search_courses",
+    "inspect_course",
+    "compare_courses"
+  ],
+  "course_identity_checks": {},
+  "unexpected_completed_item_types": [],
+  "not_a_scripted_tool_sequence": "The controller supplied the prior completed run ID and matching search inputs. The model selected course identifiers and called real MCP tools. No manually scripted tool calls or substituted results."
+}

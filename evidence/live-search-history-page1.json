@@ -1,0 +1,79 @@
+{
+  "ok": true,
+  "data": {
+    "topic": "history",
+    "study_mode": null,
+    "source_url": "https://www.pace.cam.ac.uk/course-search?search_api_fulltext=history&field_subject_categories=All&field_course_type=All&field_method=All&page=1",
+    "checked_at": "2026-11-03T09:23:09.708Z",
+    "courses": [
+      {
+        "id": "approaches-western-art-history",
+        "title": "Approaches to Western Art History",
+        "url": "https://www.pace.cam.ac.uk/courses/approaches-western-art-history",
+        "start_date": "2027-05-24",
+        "end_date": "2027-07-11",
+        "date_quote": "24 May 2027 to 11 Jul 2027",
+        "study_mode": null,
+        "course_type": "Short online courses"
+      },
+      {
+        "id": "shakespeare-and-interpretation-history",
+        "title": "Shakespeare and the interpretation of history",
+        "url": "https://www.pace.cam.ac.uk/courses/shakespeare-and-interpretation-history",
+        "start_date": "2027-05-24",
+        "end_date": "2027-07-11",
+        "date_quote": "24 May 2027 to 11 Jul 2027",
+        "study_mode": null,
+        "course_type": "Short online courses"
+      },
+      {
+        "id": "history-hollywood-musical",
+        "title": "A History of the Hollywood Musical",
+        "url": "https://www.pace.cam.ac.uk/courses/history-hollywood-musical",
+        "start_date": "2027-07-02",
+        "end_date": "2027-07-04",
+        "date_quote": "02 Jul 2027 to 04 Jul 2027",
+        "study_mode": null,
+        "course_type": "Weekend courses"
+      }
+    ],
+    "pagination": {
+      "page": 1,
+      "page_size": 15,
+      "total_results": 18,
+      "returned": 3,
+      "omitted_on_page": 0,
+      "next_page": null,
+      "catalogue_complete": false
+    },
+    "evidence": [
+      {
+        "id": "c85e8e4b-806e-4124-9fb0-094cab81f334",
+        "endpoint": "agent",
+        "source_url": "https://www.pace.cam.ac.uk/course-search?search_api_fulltext=history",
+        "checked_at": "2026-11-03T09:22:56.303Z",
+        "sha256": "c214d4a41db70a765b5938186096f45daa8122a956ef49e5e865a174ceec2181",
+        "run_id": "9fae2a50-c5ee-410c-92d4-aa8b9144d5e5",
+        "steps": 13,
+        "reserved_usd": 0.256,
+        "estimated_usd": 0.208,
+        "fresh": true
+      },
+      {
+        "id": "feb3aaa3-f7c1-43dc-8577-3d3d35091f79",
+        "endpoint": "fetch",
+        "source_url": "https://www.pace.cam.ac.uk/course-search?search_api_fulltext=history&field_subject_categories=All&field_course_type=All&field_method=All&page=1",
+        "checked_at": "2026-11-03T09:23:08.559Z",
+        "sha256": "411b841856e154ad3d784ee573b93cdb4e6020ab8647cbc98edd8a3527b8d92a",
+        "run_id": null,
+        "steps": null,
+        "reserved_usd": 0,
+        "estimated_usd": 0,
+        "fresh": true
+      }
+    ],
+    "warnings": [
+      "Search returns a bounded source page. Inspect each course before relying on fees, application windows or teaching commitments."
+    ]
+  }
+}

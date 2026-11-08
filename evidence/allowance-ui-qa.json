@@ -1,0 +1,12 @@
+{
+  "kind": "offline_browser_allowance_control_checks",
+  "paid_calls": 0,
+  "checks": [
+    "Actual local ledger: new Agent search disabled; two-course comparison fits the remaining capacity; recorded inspection and preferences remain usable",
+    "Simulated local status capacity: live action readiness correct",
+    "Simulated local status nearly-exhausted: live action readiness correct",
+    "Simulated local status halted: live action readiness correct",
+    "Simulated local status unknown: live action readiness correct"
+  ],
+  "passed": true
+}

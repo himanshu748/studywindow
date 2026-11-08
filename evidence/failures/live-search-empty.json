@@ -1,0 +1,8 @@
+{
+  "ok": false,
+  "error": {
+    "code": "SITE_CHANGED",
+    "message": "The Agent could not confirm the expected course-search form.",
+    "retryable": false
+  }
+}

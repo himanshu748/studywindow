@@ -1,0 +1,831 @@
+{
+  "kind": "conservative_build_usage",
+  "checked_at": "2026-11-05T08:38:34.486696+00:00",
+  "authorized_ceiling_usd": 5.8,
+  "agent_runs": 17,
+  "browser_sessions": 28,
+  "fetch_urls": 47,
+  "agent_reserved_usd": 5.504,
+  "browser_reserved_usd": 0.28,
+  "total_reserved_usd": 5.784,
+  "remaining_reservation_capacity_usd": 0.016,
+  "partial_known_usage_estimate_usd": 2.84267,
+  "unestimated_operations": 3,
+  "unestimated_operations_reserved_usd": 0.778,
+  "active_operations": 0,
+  "billing_or_auto_reload_changed": false,
+  "invoice_verified": false,
+  "notes": [
+    "Reservations are retained conservative ceilings, not charges. Failed and cancelled operations stay counted.",
+    "The partial known estimate excludes operations without reliable final accounting and is not a provider invoice.",
+    "No new Agent run fits under the remaining aggregate reservation ceiling. No allowance was reset.",
+    "An extra $0.50 was explicitly authorized for one final bounded attempt. That attempt reserved $0.384 and ended after the failed search. No further billable verification was performed.",
+    "A separate $0.30 extension on 5 November authorized one later retry. One new Agent run completed the form; a local title/anchor validation issue was repaired. Explicit continuation verified that same Agent result and fetched anew, without a second Agent reservation. Search and inspection passed; comparison failed on ERR_EMPTY_RESPONSE. The full $0.414 new reservation is retained.",
+    "Cumulative caps are now exhausted: 17 Agent runs, 28 Browser sessions and 47 Fetch URLs. No new live verification is permitted by the consumed retry grant."
+  ],
+  "entries": [
+    {
+      "id": "3b6c1e72-33a0-4818-8a81-96e316ee004b",
+      "endpoint": "agent",
+      "at": "2026-11-03T08:48:02.024948+00:00",
+      "run_id": "f9b8adf5-b1c5-4fca-a1bf-1986c716cf1c",
+      "steps": 13,
+      "reserved_usd": 0.256,
+      "estimated_usd": 0.208
+    },
+    {
+      "id": "0983a17c-009d-44cd-9ad7-198617ba16fd",
+      "endpoint": "agent",
+      "at": "2026-11-03T09:09:03.797Z",
+      "run_id": "54f7e7c6-62c6-4020-a306-fc0c50cc9ea7",
+      "steps": 11,
+      "reserved_usd": 0.256,
+      "estimated_usd": 0.176
+    },
+    {
+      "id": "0f07eb29-9428-46a9-a3b3-a36facd0e96b",
+      "endpoint": "fetch",
+      "at": "2026-11-03T09:10:48.793Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "330c4b9e-f772-4355-9501-7230dbe8a5d7",
+      "endpoint": "agent",
+      "at": "2026-11-03T09:11:00.102Z",
+      "run_id": "e3516eae-7658-49ff-8b45-0c87ccfbedcf",
+      "steps": 13,
+      "reserved_usd": 0.256,
+      "estimated_usd": 0.208
+    },
+    {
+      "id": "a39e084e-8b95-42a8-a68c-81fd69cb70b9",
+      "endpoint": "fetch",
+      "at": "2026-11-03T09:15:40.679Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "3a42c2f1-5601-4bea-af64-29bceebb4d6f",
+      "endpoint": "agent",
+      "at": "2026-11-03T09:15:40.701Z",
+      "run_id": "04d80bdb-05a9-449a-afc9-00f6f792bd21",
+      "steps": 13,
+      "reserved_usd": 0.256,
+      "estimated_usd": 0.208
+    },
+    {
+      "id": "fbf0c503-136e-46c1-98b9-e9bb99303445",
+      "endpoint": "agent",
+      "at": "2026-11-03T09:15:49.667Z",
+      "run_id": "5a6e64db-ac4c-486d-a024-cc37b1d9599c",
+      "steps": 13,
+      "reserved_usd": 0.256,
+      "estimated_usd": 0.208
+    },
+    {
+      "id": "f7bd1b59-5cf0-4163-8796-a41809501f71",
+      "endpoint": "fetch",
+      "at": "2026-11-03T09:17:19.620Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "6b1ccbb6-bfe7-4de3-b8a6-6dbd0aca1606",
+      "endpoint": "fetch",
+      "at": "2026-11-03T09:21:19.592Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "d41c02f6-3655-45b6-8623-fe503f636734",
+      "endpoint": "agent",
+      "at": "2026-11-03T09:21:20.401Z",
+      "run_id": "9fae2a50-c5ee-410c-92d4-aa8b9144d5e5",
+      "steps": 13,
+      "reserved_usd": 0.256,
+      "estimated_usd": 0.208
+    },
+    {
+      "id": "113c6db5-46e6-4cdf-b406-07db7b1adf87",
+      "endpoint": "agent",
+      "at": "2026-11-03T09:21:24.459Z",
+      "run_id": "2b6f24b3-deda-487d-921e-7cf2140f5fcb",
+      "steps": 13,
+      "reserved_usd": 0.256,
+      "estimated_usd": 0.208
+    },
+    {
+      "id": "7c7dd83e-2686-489b-ba1a-0a5b1cbf41c5",
+      "endpoint": "fetch",
+      "at": "2026-11-03T09:22:59.065Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "0ac9112b-fca2-4498-a239-2a865ca1f1af",
+      "endpoint": "agent",
+      "at": "2026-11-03T09:28:19.867Z",
+      "run_id": "7005065e-c038-49f1-bbf1-8d8b909c62e1",
+      "steps": 12,
+      "reserved_usd": 0.256,
+      "estimated_usd": 0.192
+    },
+    {
+      "id": "4581e21a-98c0-4fbf-8fd6-86087ac218a3",
+      "endpoint": "fetch",
+      "at": "2026-11-03T09:36:23.027Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "9daf3cc5-06d7-4c18-b9fc-0546dfaf725c",
+      "endpoint": "browser",
+      "at": "2026-11-03T09:36:26.534Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0.01,
+      "estimated_usd": 8.8e-05
+    },
+    {
+      "id": "826f1758-d501-46cd-b838-cd438af704b6",
+      "endpoint": "browser",
+      "at": "2026-11-03T09:39:25.231Z",
+      "run_id": "tf-476470b6-8f3b-4b94-bcff-d5629ba4dca3",
+      "steps": null,
+      "reserved_usd": 0.01,
+      "estimated_usd": 0.002
+    },
+    {
+      "id": "ea447425-8fb8-4ef0-8888-4d9cb52e016c",
+      "endpoint": "fetch",
+      "at": "2026-11-03T09:40:44.722Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "1c831201-4644-4f7a-a7f2-c6eeadf356d6",
+      "endpoint": "browser",
+      "at": "2026-11-03T09:40:53.115Z",
+      "run_id": "tf-c05f6c90-2d2c-4761-8e4f-75739dd05fc6",
+      "steps": null,
+      "reserved_usd": 0.01,
+      "estimated_usd": 0.001335
+    },
+    {
+      "id": "a140a1c8-fa5e-46f8-b540-c0fdc99231c0",
+      "endpoint": "fetch",
+      "at": "2026-11-03T09:45:24.258Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "ab995ff4-9094-45e5-8174-3b0f29785d25",
+      "endpoint": "browser",
+      "at": "2026-11-03T09:45:28.246Z",
+      "run_id": "tf-d04551c5-0fc0-4989-9510-ae2ad56c2f20",
+      "steps": null,
+      "reserved_usd": 0.01,
+      "estimated_usd": null
+    },
+    {
+      "id": "b69a9c7c-6373-4cad-a3d9-af73a8726c4d",
+      "endpoint": "fetch",
+      "at": "2026-11-03T09:50:42.258Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "7ccca9d9-6a83-4516-82e5-bac0b1f6180b",
+      "endpoint": "browser",
+      "at": "2026-11-03T09:50:51.805Z",
+      "run_id": "tf-96a72815-0311-4bc8-96fa-3f97992b687b",
+      "steps": null,
+      "reserved_usd": 0.01,
+      "estimated_usd": 0.000295
+    },
+    {
+      "id": "acecf4da-b151-4c3b-ac96-c20dfcc5dcef",
+      "endpoint": "browser",
+      "at": "2026-11-03T09:54:51.155Z",
+      "run_id": "tf-f9c9c82f-ae0d-41fb-b0b1-d69c71f65a09",
+      "steps": null,
+      "reserved_usd": 0.01,
+      "estimated_usd": 0.000417
+    },
+    {
+      "id": "a6914696-8928-46f1-8309-45cb591e71db",
+      "endpoint": "fetch",
+      "at": "2026-11-03T09:57:36.191Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "a60763c8-e7e0-4167-bfa6-8a3445c5a143",
+      "endpoint": "agent",
+      "at": "2026-11-03T09:57:43.189Z",
+      "run_id": "f8f5e933-5dd6-40a6-a1cc-525c0bbd145c",
+      "steps": null,
+      "reserved_usd": 0.384,
+      "estimated_usd": null
+    },
+    {
+      "id": "af374f7b-3d0e-4338-bf30-93a80eb8feb3",
+      "endpoint": "fetch",
+      "at": "2026-11-03T10:07:21.592Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "9208d7c1-6f44-433c-bd02-83bef3051447",
+      "endpoint": "fetch",
+      "at": "2026-11-03T10:08:39.234Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "773dfc60-5da2-43a4-b957-d73ed4c6a10f",
+      "endpoint": "fetch",
+      "at": "2026-11-03T10:12:01.159Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "680b1a65-bf05-4253-9559-1911c1c23c4b",
+      "endpoint": "browser",
+      "at": "2026-11-03T10:12:11.192Z",
+      "run_id": "tf-b1cddf64-164b-4f0a-9188-22e8aec1ccb3",
+      "steps": null,
+      "reserved_usd": 0.01,
+      "estimated_usd": 0.001295
+    },
+    {
+      "id": "8392b6aa-ca00-47ac-a922-377e094f96c2",
+      "endpoint": "fetch",
+      "at": "2026-11-03T10:28:07.989Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "60b7904a-116e-4833-aea4-6cbfdab3a6f1",
+      "endpoint": "fetch",
+      "at": "2026-11-03T10:28:08.062Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "adc12e7f-ee89-4bbf-b653-ebf375eed165",
+      "endpoint": "browser",
+      "at": "2026-11-03T10:28:12.706Z",
+      "run_id": "tf-917f3ba2-0cbe-4495-acbc-b3ef03d14d62",
+      "steps": null,
+      "reserved_usd": 0.01,
+      "estimated_usd": 0.000257
+    },
+    {
+      "id": "bfafb0b9-ad92-4c0f-a359-7d799abb95fb",
+      "endpoint": "fetch",
+      "at": "2026-11-03T10:28:23.968Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "9c0daef2-5d0d-4821-a50f-8cecdf9d28c3",
+      "endpoint": "browser",
+      "at": "2026-11-03T10:28:26.084Z",
+      "run_id": "tf-1d59741d-8bf3-458a-9658-e81f760c3fb0",
+      "steps": null,
+      "reserved_usd": 0.01,
+      "estimated_usd": 0.001175
+    },
+    {
+      "id": "a2b7235b-0763-4b14-b2d5-f343c7ac6152",
+      "endpoint": "fetch",
+      "at": "2026-11-03T10:38:44.540Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "5b26aa87-fd8a-4c30-a0be-b671e5c57102",
+      "endpoint": "browser",
+      "at": "2026-11-03T10:38:48.387Z",
+      "run_id": "tf-cf961bd8-2ca0-4044-aca4-03151ee34909",
+      "steps": null,
+      "reserved_usd": 0.01,
+      "estimated_usd": 0.001203
+    },
+    {
+      "id": "c4ea6c5b-06c9-4231-924e-78cb52f159bf",
+      "endpoint": "fetch",
+      "at": "2026-11-03T10:39:24.511Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "c648cd07-d9d6-49e0-9183-9d5df4f762bc",
+      "endpoint": "browser",
+      "at": "2026-11-03T10:39:27.654Z",
+      "run_id": "tf-45035c99-3f76-4aec-9c1a-21986ce9b6eb",
+      "steps": null,
+      "reserved_usd": 0.01,
+      "estimated_usd": 0.000302
+    },
+    {
+      "id": "6b10b58c-00a7-4030-9222-a4a9326d6fcf",
+      "endpoint": "fetch",
+      "at": "2026-11-03T10:47:08.366Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "304bbbb5-633d-4c36-9785-2313ecd27f32",
+      "endpoint": "fetch",
+      "at": "2026-11-03T10:47:08.414Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "7e020b2e-f08a-4a4d-8d30-0d9877c2a46b",
+      "endpoint": "browser",
+      "at": "2026-11-03T10:47:12.340Z",
+      "run_id": "tf-057c7b8a-c77a-4c74-bf8f-fe25f07b6268",
+      "steps": null,
+      "reserved_usd": 0.01,
+      "estimated_usd": 0.001275
+    },
+    {
+      "id": "5c3ab6b6-66d8-4e3d-8ef2-ece6b7099d34",
+      "endpoint": "browser",
+      "at": "2026-11-03T10:47:24.831Z",
+      "run_id": "tf-f8a402f0-a04f-4f23-b9e2-5bfbcb52def5",
+      "steps": null,
+      "reserved_usd": 0.01,
+      "estimated_usd": 0.001401
+    },
+    {
+      "id": "46aeb841-40ff-42f4-89c7-23114916de23",
+      "endpoint": "fetch",
+      "at": "2026-11-03T10:47:50.600Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "c2889fce-423d-4967-9b80-1c925492a8d0",
+      "endpoint": "browser",
+      "at": "2026-11-03T10:47:57.043Z",
+      "run_id": "tf-a817741a-d179-4ebd-a6b4-8bf2db937934",
+      "steps": null,
+      "reserved_usd": 0.01,
+      "estimated_usd": 0.00144
+    },
+    {
+      "id": "a0090b39-69c3-4708-b5a0-5f5b6c2a63b5",
+      "endpoint": "agent",
+      "at": "2026-11-03T10:52:43.828Z",
+      "run_id": "1f0eff81-4b20-4939-909d-daf1f990fd57",
+      "steps": null,
+      "reserved_usd": 0.384,
+      "estimated_usd": null
+    },
+    {
+      "id": "c3acee4e-6da1-4d17-b623-34a78bd12204",
+      "endpoint": "agent",
+      "at": "2026-11-04T08:59:25.786Z",
+      "run_id": "81631bcf-b36c-4ec9-aa21-ea43e2255d16",
+      "steps": 20,
+      "reserved_usd": 0.384,
+      "estimated_usd": 0.32
+    },
+    {
+      "id": "3aacc05e-de95-4307-ad5a-7ca5de213523",
+      "endpoint": "fetch",
+      "at": "2026-11-04T09:01:33.539Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "a9b7564d-d6b3-446b-804c-d08df8ab58b0",
+      "endpoint": "fetch",
+      "at": "2026-11-04T09:01:50.634Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "9f9ced86-ac02-4192-8242-6f477a5065e2",
+      "endpoint": "browser",
+      "at": "2026-11-04T09:02:00.671Z",
+      "run_id": "tf-87898156-2eab-41e8-a4db-89ba2a907a97",
+      "steps": null,
+      "reserved_usd": 0.01,
+      "estimated_usd": 0.000369
+    },
+    {
+      "id": "dc94b434-a045-4095-b0cb-ce3d49f4a9f5",
+      "endpoint": "fetch",
+      "at": "2026-11-04T09:02:22.670Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "31c4ba05-7b51-43b5-a609-4b69e9ac8e86",
+      "endpoint": "browser",
+      "at": "2026-11-04T09:02:31.352Z",
+      "run_id": "tf-91b96261-4e14-4c01-8812-11d15ca6c415",
+      "steps": null,
+      "reserved_usd": 0.01,
+      "estimated_usd": 0.000485
+    },
+    {
+      "id": "3a0e7175-abdf-4ecb-beea-11aa3c724ffa",
+      "endpoint": "fetch",
+      "at": "2026-11-04T09:02:57.233Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "75561567-bff6-42c9-b021-8733f4d86fe7",
+      "endpoint": "browser",
+      "at": "2026-11-04T09:03:02.952Z",
+      "run_id": "tf-d712f7f1-11e0-405d-a085-239f200090b8",
+      "steps": null,
+      "reserved_usd": 0.01,
+      "estimated_usd": 0.000612
+    },
+    {
+      "id": "5ecd1a53-d7e6-4d59-a4f8-418fda5f8b7f",
+      "endpoint": "browser",
+      "at": "2026-11-04T09:05:09.865Z",
+      "run_id": "tf-8948e844-e66b-4533-8049-92f246c1df94",
+      "steps": null,
+      "reserved_usd": 0.01,
+      "estimated_usd": 0.000585
+    },
+    {
+      "id": "15a5d094-f15d-437d-81df-2df8936a731d",
+      "endpoint": "agent",
+      "at": "2026-11-04T09:09:26.189Z",
+      "run_id": "610b5c0f-7f1b-4ba7-97c4-02079aecef4d",
+      "steps": 14,
+      "reserved_usd": 0.384,
+      "estimated_usd": 0.224
+    },
+    {
+      "id": "709169d3-dedb-4824-b3dd-a0b99a18cb07",
+      "endpoint": "agent",
+      "at": "2026-11-04T09:32:12.399Z",
+      "run_id": "e6c8a170-b16d-4ca7-ab76-417aa17ec29d",
+      "steps": 6,
+      "reserved_usd": 0.384,
+      "estimated_usd": 0.096
+    },
+    {
+      "id": "f09eaba2-c808-4654-b432-9085570914e5",
+      "endpoint": "fetch",
+      "at": "2026-11-04T09:33:16.205Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "e063f814-80cb-4fb7-b44b-51238987550e",
+      "endpoint": "fetch",
+      "at": "2026-11-04T09:33:34.077Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "d800190a-f101-487b-a60d-c62c7e110500",
+      "endpoint": "browser",
+      "at": "2026-11-04T09:33:41.325Z",
+      "run_id": "tf-6e1a5214-7f05-4756-80ab-e357ad49711f",
+      "steps": null,
+      "reserved_usd": 0.01,
+      "estimated_usd": 0.000436
+    },
+    {
+      "id": "460f6d80-fae1-4d4b-9d5d-9151b62d6c39",
+      "endpoint": "fetch",
+      "at": "2026-11-04T09:33:54.062Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "bb72aae0-54a8-448e-84e3-cfef9e2be763",
+      "endpoint": "browser",
+      "at": "2026-11-04T09:34:01.062Z",
+      "run_id": "tf-392480db-3a1b-4c22-8ae3-62b2d4b6c9a1",
+      "steps": null,
+      "reserved_usd": 0.01,
+      "estimated_usd": 0.002275
+    },
+    {
+      "id": "dbb72a41-31d9-422a-bb31-fe3616b12536",
+      "endpoint": "fetch",
+      "at": "2026-11-04T09:34:50.902Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "ec401808-25ef-47ff-9e62-75c3410e0afb",
+      "endpoint": "fetch",
+      "at": "2026-11-04T09:35:12.485Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "757760d3-2b72-44ac-97e7-c28c81037b72",
+      "endpoint": "browser",
+      "at": "2026-11-04T09:35:17.363Z",
+      "run_id": "tf-25a74954-52b7-4e3d-b307-b38ac1c7e756",
+      "steps": null,
+      "reserved_usd": 0.01,
+      "estimated_usd": 0.001619
+    },
+    {
+      "id": "75c6b856-ee33-4d80-a05a-ea40053fe5ed",
+      "endpoint": "fetch",
+      "at": "2026-11-04T09:36:04.503Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "45e5adb4-b9e7-42d4-a990-e7016fe4dc03",
+      "endpoint": "fetch",
+      "at": "2026-11-04T09:36:05.940Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "4c86038b-8978-4bb9-8a44-9361a0bfabb1",
+      "endpoint": "browser",
+      "at": "2026-11-04T09:36:23.904Z",
+      "run_id": "tf-874fc57d-cbe4-406b-b311-7137d41fb24d",
+      "steps": null,
+      "reserved_usd": 0.01,
+      "estimated_usd": 0.00168
+    },
+    {
+      "id": "ecb07381-c04c-4309-a106-b256966b022a",
+      "endpoint": "agent",
+      "at": "2026-11-04T15:37:37.533Z",
+      "run_id": "34cf30f0-7d6e-46b8-83db-594be1ee7297",
+      "steps": 8,
+      "reserved_usd": 0.384,
+      "estimated_usd": 0.128
+    },
+    {
+      "id": "deeff913-f1ec-422a-9bd6-8d46ef5a907d",
+      "endpoint": "fetch",
+      "at": "2026-11-04T15:39:12.381Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "ac69a469-c045-48d9-b5de-b5bb8bb1fe5f",
+      "endpoint": "fetch",
+      "at": "2026-11-04T15:39:28.306Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "73861bde-7e11-481e-ae09-6b49fa955bcb",
+      "endpoint": "browser",
+      "at": "2026-11-04T15:39:41.587Z",
+      "run_id": "tf-7d76f739-2d2b-4048-b7dd-a69f15a00246",
+      "steps": null,
+      "reserved_usd": 0.01,
+      "estimated_usd": 0.00149
+    },
+    {
+      "id": "d8d73af1-7225-4f1d-aa32-aa55845b6627",
+      "endpoint": "agent",
+      "at": "2026-11-04T15:40:32.950Z",
+      "run_id": "88fa3b94-3322-4694-90f6-56dcead08beb",
+      "steps": 12,
+      "reserved_usd": 0.384,
+      "estimated_usd": 0.192
+    },
+    {
+      "id": "81bc8ba1-ee05-4964-bf1e-c9145af8137f",
+      "endpoint": "fetch",
+      "at": "2026-11-04T15:41:43.597Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "ea7950d5-a23c-4ad1-8d36-481aa82538c1",
+      "endpoint": "browser",
+      "at": "2026-11-04T15:41:54.324Z",
+      "run_id": "tf-c701177b-920d-4bf3-b0e7-d44d182f7757",
+      "steps": null,
+      "reserved_usd": 0.01,
+      "estimated_usd": 0.000309
+    },
+    {
+      "id": "fc731ea2-7dd1-46e1-9b47-0de321ab9042",
+      "endpoint": "fetch",
+      "at": "2026-11-04T15:48:39.066Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "72e14ef3-d43a-4bf6-8202-48a04769df5c",
+      "endpoint": "fetch",
+      "at": "2026-11-04T15:48:42.029Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "5fca2103-cc58-4f7b-b0bf-ad144d51aa7d",
+      "endpoint": "browser",
+      "at": "2026-11-04T15:48:44.347Z",
+      "run_id": "tf-e67daba6-03b6-408d-bed3-32d71a50e3be",
+      "steps": null,
+      "reserved_usd": 0.01,
+      "estimated_usd": 0.001217
+    },
+    {
+      "id": "17e73a54-a890-4517-b791-60cd6b19b7cf",
+      "endpoint": "fetch",
+      "at": "2026-11-04T15:53:32.045Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "5de74762-ecad-48d6-aef6-06452b12cde6",
+      "endpoint": "fetch",
+      "at": "2026-11-04T15:54:56.529Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "52658ad9-dee3-4b7c-828e-6e00d4bbc4b6",
+      "endpoint": "fetch",
+      "at": "2026-11-04T15:59:27.618Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "c89ff845-2206-41ba-a9ac-fa53f967be2e",
+      "endpoint": "agent",
+      "at": "2026-11-04T16:19:19.663Z",
+      "run_id": "7c799bb6-24f7-4e12-9e65-fe382750b28c",
+      "steps": 5,
+      "reserved_usd": 0.384,
+      "estimated_usd": 0.08
+    },
+    {
+      "id": "99c79c11-75d8-4f16-a035-654be3d332de",
+      "endpoint": "agent",
+      "at": "2026-11-05T08:21:57.915Z",
+      "run_id": "ee16d35f-c920-4039-a091-8297567b4a9d",
+      "steps": 10,
+      "reserved_usd": 0.384,
+      "estimated_usd": 0.16
+    },
+    {
+      "id": "9373d8fb-e9b8-4d70-b2e9-fdde55ae8917",
+      "endpoint": "fetch",
+      "at": "2026-11-05T08:33:23.958Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "171bc2f2-9b0e-4002-b0a6-7fbd47358c30",
+      "endpoint": "fetch",
+      "at": "2026-11-05T08:33:34.328Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "e9f81404-4ba8-4c98-b5b2-4aa4e0716f79",
+      "endpoint": "browser",
+      "at": "2026-11-05T08:33:48.071Z",
+      "run_id": "tf-db704040-9541-4f43-8b33-f8e491fbeed0",
+      "steps": null,
+      "reserved_usd": 0.01,
+      "estimated_usd": 0.001334
+    },
+    {
+      "id": "03024045-0984-4edc-a97d-6de5c25d55e1",
+      "endpoint": "fetch",
+      "at": "2026-11-05T08:34:35.954Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "dcb81e50-2222-4a71-9f36-a10c2ed0bad8",
+      "endpoint": "browser",
+      "at": "2026-11-05T08:34:42.740Z",
+      "run_id": "tf-a1fb71b9-c8cd-4c9a-95aa-01b0ee99beed",
+      "steps": null,
+      "reserved_usd": 0.01,
+      "estimated_usd": 0.001327
+    },
+    {
+      "id": "6e6f74f7-f819-48f2-bdf8-285cb7cd8ba2",
+      "endpoint": "fetch",
+      "at": "2026-11-05T08:35:22.549Z",
+      "run_id": null,
+      "steps": null,
+      "reserved_usd": 0,
+      "estimated_usd": 0
+    },
+    {
+      "id": "ddadf30f-fc60-4e49-87a7-9185ae763820",
+      "endpoint": "browser",
+      "at": "2026-11-05T08:35:31.265Z",
+      "run_id": "tf-255f526d-2f24-4753-b086-3e51961c8aef",
+      "steps": null,
+      "reserved_usd": 0.01,
+      "estimated_usd": 0.000449
+    }
+  ],
+  "original_ceiling_usd": 5,
+  "additional_approved_usd": 0.8
+}
