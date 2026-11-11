@@ -1,0 +1,18 @@
+{
+  "confirmed_at": "2026-11-11T16:03:55.505Z",
+  "url": "https://www.linkedin.com/feed/update/urn:li:activity:7526313409307594753/",
+  "actor": "Himanshu Kumar / himanshu748",
+  "body": "An online course can still be a bad fit for your week.\n\nThe fee might fit your budget while the application deadline has passed. The subject might be perfect while the teaching schedule is still unclear.\n\nI built StudyWindow to make those questions easier to check.\n\nIt gives an AI assistant four MCP tools for the Cambridge PACE catalogue: search courses, inspect the details, compare a shortlist and check whether the source still matches the adapter.\n\nTinyFish operates the search and retrieves the course pages. StudyWindow keeps each offering's fees and deadlines separate, then shows matches, conflicts and unanswered questions with source links.\n\nMy favourite detail: it leaves an incomplete schedule incomplete. \u201cOnline\u201d never becomes a promise that a course fits your Friday.\n\nCode and setup:\nhttps://github.com/himanshu748/studywindow\n\nBuilt for the TinyFish Site to MCP bounty.",
+  "tag_url": "https://www.linkedin.com/company/tinyfish-ai/",
+  "native_tag_confirmed": true,
+  "video_filename": "studywindow-demo.mp4",
+  "video_observed_duration_seconds": 72,
+  "video_observed_ready_state": 4,
+  "video_observed_transcoded_dimensions": [1280, 720],
+  "status": "PUBLISHED",
+  "must_not_repeat": true,
+  "spacing_corrected_in_place": true,
+  "formatting_only_same_permalink": true,
+  "paragraph_separators_preserved": true,
+  "screenshot_retained_private": true
+}

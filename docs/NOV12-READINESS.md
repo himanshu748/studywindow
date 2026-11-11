@@ -1,6 +1,6 @@
 # StudyWindow: 12 November preparation
 
-**Technical checks complete. Publication and final submission checks pending.** StudyWindow is claimed and unsubmitted. Funding Radar used the 11 November slot; StudyWindow can be dispatched no earlier than 12 November, and only after every remaining shared gate closes. It is not in the READY submission queue yet.
+**READY for submission preparation on 12 November 2026.** The [independent final review](../evidence/readiness-2026-11-11/ready-review.json) found no remaining mandatory build or promotion blocker. StudyWindow is claimed and unsubmitted. Funding Radar used the 11 November slot; no StudyWindow prize-entry form was prepared that day. Normal on-day account, rule, link and form checks and the owner's final click remain required.
 
 ## What now works
 
@@ -33,11 +33,11 @@ The original $5.80 accounting remains preserved. The owner approved a separate $
 
 The batch consumed exactly those operation counts and retained **$0.808 in new reservations**, bringing cumulative reservations to **$6.592**. Reservations are not settled charges. Historical entries stayed unchanged, active operations are zero, billable calls are halted and the Fetch cap is exhausted. **No further provider operation or retry is authorized.** Other bounty ledgers were not modified. [Batch receipt](../evidence/readiness-2026-11-11/batch-result.json).
 
-## Remaining before submission
+## Completed package and submission-day steps
 
-1. The reviewed 72-second silent edited-screenshot walkthrough is finished. The published-package source and media readback also passed. Show the finished video and well-spaced post previews to the owner. No generated narration or alternate TTS is used.
+1. The reviewed 72-second silent edited-screenshot walkthrough is finished. The published-package source and media readback also passed. The finished video and spaced copy were shown to, and approved by, the owner. No generated narration or alternate TTS is used.
 2. The verified source and video were pushed at `ccf70ab2d8c44905c61926287ce167e16a6dcda8`. The [anonymous fresh-clone gate](../evidence/readiness-2026-11-11/public-clone-verification.json) passed at that exact public source commit: clean install, build, 150 tests, stdio protocol and 11 keyless demo routes. Later documentation-only corrections are outside its pinned README snapshot; source/test/demo/package/media files are unchanged.
-3. Obtain entry-specific approval for the LinkedIn, X and TinyFish Discord posts, publish only the reviewed copy/media, and retain target-side post links/readbacks. Existing approvals for other entries do not cover StudyWindow.
+3. The owner approved StudyWindow-specific LinkedIn, X and TinyFish Discord publication. All three posts are published with the reviewed video and target-side readbacks; [confirmation](../evidence/readiness-2026-11-11/promotion-confirmation.json). Do not post them again.
 4. On the eligible day, recheck membership, claim/submission state, exact form, deadline, source/working links and required assets. Preserve every submitted entry and the one-per-India-day limit.
 5. Prepare the real form only when all shared gates pass. The owner makes the final prize-entry click. Confirm submitted/in-review only from the portal after that action.
 

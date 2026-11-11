@@ -1,0 +1,54 @@
+{
+  "kind": "independent_submission_preparation_review",
+  "reviewed_at": "2026-11-11T16:45:44.118710+00:00",
+  "entry": "StudyWindow",
+  "bounty": "Site to MCP",
+  "status": "READY",
+  "ready_scope": "Submission preparation on or after 12 November 2026 Asia/Kolkata, subject to normal on-day rechecks.",
+  "earliest_dispatch_day_Asia_Kolkata": "2026-11-12",
+  "reviewer": "studywindow_candidate_review (read-only independent reviewer)",
+  "decision": "No remaining mandatory build or promotion blocker found.",
+  "review_scope": "Approved and published bodies, link/field consistency, media/tag receipts, original-work/source review and prior technical/anonymous-clone evidence; no new account, target or provider operations.",
+  "tested_source_commit": "ccf70ab2d8c44905c61926287ce167e16a6dcda8",
+  "documentation_baseline_commit": "ea040ad9a44e4db7178efa25b221a0ddc15c5fe9",
+  "later_edits": "Documentation and evidence only; tested source, tests, demo, package inputs and media unchanged.",
+  "checks": {
+    "approved_copy_matches_three_published_bodies": true,
+    "published_urls_match_exact_prepared_fields": true,
+    "linkedin_native_tinyfish_tag_verified": true,
+    "video_in_all_three_posts_verified": true,
+    "notes_characters": 1679,
+    "genuine_three_tool_mcp_conversation": "passed",
+    "fresh_health_canary": "healthy",
+    "fresh_improbable_topic_search": "valid empty result",
+    "anonymous_clone_tests": "150/150",
+    "anonymous_clone_install_build_stdio_and_11_keyless_routes": "passed",
+    "public_clone_receipt_hashes": "12/12 match; checkout-log normalization explicitly recorded",
+    "known_unresolved_release_secret_findings": 0
+  },
+  "evidence": {
+    "technical_review": "independent-review.json",
+    "public_clone": "public-clone-verification.json",
+    "promotion": "promotion-confirmation.json",
+    "approval": "social-authorization.json",
+    "prepared_fields": "submission-draft.json",
+    "criteria_and_limits": "../../docs/SUBMISSION.md"
+  },
+  "remaining_on_day_steps": [
+    "Confirm an unused India calendar-day slot, membership, claim/unsubmitted state and live cutoff.",
+    "Recheck official brief, original-work eligibility, public source/link access, media and actual portal fields/upload limits without provider calls.",
+    "Prepare the actual form using the exact reviewed fields and video; show it to the owner.",
+    "Owner makes the final prize-entry click; verify target-side confirmation before recording submitted/in-review."
+  ],
+  "limits": [
+    "Bounded research found no documented public catalogue API; absence of every undocumented API is not proved.",
+    "Fresh Fetch recovery is offline-tested only; all successful live detail observations used normal Browser expansion.",
+    "Actual mobile sizing and OS-level reduced-motion emulation remain unverified.",
+    "Source licence remains unselected; no hosted deployment, organizer approval, points or award is claimed."
+  ],
+  "submission_state": "CLAIMED_NOT_SUBMITTED",
+  "no_portal_form_prepared_on_Nov11": true,
+  "Nov11_daily_slot": "USED_BY_FUNDING_RADAR",
+  "must_not_repeat_promotion": true,
+  "provider_operations_wallet_reads_retries_spending_authorized": false
+}

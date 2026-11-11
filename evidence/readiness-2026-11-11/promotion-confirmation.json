@@ -1,0 +1,36 @@
+{
+  "kind": "target_verified_promotion_confirmation",
+  "confirmed_at": "2026-11-11T16:38:18.630756+00:00",
+  "status": "ALL_THREE_PUBLISHED",
+  "entry": "StudyWindow",
+  "approved_copy": "post-previews.json",
+  "approval": "social-authorization.json",
+  "video_filename": "studywindow-demo.mp4",
+  "video_duration_seconds": 72,
+  "linkedin": {
+    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7526313409307594753/",
+    "actor": "Himanshu Kumar / himanshu748",
+    "native_tinyfish_tag": "https://www.linkedin.com/company/tinyfish-ai/",
+    "video_verified": true,
+    "spacing_corrected_same_post": true
+  },
+  "x": {
+    "url": "https://x.com/jhahimanshu653/status/2120543770492207135",
+    "actor": "jhahimanshu653",
+    "mention": "@Tiny_Fish",
+    "video_verified": true
+  },
+  "discord": {
+    "url": "https://discord.com/channels/1200506685236711554/1570112823139242015",
+    "actor": "himanshujha6005",
+    "forum_id": "1554420983539048508",
+    "title": "StudyWindow | Find a course that fits your week",
+    "tags": ["App", "API"],
+    "attachment_verified": true,
+    "playback_verified_72_seconds": true
+  },
+  "must_not_repeat": true,
+  "private_account_screenshots_outside_public_repo": true,
+  "bounty_submission_status": "CLAIMED_NOT_SUBMITTED",
+  "earliest_dispatch_day_Asia_Kolkata": "2026-11-12"
+}

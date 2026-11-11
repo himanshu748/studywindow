@@ -2,7 +2,9 @@
 
 ## 11 November verified candidate
 
-**Technical checks passed; unsubmitted and pending promotion/final portal review.** The [actual Codex MCP conversation](conversations/candidate-2026-11-11/MCP-CONVERSATION.md) completed search, model-selected inspection and two-course comparison successfully. All three course observations used normal Browser expansion. The same finite batch produced a [healthy source canary](readiness-2026-11-11/live-health.json) and a [valid empty-result search](readiness-2026-11-11/live-empty-search.json). The new fresh Fetch recovery has offline tests but was not exercised live.
+[Independent final readiness review](readiness-2026-11-11/ready-review.json): **READY for 12 November submission preparation**, subject to on-day checks and the owner's final click. No form or submission is established by this review.
+
+**Technical checks and all three video promotions passed; claimed and unsubmitted, pending on-day portal review and the owner's final click.** The [actual Codex MCP conversation](conversations/candidate-2026-11-11/MCP-CONVERSATION.md) completed search, model-selected inspection and two-course comparison successfully. All three course observations used normal Browser expansion. The same finite batch produced a [healthy source canary](readiness-2026-11-11/live-health.json) and a [valid empty-result search](readiness-2026-11-11/live-empty-search.json). The new fresh Fetch recovery has offline tests but was not exercised live.
 
 The [clean local candidate gate](readiness-2026-11-11/final-local-verification.json) passed clean npm ci, 150 tests, types, build, stdio protocol, format and both demo JS syntax checks. It is an isolated copy, not a Git clone. The [file manifest](readiness-2026-11-11/final-local-source-manifest.json) records exact inputs. The later saved-health display addition is checked separately; no backend source changed after the live conversation started. [Independent review](readiness-2026-11-11/independent-review.json).
 
@@ -11,6 +13,8 @@ Current official brief/rulebook and robots were read in the restored in-app brow
 The owner authorized one $1 batch under a $6.80 aggregate ceiling. It used exactly two Agent runs, four Browser sessions and seven Fetch URLs; $0.808 new reservations bring the total to $6.592. Historical entries remained unchanged. No operation is active, billable calls are halted and the Fetch cap is exhausted. Reservations are not settled charges; no further provider operation or retry is authorized. [Authorization](readiness-2026-11-11/batch-authorization.json), [pricing](readiness-2026-11-11/pricing-preflight.json), [batch result](readiness-2026-11-11/batch-result.json).
 
 The [actual anonymous public clone](readiness-2026-11-11/public-clone-verification.json) passed clean installation, build, 150 tests, stdio verification and 11 keyless demo routes at `ccf70ab2d8c44905c61926287ce167e16a6dcda8`. Public repository/media/transcript responses and 53 file hashes matched committed bytes. A documentation-only follow-up fixes a stale historical README paragraph and records these receipts; it changes no source, tests, demo, package inputs or media. [Publication record](readiness-2026-11-11/github-publication.json).
+
+All three owner-approved posts are published with the reviewed 72-second video. LinkedIn retains the native TinyFish company tag and paragraph spacing; X mentions @Tiny_Fish; Discord's attachment played through 72 seconds. [Target-side promotion confirmation](readiness-2026-11-11/promotion-confirmation.json). These are promotion receipts, not bounty submission confirmation.
 
 ## Historical checkpoint, 8 November 2026
 

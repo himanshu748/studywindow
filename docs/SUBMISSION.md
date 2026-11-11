@@ -1,6 +1,8 @@
 # Site to MCP submission package
 
-**Technical verification passed. Claimed and unsubmitted; promotion and final portal gates remain.** This package targets the next eligible day, 12 November 2026. Funding Radar used the 11 November slot. The owner makes the final prize-entry click after the shared gates close.
+**READY for submission preparation. Claimed and unsubmitted; on-day portal checks and the owner's final click remain.** This package targets the next eligible day, 12 November 2026. Funding Radar used the 11 November slot. The owner makes the final prize-entry click after the shared gates close.
+
+[Independent final readiness review](../evidence/readiness-2026-11-11/ready-review.json) closed the build and promotion gates.
 
 ## Product and meaningful endpoints
 
@@ -21,16 +23,16 @@ TinyFish Agent operates the catalogue form and delivery filter. Fetch retrieves 
 | Loud failure                        | Typed access/auth/quota/cancellation/contract errors, conservative accounting and no saved-data substitution. Fresh Fetch recovery is strict and covered offline; it was not needed in the successful live batch.                                        |
 | Useful original product             | Learner-specific MCP workflow, interactive landing, shortlisting and offering comparisons. [Design study](DESIGN.md) records reference principles without copied branding or claims.                                                                     |
 | Easy judge path                     | Locked installation, 150 tests, types/build/protocol and rendered desktop checks. Requires Node 22+. Saved mode needs no key; live mode requires the judge's own TinyFish key, supported tier and step-cap access.                                       |
-| Public build and promotion          | [Repository](https://github.com/himanshu748/studywindow). Final publication/readback and StudyWindow-specific post receipts remain gates. No licence, hosting or universal video rule is invented.                                                       |
+| Public build and promotion          | [Repository](https://github.com/himanshu748/studywindow). The source/media publication and StudyWindow-specific posts have verified readbacks. No licence, hosting or universal video rule is invented.                                                  |
 
 ## Prepared notes
 
 The exact local form notes are in [submission-draft.json](../evidence/readiness-2026-11-11/submission-draft.json). They describe the completed behavior and distinguish the genuine saved example from a new live call. Historical failed conversations stay available; the later successful run does not establish that intermittent source failures are permanently resolved.
 
-## Remaining dispatch gates
+## Publication and dispatch
 
-1. Finish and review the silent walkthrough, updated public package and post previews. The source licence remains unselected; do not invent a licence or hosted deployment.
-2. Obtain specific approval for the finished LinkedIn, X and TinyFish Discord posts, then publish and retain their exact URLs and visible readbacks. Other entries' approvals do not cover StudyWindow.
+1. The reviewed silent walkthrough, public package and approved post copy are complete and published. The source licence remains unselected; no hosted deployment is claimed.
+2. StudyWindow-specific publication was explicitly approved and completed. [LinkedIn, X and TinyFish Discord receipts](../evidence/readiness-2026-11-11/promotion-confirmation.json) retain exact links and video/tag confirmations. Do not repeat these posts.
 3. On 12 November or a later eligible day, verify current Student membership, claim/submission state, rulebook, exact form requirements, links and media. One confirmed entry per India calendar day; preserve all submitted entries.
 4. Prepare the real form only once every shared gate passes. Hand the final prize-entry click to the owner and record submitted/in-review only after target-side confirmation.
 

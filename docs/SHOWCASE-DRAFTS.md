@@ -1,8 +1,10 @@
-# StudyWindow post previews
+# Published StudyWindow promotion
 
-**Drafts only. Do not post yet.** The candidate's genuine MCP conversation, desktop browser review and 72-second silent walkthrough are complete. Show the owner the finished copy and video for entry-specific approval before publishing. The public repository is linked below; the verified candidate and video were pushed on 11 November, with the final documentation readback recorded separately.
+The owner approved the reviewed copy and 72-second video on 11 November 2026. All three posts were published and read back from their actual targets. **Do not post them again.** The filename is retained for existing links; this is now the published copy/receipt record. [Canonical confirmation](../evidence/readiness-2026-11-11/promotion-confirmation.json).
 
 ## LinkedIn
+
+[Published post](https://www.linkedin.com/feed/update/urn:li:activity:7526313409307594753/)
 
 An online course can still be a bad fit for your week.
 
@@ -21,9 +23,9 @@ https://github.com/himanshu748/studywindow
 
 Built for the TinyFish Site to MCP bounty.
 
-Attach the reviewed walkthrough and select the official [TinyFish company mention](https://www.linkedin.com/company/tinyfish-ai/) through LinkedIn's mention control. Do not paste this instruction into the post.
-
 ## X
+
+[Published post](https://x.com/jhahimanshu653/status/2120543770492207135)
 
 “Online” doesn't tell you whether a course fits your week.
 
@@ -31,9 +33,9 @@ StudyWindow uses @Tiny_Fish + MCP to compare Cambridge courses by fees, deadline
 
 Code: https://github.com/himanshu748/studywindow
 
-Attach the reviewed video. The @Tiny_Fish handle was checked against the official tinyfish.ai outbound X link on 11 November. Recheck the final character count and account before posting. Do not publish this operator note.
-
 ## TinyFish Discord showcase
+
+[Published post](https://discord.com/channels/1200506685236711554/1570112823139242015)
 
 **StudyWindow | Find a course that fits your week**
 
@@ -53,8 +55,4 @@ Every result links back to its source. Missing information stays a question to a
 Code and setup:
 https://github.com/himanshu748/studywindow
 
-Attach the reviewed walkthrough. Link the final public MCP transcript only after the new candidate and evidence are published. Do not include this operator note in the message.
-
-## Final posting check
-
-Use the same verified source snapshot and claims in the video, README and form. Keep paragraphs separated. Do not claim hosting, admission, fee eligibility, available places, organizer approval or an unobserved complete schedule. Record actual post URLs and visible target-side readbacks after authorized publication. The saved rulebook requires LinkedIn and Discord; verify the real form's X field before dispatch.
+LinkedIn uses the native TinyFish company tag and retains readable paragraph spacing after an in-place formatting correction. X mentions @Tiny_Fish. The Discord thread is tagged App/API and its attached clip played through 72 seconds. Each post includes the same reviewed video. Private logged-in account screenshots stay outside the public repository. These promotions do not constitute a bounty submission.

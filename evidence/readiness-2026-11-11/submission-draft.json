@@ -1,15 +1,18 @@
 {
-  "status": "LOCAL_DRAFT_NOT_SUBMITTED",
+  "status": "LOCAL_FIELDS_COMPLETE_NOT_SUBMITTED",
   "entry": "StudyWindow",
   "bounty": "Site to MCP",
   "earliest_dispatch_day_Asia_Kolkata": "2026-11-12",
   "build_url": "https://github.com/himanshu748/studywindow",
-  "linkedin_url": null,
-  "x_url": null,
-  "discord_url": null,
+  "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:activity:7526313409307594753/",
+  "x_url": "https://x.com/jhahimanshu653/status/2120543770492207135",
+  "discord_url": "https://discord.com/channels/1200506685236711554/1570112823139242015",
   "notes": "StudyWindow helps a working learner turn an interesting course into a shortlist they can check against real life.\n\nIt wraps the public Cambridge PACE catalogue in four typed MCP tools: search_courses, inspect_course, compare_courses and health_check. Each offering keeps its own dates, tuition category, application deadline and source evidence. Comparisons separate matches, conflicts and unanswered questions. Online delivery never becomes a guessed promise that a schedule fits.\n\nTinyFish Agent operates the real search form and delivery filter. Fetch retrieves fresh HTML from the resulting pages. Isolated TinyFish Browser sessions expand course details, then deterministic code validates and compares them. Missing fields, changed structures and provider failures return explicit errors. A narrowly scoped fresh-HTML recovery exposes degraded Browser provenance and leaves dynamic availability unknown; that recovery is covered offline and was not needed in the successful live batch.\n\nOn 11 November, a genuine Codex MCP conversation searched psychology, chose a course to inspect and compared two courses successfully. A new health check passed and a deliberately improbable search returned a valid zero-result response. The repository retains the exact prompt, tool inputs, structured results, timestamps and earlier failed attempts.\n\nThe local app has an interactive landing page, offering tabs, shortlisting, comparisons and clearly labelled genuine saved evidence. Node 22+, npm ci, npm run build and npm run demo open it locally without a key. Live use needs the reader's own TinyFish credentials and reviewed limits. No course application or enrolment is performed.",
   "notes_characters": 1679,
   "media_file": "media/studywindow-demo.mp4",
   "final_prize_entry_click": "owner_only",
-  "current_form_limit_unverified": true
+  "current_form_limit_unverified": true,
+  "promotion_confirmation": "promotion-confirmation.json",
+  "no_portal_form_prepared_on_Nov11": true,
+  "readiness_review": "ready-review.json"
 }

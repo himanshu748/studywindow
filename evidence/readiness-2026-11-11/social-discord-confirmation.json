@@ -1,0 +1,21 @@
+{
+  "confirmed_at": "2026-11-11T16:29:57.151Z",
+  "url": "https://discord.com/channels/1200506685236711554/1570112823139242015",
+  "server": "TinyFish",
+  "forum_id": "1554420983539048508",
+  "title": "StudyWindow | Find a course that fits your week",
+  "actor": "himanshujha6005",
+  "body": "**StudyWindow | Find a course that fits your week**\n\nAn interesting course is a starting point. The next questions are practical: which offering, which fee, what deadline and what teaching time?\n\nStudyWindow turns Cambridge PACE into four typed MCP tools:\n\n\u2022 Search the catalogue and delivery filters.\n\u2022 Inspect offering-specific dates, fees and course details.\n\u2022 Compare two or three courses against a learner's constraints.\n\u2022 Check whether the supported source contracts still hold.\n\nTinyFish Agent operates search. Fetch retrieves fresh evidence, and Browser opens the course panels. The MCP tools return structured facts and explicit failures when the supported source contract breaks.\n\nEvery result links back to its source. Missing information stays a question to ask, rather than a guessed match.\n\nCode and setup:\nhttps://github.com/himanshu748/studywindow",
+  "tags": ["App", "API"],
+  "video_filename": "studywindow-demo.mp4",
+  "attachment_observed": true,
+  "status": "PUBLISHED",
+  "target_side_readback": true,
+  "must_not_repeat": true,
+  "screenshot_retained_private": true,
+  "video_observed_duration_seconds": 72,
+  "video_observed_dimensions": [1920, 1080],
+  "video_playback_verified": true,
+  "video_completed_in_browser": true,
+  "video_observed_ready_state": 4
+}

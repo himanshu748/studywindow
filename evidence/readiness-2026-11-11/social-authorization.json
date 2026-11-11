@@ -1,0 +1,14 @@
+{
+  "kind": "explicit_owner_social_publication_authorization",
+  "authorized_at": "2026-11-11T15:31:51.332636+00:00",
+  "scope": [
+    "Reviewed StudyWindow LinkedIn post with native TinyFish company tag and72-second video",
+    "Reviewed StudyWindow X post mentioning @Tiny_Fish with the same video",
+    "Reviewed TinyFish Discord showcase post with the same video"
+  ],
+  "source_copy": "post-previews.json",
+  "video": "../../media/studywindow-demo.mp4",
+  "no_provider_calls_or_spending": true,
+  "bounty_final_click_not_authorized_to_agent": true,
+  "earliest_bounty_dispatch_day_Asia_Kolkata": "2026-11-12"
+}
