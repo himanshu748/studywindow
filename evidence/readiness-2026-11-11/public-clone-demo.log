@@ -1,0 +1,5 @@
+Actual anonymous public clone ccf70ab2d8c44905c61926287ce167e16a6dcda8. Keyless README demo smoke.
+LIVE0, key/envfile/tier absent, own offline state. No /api/call or provider operation.
+Exit prior to config file resolving
+cause
+double-loading config "/dev/null" as "global", previously loaded as "user"

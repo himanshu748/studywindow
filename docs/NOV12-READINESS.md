@@ -35,8 +35,8 @@ The batch consumed exactly those operation counts and retained **$0.808 in new r
 
 ## Remaining before submission
 
-1. Finish and review the silent edited-screenshot walkthrough and final package. Show the finished video and well-spaced post previews to the owner. No generated narration or alternate TTS is used.
-2. Verify the public repository update and its anonymous judge path. The candidate's local and live evidence does not imply the new source has already been pushed.
+1. The reviewed 72-second silent edited-screenshot walkthrough is finished. The published-package source and media readback also passed. Show the finished video and well-spaced post previews to the owner. No generated narration or alternate TTS is used.
+2. The verified source and video were pushed at `ccf70ab2d8c44905c61926287ce167e16a6dcda8`. The [anonymous fresh-clone gate](../evidence/readiness-2026-11-11/public-clone-verification.json) passed at that exact public source commit: clean install, build, 150 tests, stdio protocol and 11 keyless demo routes. Later documentation-only corrections are outside its pinned README snapshot; source/test/demo/package/media files are unchanged.
 3. Obtain entry-specific approval for the LinkedIn, X and TinyFish Discord posts, publish only the reviewed copy/media, and retain target-side post links/readbacks. Existing approvals for other entries do not cover StudyWindow.
 4. On the eligible day, recheck membership, claim/submission state, exact form, deadline, source/working links and required assets. Preserve every submitted entry and the one-per-India-day limit.
 5. Prepare the real form only when all shared gates pass. The owner makes the final prize-entry click. Confirm submitted/in-review only from the portal after that action.

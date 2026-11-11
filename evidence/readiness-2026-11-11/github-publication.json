@@ -1,0 +1,18 @@
+{
+  "kind": "public_candidate_publication",
+  "recorded_at": "2026-11-11T15:24:55.413127+00:00",
+  "repository": "https://github.com/himanshu748/studywindow",
+  "source_commit": "ccf70ab2d8c44905c61926287ce167e16a6dcda8",
+  "published_to": "main",
+  "prior_github_publication_authorization": "Owner authorized StudyWindow repository creation/commit/push on8November; this updates that same reviewed public package.",
+  "anonymous_remote_readback": true,
+  "anonymous_clone_gate": "public-clone-verification.json",
+  "tested_commit": "ccf70ab2d8c44905c61926287ce167e16a6dcda8",
+  "docs_followup_only": true,
+  "source_test_demo_package_media_changes_after_tested_commit": false,
+  "readme_stale_historical_paragraph_corrected_in_followup": true,
+  "promotions_status": "AWAITING_STUDYWINDOW_SPECIFIC_OWNER_APPROVAL",
+  "portal_status": "CLAIMED_UNSUBMITTED",
+  "nov11_slot_used_by": "Funding Radar",
+  "earliest_dispatch_day_Asia_Kolkata": "2026-11-12"
+}

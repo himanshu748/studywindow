@@ -1,0 +1,115 @@
+{
+  "kind": "anonymous_public_clone_readme_gate",
+  "created_at": "2026-11-11T15:16:07.151491+00:00",
+  "status": "passed",
+  "tested_public_commit": "ccf70ab2d8c44905c61926287ce167e16a6dcda8",
+  "clone": "/Users/himanshujha/Documents/Codex/2026-11-03/files-pasted-by-the-user-build/work/studywindow-public-clone-20261111",
+  "repository": "https://github.com/himanshu748/studywindow",
+  "node_version": "v22.14.0",
+  "npm_version": "10.9.2",
+  "source_manifest": "evidence/readiness-2026-11-11/public-clone-source-manifest.json",
+  "tracked_inputs_unchanged": true,
+  "worktree_status_after_gate": "?? .offline-npm-global.conf\n?? .offline-npm-user.conf",
+  "expected_untracked_harness_files": [
+    ".offline-npm-user.conf",
+    ".offline-npm-global.conf",
+    ".offline-state/ if keyless HTTP status smoke runs"
+  ],
+  "environment": {
+    "LIVE": "0",
+    "key_unset": true,
+    "envfile_unset": true,
+    "tier_unset": true,
+    "HOME_preserved": true,
+    "git_global_system_config_disabled": true,
+    "git_credentials_disabled": true,
+    "npm_user_global_config": "two distinct empty files in owned clone",
+    "state_dir": "/Users/himanshujha/Documents/Codex/2026-11-03/files-pasted-by-the-user-build/work/studywindow-public-clone-20261111/.offline-state"
+  },
+  "checks": [
+    {
+      "name": "npm-ci",
+      "command": [
+        "npm",
+        "ci",
+        "--no-audit",
+        "--no-fund"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 5.453,
+      "receipt": "evidence/readiness-2026-11-11/public-clone-pass-npm-ci.log"
+    },
+    {
+      "name": "build",
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 6.835,
+      "receipt": "evidence/readiness-2026-11-11/public-clone-pass-build.log"
+    },
+    {
+      "name": "tests",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 10.457,
+      "receipt": "evidence/readiness-2026-11-11/public-clone-pass-tests.log",
+      "tests": 150,
+      "pass": 150,
+      "fail": 0,
+      "skipped": 0,
+      "cancelled": 0
+    },
+    {
+      "name": "mcp",
+      "command": [
+        "npm",
+        "run",
+        "verify:mcp"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 1.607,
+      "receipt": "evidence/readiness-2026-11-11/public-clone-pass-mcp.log"
+    }
+  ],
+  "retained_initial_harness_failure": {
+    "receipt": "evidence/readiness-2026-11-11/public-clone-npm-ci.log",
+    "reason": "npm rejects double-loading /dev/null as both user and global config. Replaced only harness config paths with distinct empty files; no package change.",
+    "initial_demo_receipt": "evidence/readiness-2026-11-11/public-clone-demo.log",
+    "initial_demo_started_server": false
+  },
+  "claims": [
+    "README install/build/test/disabled-live stdio commands exercised in actual anonymous public clone.",
+    "No live TinyFish calls, private key/ledger/account reads or mutation.",
+    "Only the pinned public commit is covered, not a future docs follow-up."
+  ],
+  "keyless_demo_smoke": {
+    "passed": true,
+    "receipt": "evidence/readiness-2026-11-11/public-clone-demo.json",
+    "static_and_saved_routes_passed": 11,
+    "live_enabled": false,
+    "provider_calls": 0,
+    "owned_demo_stopped": true,
+    "port4387_free_after_stop": true
+  },
+  "links_and_media": {
+    "passed": true,
+    "receipt": "evidence/readiness-2026-11-11/public-clone-links-media.json",
+    "relative_links": 22,
+    "immutable_raw_assets": 4,
+    "public_repository_http_status": 200
+  },
+  "tracked_inputs_unchanged_after_demo": true,
+  "worktree_status_after_demo": "?? .offline-npm-global.conf\n?? .offline-npm-user.conf\n?? .offline-state/",
+  "finished_at": "2026-11-11T15:17:54.531778+00:00",
+  "external_link_scope": "22 relative README/current-conversation links plus anonymous GitHub repository and4 immutable raw assets. Provider/source/account external references were not requested."
+}

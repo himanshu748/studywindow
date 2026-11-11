@@ -73,7 +73,7 @@ Current course results include `retrieval.mode`: `browser_expanded` for successf
 
 Recovery is allowed only after an exhausted, typed transient navigation failure at `navigate_course`: `ERR_EMPTY_RESPONSE`, `ERR_CONNECTION_CLOSED`, `ERR_CONNECTION_RESET` or `ERR_NETWORK_CHANGED`. The exact same course's fresh Fetch HTML and receipt must already exist in this inspection. Its identity, digest, offerings, required fields and requested panel content must validate. Missing lazy content still fails. No extra provider operation or replacement Browser session is started.
 
-Recovered courses retain the actual Fetch receipt, safe Browser failure stage/code/time/session metadata and an explicit warning. Dynamic availability stays unknown. An authentication, access, TLS, cancellation or structure failure cannot trigger recovery. The UI makes the limitation visible above course details; health shows degraded transport. This candidate behavior has not yet passed a new live-provider test.
+Recovered courses retain the actual Fetch receipt, safe Browser failure stage/code/time/session metadata and an explicit warning. Dynamic availability stays unknown. An authentication, access, TLS, cancellation or structure failure cannot trigger recovery. The UI makes the limitation visible above course details; health shows degraded transport. This recovery branch has offline coverage; all detail calls in the successful 11 November live batch used normal Browser expansion.
 
 ## `compare_courses`
 

@@ -1,0 +1,245 @@
+{
+  "kind": "anonymous_public_commit_links_and_assets",
+  "verified_at": "2026-11-11T15:09:08.089911+00:00",
+  "tested_public_commit": "ccf70ab2d8c44905c61926287ce167e16a6dcda8",
+  "passed": true,
+  "public_repository": {
+    "url": "https://github.com/himanshu748/studywindow",
+    "http_status": 200,
+    "anonymous": true
+  },
+  "local_links": [
+    {
+      "reader": "README.md",
+      "target": "docs/NOV12-READINESS.md",
+      "exists": true
+    },
+    {
+      "reader": "README.md",
+      "target": "evidence/conversations/candidate-2026-11-11/MCP-CONVERSATION.md",
+      "exists": true
+    },
+    {
+      "reader": "README.md",
+      "target": "media/studywindow-thumbnail.jpg",
+      "exists": true
+    },
+    {
+      "reader": "README.md",
+      "target": "media/studywindow-demo.mp4",
+      "exists": true
+    },
+    {
+      "reader": "README.md",
+      "target": "media/studywindow-demo.mp4",
+      "exists": true
+    },
+    {
+      "reader": "README.md",
+      "target": "evidence/VERIFICATION.md",
+      "exists": true
+    },
+    {
+      "reader": "README.md",
+      "target": "docs/TOOLS.md",
+      "exists": true
+    },
+    {
+      "reader": "README.md",
+      "target": "docs/ARCHITECTURE.md",
+      "exists": true
+    },
+    {
+      "reader": "README.md",
+      "target": "evidence/robots-observed.txt",
+      "exists": true
+    },
+    {
+      "reader": "README.md",
+      "target": "evidence/redesign-landing-final.png",
+      "exists": true
+    },
+    {
+      "reader": "README.md",
+      "target": "docs/DESIGN.md",
+      "exists": true
+    },
+    {
+      "reader": "README.md",
+      "target": "evidence/live-ui-inspect-course.json",
+      "exists": true
+    },
+    {
+      "reader": "README.md",
+      "target": "evidence/live-ui-compare-courses.json",
+      "exists": true
+    },
+    {
+      "reader": "README.md",
+      "target": "evidence/MCP-CONVERSATION.md",
+      "exists": true
+    },
+    {
+      "reader": "README.md",
+      "target": "evidence/VERIFICATION.md",
+      "exists": true
+    },
+    {
+      "reader": "README.md",
+      "target": "docs/SUBMISSION.md",
+      "exists": true
+    },
+    {
+      "reader": "README.md",
+      "target": "docs/SHOWCASE-DRAFTS.md",
+      "exists": true
+    },
+    {
+      "reader": "README.md",
+      "target": "docs/PROPOSED-LICENSE.txt",
+      "exists": true
+    },
+    {
+      "reader": "evidence/conversations/candidate-2026-11-11/MCP-CONVERSATION.md",
+      "target": "../../readiness-2026-11-11/live-candidate-source-manifest.json",
+      "exists": true
+    },
+    {
+      "reader": "evidence/conversations/candidate-2026-11-11/MCP-CONVERSATION.md",
+      "target": "call-1-search_courses.json",
+      "exists": true
+    },
+    {
+      "reader": "evidence/conversations/candidate-2026-11-11/MCP-CONVERSATION.md",
+      "target": "call-2-inspect_course.json",
+      "exists": true
+    },
+    {
+      "reader": "evidence/conversations/candidate-2026-11-11/MCP-CONVERSATION.md",
+      "target": "call-3-compare_courses.json",
+      "exists": true
+    }
+  ],
+  "immutable_raw_assets": [
+    {
+      "url": "https://raw.githubusercontent.com/himanshu748/studywindow/ccf70ab2d8c44905c61926287ce167e16a6dcda8/README.md",
+      "http_status": 200,
+      "bytes": 16841,
+      "sha256": "760e71fd1f774fc65ef1c47c845b07b0c417392ce19c0e1513ceac2b39e56c58",
+      "matches_public_clone": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/himanshu748/studywindow/ccf70ab2d8c44905c61926287ce167e16a6dcda8/media/studywindow-demo.mp4",
+      "http_status": 200,
+      "bytes": 2800948,
+      "sha256": "8c14d155c30a62f0c3261ddad76d237d65e9f8fdc349d136440b7c0093c1e56d",
+      "matches_public_clone": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/himanshu748/studywindow/ccf70ab2d8c44905c61926287ce167e16a6dcda8/media/studywindow-thumbnail.jpg",
+      "http_status": 200,
+      "bytes": 142161,
+      "sha256": "bb92da88dc973c188f831f9263a608c573ee187145f96c3a2ddca7f2e81178a9",
+      "matches_public_clone": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/himanshu748/studywindow/ccf70ab2d8c44905c61926287ce167e16a6dcda8/evidence/conversations/candidate-2026-11-11/MCP-CONVERSATION.md",
+      "http_status": 200,
+      "bytes": 9880,
+      "sha256": "51964257239c2a52a2b3010f22182bd6bedf48c3c6da8517a07b6445f1f83796",
+      "matches_public_clone": true
+    }
+  ],
+  "external_references_not_requested": [
+    {
+      "reader": "README.md",
+      "target": "http://127.0.0.1:4387",
+      "checked": false,
+      "reason": "External reference or in-page anchor; no provider/source/account requests in this gate."
+    },
+    {
+      "reader": "README.md",
+      "target": "http://127.0.0.1:4387",
+      "checked": false,
+      "reason": "External reference or in-page anchor; no provider/source/account requests in this gate."
+    },
+    {
+      "reader": "README.md",
+      "target": "http://127.0.0.1:4387/app",
+      "checked": false,
+      "reason": "External reference or in-page anchor; no provider/source/account requests in this gate."
+    },
+    {
+      "reader": "README.md",
+      "target": "https://www.tinyfish.ai/pricing",
+      "checked": false,
+      "reason": "External reference or in-page anchor; no provider/source/account requests in this gate."
+    },
+    {
+      "reader": "README.md",
+      "target": "https://www.pace.cam.ac.uk/policies-and-reports/general-terms-and-conditions",
+      "checked": false,
+      "reason": "External reference or in-page anchor; no provider/source/account requests in this gate."
+    },
+    {
+      "reader": "README.md",
+      "target": "https://github.com/himanshu748/studywindow",
+      "checked": false,
+      "reason": "External reference or in-page anchor; no provider/source/account requests in this gate."
+    },
+    {
+      "reader": "evidence/conversations/candidate-2026-11-11/MCP-CONVERSATION.md",
+      "target": "https://www.pace.cam.ac.uk/course-search?search_api_fulltext=psychology&field_subject_categories=All&field_course_type=All&field_method=31",
+      "checked": false,
+      "reason": "External reference or in-page anchor; no provider/source/account requests in this gate."
+    },
+    {
+      "reader": "evidence/conversations/candidate-2026-11-11/MCP-CONVERSATION.md",
+      "target": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain",
+      "checked": false,
+      "reason": "External reference or in-page anchor; no provider/source/account requests in this gate."
+    },
+    {
+      "reader": "evidence/conversations/candidate-2026-11-11/MCP-CONVERSATION.md",
+      "target": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain",
+      "checked": false,
+      "reason": "External reference or in-page anchor; no provider/source/account requests in this gate."
+    },
+    {
+      "reader": "evidence/conversations/candidate-2026-11-11/MCP-CONVERSATION.md",
+      "target": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology",
+      "checked": false,
+      "reason": "External reference or in-page anchor; no provider/source/account requests in this gate."
+    },
+    {
+      "reader": "evidence/conversations/candidate-2026-11-11/MCP-CONVERSATION.md",
+      "target": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology",
+      "checked": false,
+      "reason": "External reference or in-page anchor; no provider/source/account requests in this gate."
+    }
+  ],
+  "claims": [
+    "Public repository and immutable README,video,thumbnail,current conversation URLs returned200 anonymously and matched committed bytes.",
+    "All relative README/current-conversation links exist in this pinned clone.",
+    "No TinyFish/provider/account/source endpoint requested."
+  ],
+  "committed_video_ffprobe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "60/1",
+        "nb_frames": "4320"
+      }
+    ],
+    "format": {
+      "duration": "72.000000",
+      "size": "2800948"
+    }
+  },
+  "committed_media_passed": true
+}

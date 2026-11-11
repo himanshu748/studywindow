@@ -1,0 +1,11 @@
+Anonymous public clone at ccf70ab2d8c44905c61926287ce167e16a6dcda8
+cwd: /Users/himanshujha/Documents/Codex/2026-11-03/files-pasted-by-the-user-build/work/studywindow-public-clone-20261111
+started_at: 2026-11-11T15:07:11.626960+00:00
+LIVE=0; key/envfile/tier unset; isolated offline state; user/global npm config disabled.
+$ npm ci --no-audit --no-fund
+Exit prior to config file resolving
+cause
+double-loading config "/dev/null" as "global", previously loaded as "user"
+
+exit_code: 1
+finished_at: 2026-11-11T15:07:12.108542+00:00

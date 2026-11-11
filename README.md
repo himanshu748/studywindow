@@ -28,7 +28,7 @@ npm run demo
 
 Open [the landing page](http://127.0.0.1:4387), then use **Explore a recorded example** to inspect genuine saved receipts. Each section retains its original evidence time. With no live configuration, actions that would call TinyFish are disabled.
 
-`verify:mcp` connects a real SDK client over stdio, advertises the four schemas, and exercises disabled-live failure paths. It makes no TinyFish calls. It is a protocol test, **not** a model-driven conversation. Offline CI is configured for Node.js 22 and 24, but hosted jobs have not executed because of an account restriction. The recorded local checks are separate evidence; neither is a live-provider check.
+`verify:mcp` connects a real SDK client over stdio, advertises the four schemas, and exercises disabled-live failure paths. It makes no TinyFish calls. It is a protocol test, **not** a model-driven conversation. Offline CI is configured for Node.js 22 and 24. The 8 November hosted check was blocked by an account restriction. The recorded local checks are separate evidence; neither is a live-provider check.
 
 Keep the existing API key in a private file outside this directory, readable only by your account. The parser accepts allowlisted, unquoted `KEY=value` lines; credentials remain server-side:
 
@@ -141,10 +141,10 @@ The dedicated landing page has an interactive budget and availability preview, a
 
 ## Evidence and handoff
 
-Recorded live receipts cover psychology and history searches, pagination, inspection of three course pages, two-course comparisons, and the last health canary on 4 November 2026. The [latest UI inspection](evidence/live-ui-inspect-course.json) and [comparison](evidence/live-ui-compare-courses.json) contain bounded typed details. The [actual MCP conversation](evidence/MCP-CONVERSATION.md) preserves successful search and inspection, the 5 November validation repair and explicit continuation, and the later comparison failure at public Browser navigation. A complete successful autonomous shortlist remains a verification gap.
+The [11 November actual MCP conversation](evidence/conversations/candidate-2026-11-11/MCP-CONVERSATION.md) completed search, model-selected inspection and two-course comparison. A new [healthy source canary](evidence/readiness-2026-11-11/live-health.json) and [valid empty-result search](evidence/readiness-2026-11-11/live-empty-search.json) also passed. Earlier psychology/history/pagination receipts and the failed 5 November conversations remain preserved as historical evidence. The fresh batch used normal Browser expansion; it does not establish live Fetch recovery or permanent resolution of intermittent source access.
 
 [Verification](evidence/VERIFICATION.md) distinguishes implementation, offline tests, genuine TinyFish live calls, actual MCP conversation evidence, public deployment, and claim/submission state. [Submission notes](docs/SUBMISSION.md) map the bounty requirements to evidence and outstanding gates. [Showcase drafts](docs/SHOWCASE-DRAFTS.md) are prepared text, not posted announcements.
 
-The bounty was claimed through the authenticated platform during the build; it has **not** been submitted. Submissions are final. A working public link, required LinkedIn and Discord posts, all mandatory live evidence, and a final review are submission gates. The reviewed source is published in [this GitHub repository](https://github.com/himanshu748/studywindow). Deployment and social posting remain separate actions.
+The bounty was claimed through the authenticated platform during the build; it has **not** been submitted. Submissions are final. The technical live checks are complete. Required promotion, current form/link checks and the owner's final click remain submission gates. The reviewed source is published in [this GitHub repository](https://github.com/himanshu748/studywindow). Deployment and social posting remain separate actions.
 
 No source-code license has been selected. The [MIT proposal](docs/PROPOSED-LICENSE.txt) is a draft for review, not an applied license. Cambridge content, TinyFish services, and their names and trademarks retain their respective rights.

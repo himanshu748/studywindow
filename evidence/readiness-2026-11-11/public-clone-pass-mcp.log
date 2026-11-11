@@ -1,0 +1,29 @@
+Anonymous public clone at ccf70ab2d8c44905c61926287ce167e16a6dcda8
+cwd: /Users/himanshujha/Documents/Codex/2026-11-03/files-pasted-by-the-user-build/work/studywindow-public-clone-20261111
+started_at: 2026-11-11T15:16:05.148934+00:00
+LIVE=0; key/envfile/tier unset; isolated offline state; two distinct empty task-owned npm config files.
+$ npm run verify:mcp
+
+> studywindow@0.1.0 verify:mcp
+> node dist/verify-mcp.js
+
+{
+  "kind": "offline_protocol_validation",
+  "passed": true,
+  "tools": [
+    "compare_courses",
+    "health_check",
+    "inspect_course",
+    "search_courses"
+  ],
+  "checks": [
+    "official stdio initialize and list",
+    "typed inputs and outputs advertised",
+    "all four real entry points reject disabled live retrieval",
+    "invalid limit rejected"
+  ],
+  "conversation_evidence": false
+}
+
+exit_code: 0
+finished_at: 2026-11-11T15:16:06.755204+00:00

@@ -1,6 +1,6 @@
 # StudyWindow post previews
 
-**Drafts only. Do not post yet.** The candidate's genuine MCP conversation, desktop browser review and 72-second silent walkthrough are complete. Show the owner the finished copy and video for entry-specific approval before publishing. The public repository is linked below; the new candidate has not been pushed.
+**Drafts only. Do not post yet.** The candidate's genuine MCP conversation, desktop browser review and 72-second silent walkthrough are complete. Show the owner the finished copy and video for entry-specific approval before publishing. The public repository is linked below; the verified candidate and video were pushed on 11 November, with the final documentation readback recorded separately.
 
 ## LinkedIn
 

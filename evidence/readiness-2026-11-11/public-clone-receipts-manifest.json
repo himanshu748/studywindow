@@ -1,0 +1,29 @@
+{
+  "kind": "anonymous_public_clone_receipt_manifest",
+  "created_at": "2026-11-11T15:17:54.533357+00:00",
+  "tested_public_commit": "ccf70ab2d8c44905c61926287ce167e16a6dcda8",
+  "status": "passed",
+  "receipt_sha256": {
+    "evidence/readiness-2026-11-11/public-clone-checkout.log": "df5791f1ebf9362d65ecc4efabc868c81a9204e6dcefb7d17737fc89073f3127",
+    "evidence/readiness-2026-11-11/public-clone-demo.json": "0f12f19ebfd348eda619fcdec10fe8906f98f33b950700c8b416f7f97abb4c63",
+    "evidence/readiness-2026-11-11/public-clone-demo.log": "8d44ebdc1b6a5107fd9776d61f089d13119273e7e283546a435119cec4ab7465",
+    "evidence/readiness-2026-11-11/public-clone-links-media.json": "b36cfd5d58a64089ca075aa77855814ed540e7d501ad1deccaa36a7d5884d6a9",
+    "evidence/readiness-2026-11-11/public-clone-npm-ci.log": "ce593f06f3de261736f35e446ac3a671baef4fc3876b0ee8cb3f5d4ef6e9965b",
+    "evidence/readiness-2026-11-11/public-clone-pass-build.log": "8f062f04ab7e1f8eb8baa8c2aaa9d67501b56324cad832139eb769b9b6582aab",
+    "evidence/readiness-2026-11-11/public-clone-pass-demo.log": "85b7b9b62311b2cb95305f8dd5858fa2d3fe8cab6b49b0be2dbc4ef48b448047",
+    "evidence/readiness-2026-11-11/public-clone-pass-mcp.log": "38fef8cf1e21f1c9277e979bc05932eb05524932d8d7dac9dc191b27fd9c0fd2",
+    "evidence/readiness-2026-11-11/public-clone-pass-npm-ci.log": "c5011b96349248d72b18e6590d538a630b8b366402cff8adbb82d2712cba586a",
+    "evidence/readiness-2026-11-11/public-clone-pass-tests.log": "76ccf6580a01f95caf9c792734b3f3f6dd359c3aeed7e71bcf8a1970b3f30b5d",
+    "evidence/readiness-2026-11-11/public-clone-source-manifest.json": "bc4d21b3bd7ff7275007441011472d178aa78e61d151ee0bf80e5243e9ec5c07",
+    "evidence/readiness-2026-11-11/public-clone-verification.json": "cb31b0079c51eb6b69148e28edd85d59f65c9348d9ea3267b569c1d18ff1476d"
+  },
+  "not_a_future_docs_commit_claim": true,
+  "retained_initial_failures": "Initial /dev/null npm config conflict and pre-start demo attempt are retained; final pass logs and summary distinguish them.",
+  "publication_normalization": {
+    "file": "evidence/readiness-2026-11-11/public-clone-checkout.log",
+    "change": "Removed trailing whitespace from one empty initial_worktree_status line; command/results unchanged.",
+    "original_raw_sha256": "f28da613680dd074a01e40a86bcdfa1c41b820bdd8adaf7116740b77b127f93d",
+    "published_sha256": "df5791f1ebf9362d65ecc4efabc868c81a9204e6dcefb7d17737fc89073f3127",
+    "raw_retained_outside_public_package": true
+  }
+}

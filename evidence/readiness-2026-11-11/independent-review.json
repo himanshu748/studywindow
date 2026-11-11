@@ -15,5 +15,15 @@
     "Offline review is not a live recovery demonstration.",
     "The latest genuine detail retrievals used normal Browser expansion.",
     "The later addition of saved-health rendering is verified separately."
-  ]
+  ],
+  "public_clone_final_review": {
+    "tested_commit": "ccf70ab2d8c44905c61926287ce167e16a6dcda8",
+    "source_hashes_matched": 53,
+    "receipt_hashes_matched": 12,
+    "tests_passed": 150,
+    "keyless_http_routes": 11,
+    "later_changes_docs_evidence_only": true,
+    "new_clone_logs_private_patterns_found": false,
+    "no_actionable_findings": true
+  }
 }

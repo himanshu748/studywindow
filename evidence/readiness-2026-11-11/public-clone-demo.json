@@ -1,0 +1,83 @@
+{
+  "kind": "anonymous_public_clone_keyless_demo_smoke",
+  "verified_at": "2026-11-11T15:16:47.675002+00:00",
+  "tested_public_commit": "ccf70ab2d8c44905c61926287ce167e16a6dcda8",
+  "passed": true,
+  "checks": [
+    {
+      "route": "/",
+      "http_status": 200,
+      "bytes": 17801,
+      "content_type": "text/html"
+    },
+    {
+      "route": "/app",
+      "http_status": 200,
+      "bytes": 17429,
+      "content_type": "text/html"
+    },
+    {
+      "route": "/base.css",
+      "http_status": 200,
+      "bytes": 2134,
+      "content_type": "text/css"
+    },
+    {
+      "route": "/styles.css",
+      "http_status": 200,
+      "bytes": 39099,
+      "content_type": "text/css"
+    },
+    {
+      "route": "/app.js",
+      "http_status": 200,
+      "bytes": 41231,
+      "content_type": "text/javascript"
+    },
+    {
+      "route": "/landing.css",
+      "http_status": 200,
+      "bytes": 29155,
+      "content_type": "text/css"
+    },
+    {
+      "route": "/landing.js",
+      "http_status": 200,
+      "bytes": 9853,
+      "content_type": "text/javascript"
+    },
+    {
+      "route": "/assets/dmsans.woff2",
+      "http_status": 200,
+      "bytes": 36980,
+      "content_type": "font/woff2"
+    },
+    {
+      "route": "/assets/manrope.woff2",
+      "http_status": 200,
+      "bytes": 24436,
+      "content_type": "font/woff2"
+    },
+    {
+      "route": "/api/saved",
+      "http_status": 200,
+      "bytes": 119073,
+      "content_type": "application/json",
+      "saved_items": 14
+    },
+    {
+      "route": "/api/status",
+      "http_status": 200,
+      "bytes": 602,
+      "content_type": "application/json",
+      "live_enabled": false,
+      "isolated_provider_counts_zero": true
+    }
+  ],
+  "own_process_group_stopped": true,
+  "port4387_free_after_stop": true,
+  "provider_calls": 0,
+  "root_demo_touched": false,
+  "state_dir": "/Users/himanshujha/Documents/Codex/2026-11-03/files-pasted-by-the-user-build/work/studywindow-public-clone-20261111/.offline-state",
+  "log": "/Users/himanshujha/Documents/Codex/2026-11-03/files-pasted-by-the-user-build/outputs/studywindow/evidence/readiness-2026-11-11/public-clone-pass-demo.log"
+}

@@ -10,6 +10,8 @@ Current official brief/rulebook and robots were read in the restored in-app brow
 
 The owner authorized one $1 batch under a $6.80 aggregate ceiling. It used exactly two Agent runs, four Browser sessions and seven Fetch URLs; $0.808 new reservations bring the total to $6.592. Historical entries remained unchanged. No operation is active, billable calls are halted and the Fetch cap is exhausted. Reservations are not settled charges; no further provider operation or retry is authorized. [Authorization](readiness-2026-11-11/batch-authorization.json), [pricing](readiness-2026-11-11/pricing-preflight.json), [batch result](readiness-2026-11-11/batch-result.json).
 
+The [actual anonymous public clone](readiness-2026-11-11/public-clone-verification.json) passed clean installation, build, 150 tests, stdio verification and 11 keyless demo routes at `ccf70ab2d8c44905c61926287ce167e16a6dcda8`. Public repository/media/transcript responses and 53 file hashes matched committed bytes. A documentation-only follow-up fixes a stale historical README paragraph and records these receipts; it changes no source, tests, demo, package inputs or media. [Publication record](readiness-2026-11-11/github-publication.json).
+
 ## Historical checkpoint, 8 November 2026
 
 Live verification in this section remains from 5 November. **The local product is implemented and usable. The bounty is claimed, not submitted. At that checkpoint a complete successful autonomous search → inspect → compare conversation remained unverified.** Individual successful live calls and conversational failures are separate evidence.

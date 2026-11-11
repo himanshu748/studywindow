@@ -1,0 +1,7 @@
+Anonymous public clone ccf70ab2d8c44905c61926287ce167e16a6dcda8. README npm run demo after clean build.
+LIVE0, no key/envfile/tier, own offline state, separate empty npm configs.
+
+> studywindow@0.1.0 demo
+> node dist/demo-server.js
+
+StudyWindow local demo: http://127.0.0.1:4387
