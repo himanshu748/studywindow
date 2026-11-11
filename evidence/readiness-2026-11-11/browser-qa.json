@@ -1,0 +1,38 @@
+{
+  "kind": "in_app_browser_qa",
+  "checked_on": "2026-11-11",
+  "real_viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "checks_passed": [
+    "Landing budget change updates affordability message.",
+    "Available-day toggle and preview tabs respond.",
+    "Genuine saved results retain11November retrieval times.",
+    "Inspection drawer displays offering-specific fee/deadline/status.",
+    "Right-arrow switches offering tabs and moves focus.",
+    "Escape closes drawer and restores its trigger focus.",
+    "Comparison preserves unknown workload and weekday compatibility.",
+    "Receipts retain endpoint,original timestamp,hash and Browser session.",
+    "Saved health displays three explicit passed checks.",
+    "Live actions remain disabled in keyless demo."
+  ],
+  "mobile_requested": {
+    "width": 390,
+    "height": 844
+  },
+  "mobile_actual": {
+    "width": 1280,
+    "height": 720
+  },
+  "mobile_verified": false,
+  "viewport_override_reset": true,
+  "alternate_browser_automation_used": false,
+  "os_reduced_motion_emulation_verified": false,
+  "new_retrieval_notice_live_screenshot": false,
+  "limitations": [
+    "All successful live detail observations used Browser expansion; fallback UI branch has code review/syntax checks but no genuine fallback screenshot.",
+    "OS-level reduced-motion emulation and true mobile viewport remain unverified."
+  ],
+  "screenshot": "desktop-preview.png"
+}

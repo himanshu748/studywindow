@@ -15,6 +15,7 @@ import {
   RESERVED_PER_RUN,
 } from '../src/budget.js';
 import { ORIGIN, searchUrl } from '../src/urls.js';
+import { BrowserNavigationError } from '../src/errors.js';
 
 const url = `${ORIGIN}/courses/offline-browser-course`;
 const api = 'https://api.browser.tinyfish.ai';
@@ -67,11 +68,14 @@ function rawCourse() {
 function fakeBrowser(
   options: {
     status?: number;
+    statusError?: string;
     pageUrl?: string;
     count?: number;
     data?: unknown;
     missingPanel?: boolean;
     navigationError?: boolean;
+    navigationMessage?: string;
+    observationError?: string;
   } = {},
 ) {
   const calls: string[] = [];
@@ -118,9 +122,11 @@ function fakeBrowser(
     },
     async goto(target: string) {
       calls.push(`navigate:${target}`);
+      if (options.navigationMessage) throw new Error(options.navigationMessage);
       if (options.navigationError) throw new Error('PRIVATE-CDP-DIAGNOSTIC');
       return {
         status() {
+          if (options.statusError) throw new Error(options.statusError);
           return options.status ?? 200;
         },
       };
@@ -148,6 +154,7 @@ function fakeBrowser(
         return {
           async evaluate() {
             calls.push('extract-dom');
+            if (options.observationError) throw new Error(options.observationError);
             return options.data ?? rawCourse();
           },
         };
@@ -425,6 +432,67 @@ test('blocked, missing and changed course structure do not return success and st
     assert.deepEqual((await f.budget.status()).active, []);
     t.mock.restoreAll();
   }
+});
+
+test('only exhausted known transient course navigation emits safe typed recovery metadata', async (t) => {
+  const f = await setup(t, {
+    navigationMessage: `page.goto: net::ERR_EMPTY_RESPONSE at ${url}\nPRIVATE-CDP-DIAGNOSTIC`,
+  });
+  await assert.rejects(
+    expandCourseWithBrowser(f.config, f.budget, url, ['Requirements']),
+    (error) => {
+      assert.ok(error instanceof BrowserNavigationError);
+      assert.equal(error.code, 'PROVIDER_FAILURE');
+      assert.equal(error.navigation.stage, 'navigate_course');
+      assert.equal(error.navigation.source_url, url);
+      assert.equal(error.navigation.network_code, 'ERR_EMPTY_RESPONSE');
+      assert.equal(error.navigation.session_id, sessionId);
+      assert.equal(error.navigation.attempts, 3);
+      assert.doesNotMatch(JSON.stringify(error), /PRIVATE-CDP-DIAGNOSTIC/);
+      return true;
+    },
+  );
+  assert.equal(f.calls.filter((call) => call.startsWith('navigate:')).length, 3);
+  assert.equal(f.requests.filter((request) => request.method === 'POST').length, 1);
+  assert.equal(f.requests.filter((request) => request.method === 'DELETE').length, 1);
+  assert.deepEqual((await f.budget.status()).active, []);
+});
+
+test('TLS, unknown or mixed network failures and post-navigation errors cannot become recovery signals', async (t) => {
+  for (const options of [
+    { navigationMessage: 'page.goto: net::ERR_CERT_AUTHORITY_INVALID' },
+    { navigationMessage: 'page.goto: net::ERR_FAILED' },
+    { navigationMessage: 'net::ERR_EMPTY_RESPONSE with net::ERR_CERT_AUTHORITY_INVALID' },
+    { observationError: 'net::ERR_EMPTY_RESPONSE' },
+    { statusError: 'net::ERR_EMPTY_RESPONSE' },
+    { status: 500 },
+  ]) {
+    const f = await setup(t, options);
+    await assert.rejects(
+      expandCourseWithBrowser(f.config, f.budget, url, ['Requirements']),
+      (error) => {
+        assert.equal(error instanceof BrowserNavigationError, false);
+        return true;
+      },
+    );
+    assert.equal(f.calls.filter((call) => call.startsWith('navigate:')).length, 1);
+    assert.equal(f.requests.filter((request) => request.method === 'POST').length, 1);
+    assert.equal(f.requests.filter((request) => request.method === 'DELETE').length, 1);
+    t.mock.restoreAll();
+  }
+});
+
+test('a create-session network error cannot be reclassified as failed course navigation', async (t) => {
+  const f = await setup(t, {}, () => {
+    throw new Error('net::ERR_EMPTY_RESPONSE');
+  });
+  await assert.rejects(expandCourseWithBrowser(f.config, f.budget, url, []), (error) => {
+    assert.equal(error instanceof BrowserNavigationError, false);
+    assert.equal((error as { code: string }).code, 'PROVIDER_TIMEOUT');
+    return true;
+  });
+  assert.equal(f.calls.filter((call) => call.startsWith('navigate:')).length, 0);
+  assert.equal(f.requests.filter((request) => request.method === 'POST').length, 1);
 });
 
 test('invalid expanded DOM and unexpected navigation do not trigger an Agent or new Browser session', async (t) => {

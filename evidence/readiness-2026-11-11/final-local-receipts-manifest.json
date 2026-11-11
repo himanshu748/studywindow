@@ -1,0 +1,17 @@
+{
+  "kind": "clean_local_candidate_receipt_manifest",
+  "created_at": "2026-11-11T14:37:01.743441+00:00",
+  "is_git_clone": false,
+  "is_live_provider_proof": false,
+  "receipt_sha256": {
+    "evidence/readiness-2026-11-11/final-local-build.txt": "e42f90a994d7f44cc81a10f0cad2cf3f762ab1d70784d29a7fd48ad32d9cfdcf",
+    "evidence/readiness-2026-11-11/final-local-format.txt": "6bb7df1f2c9ab999f8edbeb7d9c2b5efb51061438d8e2439632251d31815d39c",
+    "evidence/readiness-2026-11-11/final-local-js-syntax.txt": "b2d4ea52955f136d818230c7ebb33dca0027cb21b1c50f7edbbb79a707946cc6",
+    "evidence/readiness-2026-11-11/final-local-mcp.txt": "24ffe5bc514bcf91207476b2cd345c4c1c20f71c8d4c2d507978913a4cbe36c4",
+    "evidence/readiness-2026-11-11/final-local-npm-ci.txt": "2d19a446bfd4a001ad1fb832d2d15194a62313c3f545fbf96842a75e418d6c23",
+    "evidence/readiness-2026-11-11/final-local-source-manifest.json": "bf1c6852c5470c9bdc3e0c8db293ab1db2050bab9e5f05877b84da5523b17e67",
+    "evidence/readiness-2026-11-11/final-local-tests.txt": "a67f4a946873653bb735a94e98218665adf569461acd2dbdaabc6296fb80ac10",
+    "evidence/readiness-2026-11-11/final-local-types.txt": "915c3f8828c504ec4647c7f0a586e3099642fe24bae9010edc3747c3c771b8b0",
+    "evidence/readiness-2026-11-11/final-local-verification.json": "86587ba40f63e0255dfed6e9b9ef13ff1aa50a7de0a41587f0a07e427662bbd8"
+  }
+}

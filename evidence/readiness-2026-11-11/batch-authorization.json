@@ -1,0 +1,19 @@
+{
+  "kind": "explicit_owner_authorization",
+  "authorized_on": "2026-11-11",
+  "allowance_usd": 1,
+  "studywindow_aggregate_ceiling_usd": 6.8,
+  "maximum_new_operations": {
+    "agent": 2,
+    "browser": 4,
+    "fetch_urls": 7
+  },
+  "agent_max_steps": 20,
+  "provider_duration_seconds": 150,
+  "browser_operation_seconds": 120,
+  "one_batch_only": true,
+  "automatic_repeat": false,
+  "purchase_or_billing_changes": false,
+  "other_bounty_ledgers_unchanged": true,
+  "historical_controls_and_reservations_preserved": true
+}

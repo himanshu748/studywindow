@@ -1,0 +1,21 @@
+
+> studywindow@0.1.0 verify:mcp
+> node dist/verify-mcp.js
+
+{
+  "kind": "offline_protocol_validation",
+  "passed": true,
+  "tools": [
+    "compare_courses",
+    "health_check",
+    "inspect_course",
+    "search_courses"
+  ],
+  "checks": [
+    "official stdio initialize and list",
+    "typed inputs and outputs advertised",
+    "all four real entry points reject disabled live retrieval",
+    "invalid limit rejected"
+  ],
+  "conversation_evidence": false
+}

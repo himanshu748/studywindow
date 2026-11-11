@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { ErrorCode, Failure } from './schemas.js';
+import { BrowserNavigationFailure, ErrorCode, Failure } from './schemas.js';
 export class StudyError extends Error {
   constructor(
     public readonly code: z.infer<typeof ErrorCode>,
@@ -7,6 +7,18 @@ export class StudyError extends Error {
     public readonly retryable = false,
   ) {
     super(message);
+  }
+}
+/** Exhausted same-session navigation only; never carries raw Browser diagnostics. */
+export class BrowserNavigationError extends StudyError {
+  readonly navigation: z.infer<typeof BrowserNavigationFailure>;
+  constructor(navigation: z.infer<typeof BrowserNavigationFailure>) {
+    super(
+      'PROVIDER_FAILURE',
+      'The isolated Browser exhausted its bounded same-session public course navigation attempts.',
+    );
+    this.name = 'BrowserNavigationError';
+    this.navigation = BrowserNavigationFailure.parse(navigation);
   }
 }
 export function failure(error: unknown): z.infer<typeof Failure> {

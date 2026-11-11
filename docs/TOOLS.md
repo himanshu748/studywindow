@@ -67,6 +67,14 @@ A course includes:
 
 Fee categories are `home`, `overseas`, `standard`, and `unknown`; basis is `course`, `year`, or `unknown`. Home/overseas eligibility is never inferred. Tentative dates or fees and contradictory values produce visible uncertainty.
 
+## Course retrieval provenance
+
+Current course results include `retrieval.mode`: `browser_expanded` for successful Browser expansion or `fresh_fetch_fallback` for the narrowly supported recovery. Genuine historical records may omit this additive field.
+
+Recovery is allowed only after an exhausted, typed transient navigation failure at `navigate_course`: `ERR_EMPTY_RESPONSE`, `ERR_CONNECTION_CLOSED`, `ERR_CONNECTION_RESET` or `ERR_NETWORK_CHANGED`. The exact same course's fresh Fetch HTML and receipt must already exist in this inspection. Its identity, digest, offerings, required fields and requested panel content must validate. Missing lazy content still fails. No extra provider operation or replacement Browser session is started.
+
+Recovered courses retain the actual Fetch receipt, safe Browser failure stage/code/time/session metadata and an explicit warning. Dynamic availability stays unknown. An authentication, access, TLS, cancellation or structure failure cannot trigger recovery. The UI makes the limitation visible above course details; health shows degraded transport. This candidate behavior has not yet passed a new live-provider test.
+
 ## `compare_courses`
 
 ```json
@@ -87,7 +95,7 @@ Fee categories are `home`, `overseas`, `standard`, and `unknown`; basis is `cour
 
 Availability is optional. Weekly hours must be greater than zero and at most 168. Unavailable weekdays use lowercase full English names. Dates use `YYYY-MM-DD`; an earliest start after the latest finish is rejected.
 
-The service retrieves each course afresh through Fetch and Browser, sequentially, then compares validated evidence locally. A two-course comparison uses two bounded Browser sessions and two Fetch requests; a three-course comparison uses three of each. It does not return a partial comparison if one retrieval fails. Each offering receives findings with a criterion, `match`/`conflict`/`unknown`, explanation, source URLs, and optional quote. Criteria cover budget, source availability, deadline, course dates, supplied availability constraints, preferred modes, and requirements.
+The service retrieves each course afresh, sequentially, then compares validated evidence locally. The normal Browser path and strictly validated same-page Fetch recovery both preserve explicit provenance. A two-course comparison uses two bounded Browser sessions and two Fetch requests; a three-course comparison uses three of each. It does not return a partial comparison if one retrieval fails. Each offering receives findings with a criterion, `match`/`conflict`/`unknown`, explanation, source URLs, and optional quote. Criteria cover budget, source availability, deadline, course dates, supplied availability constraints, preferred modes, and requirements.
 
 Practical outcomes are `potential_fit`, `conflict`, or `needs_information`. A course-level potential fit means at least one offering has no unresolved practical constraint among those assessed. Entry requirements always remain unassessed and are excluded from that practical outcome; potential fit is not admission approval or a recommendation. Known conflicts take precedence over unknowns. Fees retain category and basis; annual or unspecified totals cannot establish a full-course budget match. A standard fee may be used when no category-specific fee is published. Missing schedule evidence never establishes compatibility.
 
@@ -99,7 +107,7 @@ Practical outcomes are `potential_fit`, `conflict`, or `needs_information`. A co
 
 A real TinyFish Fetch retrieves a psychology catalogue canary and checks form/mode/count/row/pagination contracts. A known course canary, `learning-and-memory-brain`, is inspected through fresh Fetch and Browser, checking identity, loaded offerings, fees, deadline, and mode. The health check uses one bounded Browser session and two Fetch requests.
 
-Success returns `status: healthy`, `checked_at`, named passed checks, receipts, and a coverage statement. A known canary unexpectedly becoming empty is a breakage signal; an ordinary user search returning zero can still be valid. The check detects supported structural and semantic contract loss. It does not certify every field or every catalogue course.
+Health returns `status: healthy` or `status: degraded`, `checked_at`, named checks with explicit `passed` booleans, receipts, and a coverage statement. Fresh Fetch recovery reports `degraded` and a failed `browser_navigation` check, preserving the transport failure rather than implying successful Browser retrieval. A known canary unexpectedly becoming empty is a breakage signal; an ordinary user search returning zero can still be valid. The check detects supported structural and semantic contract loss. It does not certify every field or every catalogue course.
 
 ## Receipts, errors, cancellation
 
@@ -123,3 +131,5 @@ Live receipts contain a unique id, TinyFish endpoint (`agent`, `fetch`, or `brow
 | `RESPONSE_TOO_LARGE`  | Provider response exceeded the 2 MB limit                                            |
 
 MCP cancellation signals propagate to the provider. Async Agent runs are cancelled on error/cancellation when a run id is available. Remote cancellation can fail or a queue response can be lost; the duration and step limits remain, and the full reservation stays counted. Billable Agent and Browser creation are not automatically retried. Browser operations have a 120-second local bound, close the remote connection, and attempt session deletion in `finally`; a 30-second provider inactivity timeout is a second guard. Deletion can retry up to three times without creating a new session. There is no automatic Agent/Browser backend fallback after failure; historical failed experiments retain their reservations.
+
+The optional `STUDYWINDOW_FETCH_TIER=hobby|builder` configuration selects only that exact Fetch pricing meter after the operator checks the effective account tier. Omitted configuration requires the generic meter; it never guesses a tier. The existing $0 ceiling rejects any nonzero selected Fetch rate. Configuration does not upgrade or change the account.

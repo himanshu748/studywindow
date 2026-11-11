@@ -1,0 +1,21 @@
+{
+  "kind": "reviewed_edited_browser_walkthrough",
+  "reviewed_at": "2026-11-11T14:58:00.591521+00:00",
+  "video": "../../media/studywindow-demo.mp4",
+  "thumbnail": "../../media/studywindow-thumbnail.jpg",
+  "duration_seconds": 72,
+  "width": 1920,
+  "height": 1080,
+  "fps": 60,
+  "bytes": 2800948,
+  "audio_streams": 0,
+  "captions": true,
+  "narration_generated": false,
+  "source": "Actual in-app browser screenshots and a visibly labelled static export of the genuine Codex MCP conversation. Edited screenshot walkthrough, not continuous real-time recording.",
+  "live_fallback_claim": false,
+  "public_ui_and_source_data_only": true,
+  "sha256": {
+    "studywindow-demo.mp4": "8c14d155c30a62f0c3261ddad76d237d65e9f8fdc349d136440b7c0093c1e56d",
+    "studywindow-thumbnail.jpg": "bb92da88dc973c188f831f9263a608c573ee187145f96c3a2ddca7f2e81178a9"
+  }
+}

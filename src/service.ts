@@ -1,4 +1,5 @@
 import { load } from 'cheerio';
+import { createHash } from 'node:crypto';
 import {
   CompareInput,
   ComparisonOutput,
@@ -6,6 +7,7 @@ import {
   HealthInput,
   HealthOutput,
   InspectInput,
+  Receipt,
   SearchInput,
   SearchOutput,
   modeLabels,
@@ -22,9 +24,10 @@ import {
   parseSearch,
   dateRange,
 } from './extract.js';
-import { StudyError, checkCancelled, failure } from './errors.js';
+import { BrowserNavigationError, StudyError, checkCancelled, failure } from './errors.js';
 import type { WebProvider } from './provider.js';
 import { compareCourses } from './compare.js';
+import { courseFromFreshHtml } from './fetch-course.js';
 export const toolDefinitions = {
   search_courses: {
     input: SearchInput,
@@ -36,7 +39,7 @@ export const toolDefinitions = {
     input: InspectInput,
     output: responseSchema(Course),
     description:
-      'Read fresh Cambridge course offerings, fees by category, application deadlines, requirements and teaching evidence. TinyFish Fetch reads the page and an isolated TinyFish Browser opens lazy panels. Missing schedules remain unknown. Costs one bounded Browser session.',
+      'Read fresh Cambridge course offerings, fees by category, application deadlines, requirements and teaching evidence. TinyFish Fetch reads the page and an isolated TinyFish Browser opens lazy panels. Only exhausted transient course navigation may use complete literal HTML from that same fresh Fetch, with degraded provenance and unknown availability. Missing schedules remain unknown. Costs one bounded Browser session.',
   },
   compare_courses: {
     input: CompareInput,
@@ -48,7 +51,7 @@ export const toolDefinitions = {
     input: HealthInput,
     output: responseSchema(HealthOutput),
     description:
-      'Run a LIVE TinyFish Fetch catalogue canary and Browser+Fetch detail canary. Checks actual filter/row/detail contracts and explicit expiry fields. Costs one bounded Browser session; does not just ping the provider.',
+      'Run a LIVE TinyFish Fetch catalogue canary and Browser+Fetch detail canary. Checks actual filter/row/detail contracts and explicit expiry fields. A permitted same-Fetch fallback reports degraded health and failed Browser navigation. Costs one bounded Browser session; does not just ping the provider.',
   },
 } as const;
 export type ToolName = keyof typeof toolDefinitions;
@@ -111,6 +114,7 @@ export class StudyWindow {
     const { course } = InspectInput.parse(input);
     const url = courseUrl(course);
     checkCancelled(signal);
+    const fetchStarted = Date.now();
     const page = await this.web.fetchHtml(url, signal);
     const title = courseTitle(page.data);
     const $ = load(page.data);
@@ -128,7 +132,53 @@ export class StudyWindow {
         s,
       ),
     );
-    const expanded = await this.web.expandCourse(url, required, signal);
+    let expanded;
+    try {
+      expanded = await this.web.expandCourse(url, required, signal);
+    } catch (error) {
+      checkCancelled(signal);
+      if (!(error instanceof BrowserNavigationError) || error.navigation.source_url !== url)
+        throw error;
+      const fetched = Receipt.safeParse(page.receipt);
+      if (
+        !fetched.success ||
+        fetched.data.endpoint !== 'fetch' ||
+        fetched.data.source_url !== url ||
+        fetched.data.run_id !== null ||
+        fetched.data.session_id !== null ||
+        Date.parse(fetched.data.checked_at) < fetchStarted ||
+        Date.parse(fetched.data.checked_at) > Date.now() ||
+        fetched.data.sha256 !== createHash('sha256').update(page.data).digest('hex')
+      )
+        throw new StudyError(
+          'SITE_CHANGED',
+          'The failed navigation has no matching fresh Fetch observation from this operation.',
+        );
+      const raw = courseFromFreshHtml(page.data, url, title, required);
+      const fallback = parseCourse(raw, title, url, [fetched.data]);
+      if (
+        fallback.offerings.some(
+          (offering) =>
+            !offering.deadline_date || !offering.fees.length || offering.conflicts.length > 0,
+        )
+      )
+        throw new StudyError(
+          'SITE_CHANGED',
+          'Fresh Fetch HTML has incomplete or conflicting supported offering facts.',
+        );
+      return Course.parse({
+        ...fallback,
+        checked_at: fetched.data.checked_at,
+        retrieval: { mode: 'fresh_fetch_fallback', browser_failure: error.navigation },
+        warnings: [
+          fallback.warnings[0]!,
+          `Browser navigation failed after three same-session attempts (${error.navigation.network_code}). Complete literal course fields and requested panels came from the same fresh TinyFish Fetch HTML; no extra retrieval was started.`,
+          'Course panels were not opened in Browser. Current availability was not observed and remains unknown.',
+          'The failed Browser session reservation remains counted. Fetch-only evidence does not establish zero Browser usage.',
+          'The Fetch receipt records the actual source observation; Browser failure metadata is not a successful Browser receipt or independent certification.',
+        ],
+      });
+    }
     const observed = RawCourse.safeParse(expanded.data);
     if (!observed.success)
       throw new StudyError(
@@ -177,7 +227,10 @@ export class StudyWindow {
       ...result.data,
       offerings: result.data.offerings.map((o, i) => ({ ...o, date_label: dateLabels[i]! })),
     };
-    return parseCourse(corroborated, title, url, [page.receipt, result.receipt]);
+    return Course.parse({
+      ...parseCourse(corroborated, title, url, [page.receipt, result.receipt]),
+      retrieval: { mode: 'browser_expanded' },
+    });
   }
   async compare(input: unknown, signal?: AbortSignal) {
     const args = CompareInput.parse(input);
@@ -229,8 +282,9 @@ export class StudyWindow {
         'SITE_CHANGED',
         'The known detail canary lost its date, deadline, fee or study-mode contract, or contains unresolved source conflicts.',
       );
+    const fallback = course.retrieval?.mode === 'fresh_fetch_fallback';
     return HealthOutput.parse({
-      status: 'healthy',
+      status: fallback ? 'degraded' : 'healthy',
       checked_at: new Date().toISOString(),
       checks: [
         {
@@ -240,10 +294,18 @@ export class StudyWindow {
             'Expected form, supported mode values, count/rows, applied topic and pagination agree.',
         },
         {
+          name: 'browser_navigation',
+          passed: !fallback,
+          detail: fallback
+            ? 'Browser course navigation failed. Complete same-page fresh Fetch HTML supplied the detail facts; no successful Browser observation or current availability is established.'
+            : 'The isolated Browser navigated to the requested course and completed its detail observation.',
+        },
+        {
           name: 'course_details',
           passed: true,
-          detail:
-            'Fetch identity/dates and Browser-expanded offering count, fees, application deadlines and study mode agree with their typed contracts.',
+          detail: fallback
+            ? 'Literal same-page fresh Fetch HTML contains supported offering count, dates, fees, application deadlines, study mode and requested panels. Browser/Fetch agreement was not established.'
+            : 'Fetch identity/dates and Browser-expanded offering count, fees, application deadlines and study mode agree with their typed contracts.',
         },
       ],
       evidence: [...search.evidence, ...course.evidence],

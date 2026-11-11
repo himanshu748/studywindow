@@ -1,0 +1,12 @@
+Clean local candidate snapshot; not a Git clone or live provider proof.
+cwd: /Users/himanshujha/Documents/Codex/2026-11-03/files-pasted-by-the-user-build/work/studywindow-final-candidate-20261111
+started_at: 2026-11-11T14:36:19.464376+00:00
+STUDYWINDOW_LIVE=0; API key/env file/tier unset; isolated offline state.
+
+$ npm ci --no-audit --no-fund
+npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+
+added 46 packages in 2s
+
+exit_code: 0
+finished_at: 2026-11-11T14:36:21.673844+00:00

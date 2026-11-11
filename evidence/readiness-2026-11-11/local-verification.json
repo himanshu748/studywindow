@@ -1,0 +1,75 @@
+{
+  "kind": "clean_local_candidate_check_not_clone",
+  "checked_at": "2026-11-11T14:21:39.308373+00:00",
+  "live_enabled": false,
+  "provider_calls": 0,
+  "private_credentials_loaded": false,
+  "source_manifest": "candidate-source-manifest.json",
+  "npm_ci_exit_code": 0,
+  "results": [
+    {
+      "check": "build",
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "exit_code": 0,
+      "receipt": "build.txt"
+    },
+    {
+      "check": "tests",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exit_code": 0,
+      "receipt": "tests.txt"
+    },
+    {
+      "check": "types",
+      "command": [
+        "npm",
+        "run",
+        "typecheck"
+      ],
+      "exit_code": 0,
+      "receipt": "types.txt"
+    },
+    {
+      "check": "mcp",
+      "command": [
+        "npm",
+        "run",
+        "verify:mcp"
+      ],
+      "exit_code": 0,
+      "receipt": "mcp.txt"
+    },
+    {
+      "check": "format",
+      "command": [
+        "npm",
+        "run",
+        "format:check"
+      ],
+      "exit_code": 0,
+      "receipt": "format.txt"
+    },
+    {
+      "check": "js-syntax",
+      "command": [
+        "node",
+        "--check",
+        "demo/app.js"
+      ],
+      "exit_code": 0,
+      "receipt": "js-syntax.txt"
+    }
+  ],
+  "limitations": [
+    "No new live-provider or model conversation verification.",
+    "In-app browser unavailable; no rendered UI/mobile/reduced-motion check or current authenticated brief readback.",
+    "Candidate is uncommitted and has not replaced the public repository."
+  ]
+}

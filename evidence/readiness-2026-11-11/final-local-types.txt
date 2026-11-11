@@ -1,0 +1,13 @@
+Clean local candidate snapshot; not a Git clone or live provider proof.
+cwd: /Users/himanshujha/Documents/Codex/2026-11-03/files-pasted-by-the-user-build/work/studywindow-final-candidate-20261111
+started_at: 2026-11-11T14:36:28.833705+00:00
+STUDYWINDOW_LIVE=0; API key/env file/tier unset; isolated offline state.
+
+$ npm run typecheck
+
+> studywindow@0.1.0 typecheck
+> tsc --noEmit
+
+
+exit_code: 0
+finished_at: 2026-11-11T14:36:30.141151+00:00

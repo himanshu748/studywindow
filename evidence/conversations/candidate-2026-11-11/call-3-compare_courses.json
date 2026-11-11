@@ -1,0 +1,843 @@
+{
+  "tool": "compare_courses",
+  "input": {
+    "courses": [
+      "learning-and-memory-brain",
+      "introduction-cognitive-psychology-and-neuropsychology"
+    ],
+    "budget": {
+      "amount": 500,
+      "currency": "GBP",
+      "fee_category": "home"
+    },
+    "study_modes": [
+      "online"
+    ],
+    "availability": {
+      "earliest_start_date": "2026-11-12",
+      "max_hours_per_week": 5,
+      "unavailable_weekdays": [
+        "friday"
+      ]
+    }
+  },
+  "result": {
+    "ok": true,
+    "data": {
+      "checked_at": "2026-11-11T14:37:58.317Z",
+      "budget": {
+        "amount": 500,
+        "currency": "GBP",
+        "fee_category": "home"
+      },
+      "results": [
+        {
+          "course": {
+            "id": "learning-and-memory-brain",
+            "title": "Learning and memory in the brain",
+            "url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain",
+            "checked_at": "2026-11-11T14:36:25.329Z",
+            "offerings": [
+              {
+                "id": "2627NOE053",
+                "start_date": "2027-01-11",
+                "end_date": "2027-02-28",
+                "date_quote": "11 Jan 2027 to 28 Feb 2027",
+                "deadline": {
+                  "value": "11 Jan 2027",
+                  "quote": "application deadline: 11 Jan 2027",
+                  "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+                },
+                "deadline_date": "2027-01-11",
+                "status": {
+                  "value": "AVAILABLE",
+                  "quote": "AVAILABLE",
+                  "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+                },
+                "fees": [
+                  {
+                    "amount": 435,
+                    "currency": "GBP",
+                    "category": "home",
+                    "basis": "course",
+                    "quote": "Home: \u00a3435",
+                    "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+                  }
+                ],
+                "study_mode": {
+                  "value": "Online learning",
+                  "quote": "study mode: Online learning",
+                  "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+                },
+                "duration": {
+                  "value": "7 Weeks",
+                  "quote": "duration: 7 Weeks",
+                  "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+                },
+                "location": {
+                  "value": null,
+                  "quote": null,
+                  "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+                },
+                "missing_fields": [
+                  "location"
+                ],
+                "conflicts": []
+              },
+              {
+                "id": "2627NOE093",
+                "start_date": "2027-04-12",
+                "end_date": "2027-05-30",
+                "date_quote": "12 Apr 2027 to 30 May 2027",
+                "deadline": {
+                  "value": "12 Apr 2027",
+                  "quote": "application deadline: 12 Apr 2027",
+                  "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+                },
+                "deadline_date": "2027-04-12",
+                "status": {
+                  "value": "AVAILABLE",
+                  "quote": "AVAILABLE",
+                  "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+                },
+                "fees": [
+                  {
+                    "amount": 435,
+                    "currency": "GBP",
+                    "category": "home",
+                    "basis": "course",
+                    "quote": "Home: \u00a3435",
+                    "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+                  }
+                ],
+                "study_mode": {
+                  "value": "Online learning",
+                  "quote": "study mode: Online learning",
+                  "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+                },
+                "duration": {
+                  "value": "7 Weeks",
+                  "quote": "duration: 7 Weeks",
+                  "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+                },
+                "location": {
+                  "value": null,
+                  "quote": null,
+                  "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+                },
+                "missing_fields": [
+                  "location"
+                ],
+                "conflicts": []
+              }
+            ],
+            "requirements": {
+              "value": "The published description states open entry. No prior subject knowledge or experience is stated as necessary. Teaching is in English. Near-native English is advised. Full entry conditions and individual eligibility remain unassessed.",
+              "quote": "This course is open to everyone",
+              "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+            },
+            "teaching": {
+              "value": "Weekly classroom-time equivalent: about 2\u20133 hours; this is not a confirmed total workload. Separate self-study guidance: about 2\u20133 hours per week; individual needs vary. Normally no fixed online day/time is required; the full timetable remains unconfirmed. Web seminars are stated to be recorded.",
+              "quote": "equivalent to 2-3 hours of classroom time",
+              "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+            },
+            "weekly_hours": null,
+            "scheduled_weekdays": [],
+            "schedule_complete": false,
+            "missing_fields": [
+              "full_entry_conditions",
+              "complete_teaching_schedule",
+              "total_weekly_study_hours"
+            ],
+            "warnings": [
+              "Teaching evidence does not establish a complete schedule. Online delivery does not imply compatible hours.",
+              "Course panels were opened through TinyFish; the public page identity and dates were separately retrieved by TinyFish Fetch.",
+              "Interaction observations are validated structurally; receipts record provider observations, not independent certification."
+            ],
+            "evidence": [
+              {
+                "id": "9ce6172e-6d1a-49e1-9419-4bfac14db18d",
+                "endpoint": "fetch",
+                "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain",
+                "checked_at": "2026-11-11T14:35:29.185Z",
+                "sha256": "23b1f77aeede50e8f96d9c963cdfe91053df47c8af63e908f8a6afca9921143d",
+                "run_id": null,
+                "session_id": null,
+                "steps": null,
+                "reserved_usd": 0,
+                "estimated_usd": 0,
+                "fresh": true
+              },
+              {
+                "id": "8833b31a-ed2f-4e55-a158-875a2f96c44f",
+                "endpoint": "browser",
+                "source_url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain",
+                "checked_at": "2026-11-11T14:36:23.919Z",
+                "sha256": "85467eb896434176324b82da4b8868453f3feacb86fbe7b0a9d3de062507bba3",
+                "run_id": null,
+                "session_id": "tf-29c71151-ea5a-4fd1-bb9f-c72da20f88bb",
+                "steps": null,
+                "reserved_usd": 0.01,
+                "estimated_usd": 0.001825,
+                "fresh": true
+              }
+            ],
+            "retrieval": {
+              "mode": "browser_expanded"
+            }
+          },
+          "offerings": [
+            {
+              "offering_id": "2627NOE053",
+              "outcome": "needs_information",
+              "findings": [
+                {
+                  "criterion": "budget",
+                  "status": "match",
+                  "explanation": "The published home course fee of GBP 435 is within the GBP 500 budget. Additional expenses and fee-status eligibility are not assessed.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+                  ],
+                  "quote": "Home: \u00a3435"
+                },
+                {
+                  "criterion": "source",
+                  "status": "match",
+                  "explanation": "The source currently signals an open or available offering. This does not reserve a place or guarantee admission.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+                  ],
+                  "quote": "AVAILABLE"
+                },
+                {
+                  "criterion": "deadline",
+                  "status": "match",
+                  "explanation": "The published deadline (2027-01-11) is after 2026-11-11 in Europe/London. The separate offering-status check must also be considered.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+                  ],
+                  "quote": "application deadline: 11 Jan 2027"
+                },
+                {
+                  "criterion": "course_dates",
+                  "status": "match",
+                  "explanation": "The published course runs from 2027-01-11 to 2027-02-28. These dates alone do not prove applications are open.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+                  ],
+                  "quote": "11 Jan 2027 to 28 Feb 2027"
+                },
+                {
+                  "criterion": "course_dates",
+                  "status": "match",
+                  "explanation": "The course starts on or after the learner\u2019s earliest acceptable start (2026-11-12).",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+                  ],
+                  "quote": "11 Jan 2027 to 28 Feb 2027"
+                },
+                {
+                  "criterion": "availability",
+                  "status": "unknown",
+                  "explanation": "A weekly time budget was supplied, but no valid complete weekly workload range is established. \u201cOnline\u201d or \u201cflexible\u201d does not establish a workload.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+                  ],
+                  "quote": "equivalent to 2-3 hours of classroom time"
+                },
+                {
+                  "criterion": "availability",
+                  "status": "unknown",
+                  "explanation": "The complete teaching schedule is not established. The absence of a published weekday cannot establish compatibility with unavailable days.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+                  ],
+                  "quote": "equivalent to 2-3 hours of classroom time"
+                },
+                {
+                  "criterion": "mode",
+                  "status": "match",
+                  "explanation": "The published study mode (Online learning) matches a preference; it does not establish schedule flexibility.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+                  ],
+                  "quote": "study mode: Online learning"
+                },
+                {
+                  "criterion": "requirements",
+                  "status": "unknown",
+                  "explanation": "Entry requirements are supplied as evidence, but the learner\u2019s eligibility and admission have not been assessed. Confirm them directly with the provider.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+                  ],
+                  "quote": "This course is open to everyone"
+                }
+              ]
+            },
+            {
+              "offering_id": "2627NOE093",
+              "outcome": "needs_information",
+              "findings": [
+                {
+                  "criterion": "budget",
+                  "status": "match",
+                  "explanation": "The published home course fee of GBP 435 is within the GBP 500 budget. Additional expenses and fee-status eligibility are not assessed.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+                  ],
+                  "quote": "Home: \u00a3435"
+                },
+                {
+                  "criterion": "source",
+                  "status": "match",
+                  "explanation": "The source currently signals an open or available offering. This does not reserve a place or guarantee admission.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+                  ],
+                  "quote": "AVAILABLE"
+                },
+                {
+                  "criterion": "deadline",
+                  "status": "match",
+                  "explanation": "The published deadline (2027-04-12) is after 2026-11-11 in Europe/London. The separate offering-status check must also be considered.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+                  ],
+                  "quote": "application deadline: 12 Apr 2027"
+                },
+                {
+                  "criterion": "course_dates",
+                  "status": "match",
+                  "explanation": "The published course runs from 2027-04-12 to 2027-05-30. These dates alone do not prove applications are open.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+                  ],
+                  "quote": "12 Apr 2027 to 30 May 2027"
+                },
+                {
+                  "criterion": "course_dates",
+                  "status": "match",
+                  "explanation": "The course starts on or after the learner\u2019s earliest acceptable start (2026-11-12).",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+                  ],
+                  "quote": "12 Apr 2027 to 30 May 2027"
+                },
+                {
+                  "criterion": "availability",
+                  "status": "unknown",
+                  "explanation": "A weekly time budget was supplied, but no valid complete weekly workload range is established. \u201cOnline\u201d or \u201cflexible\u201d does not establish a workload.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+                  ],
+                  "quote": "equivalent to 2-3 hours of classroom time"
+                },
+                {
+                  "criterion": "availability",
+                  "status": "unknown",
+                  "explanation": "The complete teaching schedule is not established. The absence of a published weekday cannot establish compatibility with unavailable days.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+                  ],
+                  "quote": "equivalent to 2-3 hours of classroom time"
+                },
+                {
+                  "criterion": "mode",
+                  "status": "match",
+                  "explanation": "The published study mode (Online learning) matches a preference; it does not establish schedule flexibility.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+                  ],
+                  "quote": "study mode: Online learning"
+                },
+                {
+                  "criterion": "requirements",
+                  "status": "unknown",
+                  "explanation": "Entry requirements are supplied as evidence, but the learner\u2019s eligibility and admission have not been assessed. Confirm them directly with the provider.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain"
+                  ],
+                  "quote": "This course is open to everyone"
+                }
+              ]
+            }
+          ],
+          "outcome": "needs_information"
+        },
+        {
+          "course": {
+            "id": "introduction-cognitive-psychology-and-neuropsychology",
+            "title": "Introduction to Cognitive Psychology and Neuropsychology",
+            "url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology",
+            "checked_at": "2026-11-11T14:37:58.316Z",
+            "offerings": [
+              {
+                "id": "2627NOE029",
+                "start_date": "2026-10-26",
+                "end_date": "2026-12-13",
+                "date_quote": "26 Oct 2026 to 13 Dec 2026",
+                "deadline": {
+                  "value": "26 Oct 2026",
+                  "quote": "application deadline: 26 Oct 2026",
+                  "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                },
+                "deadline_date": "2026-10-26",
+                "status": {
+                  "value": "NO LONGER AVAILABLE",
+                  "quote": "NO LONGER AVAILABLE",
+                  "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                },
+                "fees": [
+                  {
+                    "amount": 435,
+                    "currency": "GBP",
+                    "category": "home",
+                    "basis": "course",
+                    "quote": "Home: \u00a3435",
+                    "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                  }
+                ],
+                "study_mode": {
+                  "value": "Online learning",
+                  "quote": "study mode: Online learning",
+                  "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                },
+                "duration": {
+                  "value": "7 Weeks",
+                  "quote": "duration: 7 Weeks",
+                  "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                },
+                "location": {
+                  "value": null,
+                  "quote": null,
+                  "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                },
+                "missing_fields": [
+                  "location"
+                ],
+                "conflicts": []
+              },
+              {
+                "id": "2627NOE067",
+                "start_date": "2027-02-22",
+                "end_date": "2027-04-11",
+                "date_quote": "22 Feb 2027 to 11 Apr 2027",
+                "deadline": {
+                  "value": "22 Feb 2027",
+                  "quote": "application deadline: 22 Feb 2027",
+                  "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                },
+                "deadline_date": "2027-02-22",
+                "status": {
+                  "value": "AVAILABLE",
+                  "quote": "AVAILABLE",
+                  "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                },
+                "fees": [
+                  {
+                    "amount": 435,
+                    "currency": "GBP",
+                    "category": "home",
+                    "basis": "course",
+                    "quote": "Home: \u00a3435",
+                    "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                  }
+                ],
+                "study_mode": {
+                  "value": "Online learning",
+                  "quote": "study mode: Online learning",
+                  "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                },
+                "duration": {
+                  "value": "7 Weeks",
+                  "quote": "duration: 7 Weeks",
+                  "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                },
+                "location": {
+                  "value": null,
+                  "quote": null,
+                  "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                },
+                "missing_fields": [
+                  "location"
+                ],
+                "conflicts": []
+              },
+              {
+                "id": "2627NOE107",
+                "start_date": "2027-05-24",
+                "end_date": "2027-07-11",
+                "date_quote": "24 May 2027 to 11 Jul 2027",
+                "deadline": {
+                  "value": "24 May 2027",
+                  "quote": "application deadline: 24 May 2027",
+                  "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                },
+                "deadline_date": "2027-05-24",
+                "status": {
+                  "value": "AVAILABLE",
+                  "quote": "AVAILABLE",
+                  "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                },
+                "fees": [
+                  {
+                    "amount": 435,
+                    "currency": "GBP",
+                    "category": "home",
+                    "basis": "course",
+                    "quote": "Home: \u00a3435",
+                    "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                  }
+                ],
+                "study_mode": {
+                  "value": "Online learning",
+                  "quote": "study mode: Online learning",
+                  "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                },
+                "duration": {
+                  "value": "7 Weeks",
+                  "quote": "duration: 7 Weeks",
+                  "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                },
+                "location": {
+                  "value": null,
+                  "quote": null,
+                  "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                },
+                "missing_fields": [
+                  "location"
+                ],
+                "conflicts": []
+              }
+            ],
+            "requirements": {
+              "value": "The published description states open entry. No prior subject knowledge or experience is stated as necessary. Teaching is in English. Near-native English is advised. Full entry conditions and individual eligibility remain unassessed.",
+              "quote": "This course is open to everyone",
+              "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+            },
+            "teaching": {
+              "value": "Weekly classroom-time equivalent: about 2\u20133 hours; this is not a confirmed total workload. Separate self-study guidance: about 2\u20133 hours per week; individual needs vary. Normally no fixed online day/time is required; the full timetable remains unconfirmed. Web seminars are stated to be recorded.",
+              "quote": "equivalent to 2-3 hours of classroom time",
+              "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+            },
+            "weekly_hours": null,
+            "scheduled_weekdays": [],
+            "schedule_complete": false,
+            "missing_fields": [
+              "full_entry_conditions",
+              "complete_teaching_schedule",
+              "total_weekly_study_hours"
+            ],
+            "warnings": [
+              "Teaching evidence does not establish a complete schedule. Online delivery does not imply compatible hours.",
+              "Course panels were opened through TinyFish; the public page identity and dates were separately retrieved by TinyFish Fetch.",
+              "Interaction observations are validated structurally; receipts record provider observations, not independent certification."
+            ],
+            "evidence": [
+              {
+                "id": "00bfe87e-66c7-4aa9-bf20-9b2a4e95ea0a",
+                "endpoint": "fetch",
+                "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology",
+                "checked_at": "2026-11-11T14:36:33.712Z",
+                "sha256": "e90a91ef8e339c1e4df0d2a3f73e55cc7b29dd21ce7340345fa026a07b2a5c29",
+                "run_id": null,
+                "session_id": null,
+                "steps": null,
+                "reserved_usd": 0,
+                "estimated_usd": 0,
+                "fresh": true
+              },
+              {
+                "id": "dba60808-b5fe-4ccd-9b9d-5a1c767b17c3",
+                "endpoint": "browser",
+                "source_url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology",
+                "checked_at": "2026-11-11T14:37:55.231Z",
+                "sha256": "4e8ddd847f04d00b5a3195e0a542c1db6cc9b49e7e5299f39e09682e082224bc",
+                "run_id": null,
+                "session_id": "tf-596be467-a691-4a69-8661-c5cb0b5bd937",
+                "steps": null,
+                "reserved_usd": 0.01,
+                "estimated_usd": 0.002717,
+                "fresh": true
+              }
+            ],
+            "retrieval": {
+              "mode": "browser_expanded"
+            }
+          },
+          "offerings": [
+            {
+              "offering_id": "2627NOE029",
+              "outcome": "conflict",
+              "findings": [
+                {
+                  "criterion": "budget",
+                  "status": "match",
+                  "explanation": "The published home course fee of GBP 435 is within the GBP 500 budget. Additional expenses and fee-status eligibility are not assessed.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                  ],
+                  "quote": "Home: \u00a3435"
+                },
+                {
+                  "criterion": "source",
+                  "status": "conflict",
+                  "explanation": "The published offering status prevents treating it as currently available for a new enrolment.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                  ],
+                  "quote": "NO LONGER AVAILABLE"
+                },
+                {
+                  "criterion": "deadline",
+                  "status": "conflict",
+                  "explanation": "The published application deadline (2026-10-26) has passed as of 2026-11-11 in Europe/London.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                  ],
+                  "quote": "application deadline: 26 Oct 2026"
+                },
+                {
+                  "criterion": "course_dates",
+                  "status": "conflict",
+                  "explanation": "This offering started on 2026-10-26; a new learner cannot assume late entry is available.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                  ],
+                  "quote": "26 Oct 2026 to 13 Dec 2026"
+                },
+                {
+                  "criterion": "course_dates",
+                  "status": "conflict",
+                  "explanation": "The course starts before the learner\u2019s earliest acceptable start (2026-11-12).",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                  ],
+                  "quote": "26 Oct 2026 to 13 Dec 2026"
+                },
+                {
+                  "criterion": "availability",
+                  "status": "unknown",
+                  "explanation": "A weekly time budget was supplied, but no valid complete weekly workload range is established. \u201cOnline\u201d or \u201cflexible\u201d does not establish a workload.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                  ],
+                  "quote": "equivalent to 2-3 hours of classroom time"
+                },
+                {
+                  "criterion": "availability",
+                  "status": "unknown",
+                  "explanation": "The complete teaching schedule is not established. The absence of a published weekday cannot establish compatibility with unavailable days.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                  ],
+                  "quote": "equivalent to 2-3 hours of classroom time"
+                },
+                {
+                  "criterion": "mode",
+                  "status": "match",
+                  "explanation": "The published study mode (Online learning) matches a preference; it does not establish schedule flexibility.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                  ],
+                  "quote": "study mode: Online learning"
+                },
+                {
+                  "criterion": "requirements",
+                  "status": "unknown",
+                  "explanation": "Entry requirements are supplied as evidence, but the learner\u2019s eligibility and admission have not been assessed. Confirm them directly with the provider.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                  ],
+                  "quote": "This course is open to everyone"
+                }
+              ]
+            },
+            {
+              "offering_id": "2627NOE067",
+              "outcome": "needs_information",
+              "findings": [
+                {
+                  "criterion": "budget",
+                  "status": "match",
+                  "explanation": "The published home course fee of GBP 435 is within the GBP 500 budget. Additional expenses and fee-status eligibility are not assessed.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                  ],
+                  "quote": "Home: \u00a3435"
+                },
+                {
+                  "criterion": "source",
+                  "status": "match",
+                  "explanation": "The source currently signals an open or available offering. This does not reserve a place or guarantee admission.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                  ],
+                  "quote": "AVAILABLE"
+                },
+                {
+                  "criterion": "deadline",
+                  "status": "match",
+                  "explanation": "The published deadline (2027-02-22) is after 2026-11-11 in Europe/London. The separate offering-status check must also be considered.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                  ],
+                  "quote": "application deadline: 22 Feb 2027"
+                },
+                {
+                  "criterion": "course_dates",
+                  "status": "match",
+                  "explanation": "The published course runs from 2027-02-22 to 2027-04-11. These dates alone do not prove applications are open.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                  ],
+                  "quote": "22 Feb 2027 to 11 Apr 2027"
+                },
+                {
+                  "criterion": "course_dates",
+                  "status": "match",
+                  "explanation": "The course starts on or after the learner\u2019s earliest acceptable start (2026-11-12).",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                  ],
+                  "quote": "22 Feb 2027 to 11 Apr 2027"
+                },
+                {
+                  "criterion": "availability",
+                  "status": "unknown",
+                  "explanation": "A weekly time budget was supplied, but no valid complete weekly workload range is established. \u201cOnline\u201d or \u201cflexible\u201d does not establish a workload.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                  ],
+                  "quote": "equivalent to 2-3 hours of classroom time"
+                },
+                {
+                  "criterion": "availability",
+                  "status": "unknown",
+                  "explanation": "The complete teaching schedule is not established. The absence of a published weekday cannot establish compatibility with unavailable days.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                  ],
+                  "quote": "equivalent to 2-3 hours of classroom time"
+                },
+                {
+                  "criterion": "mode",
+                  "status": "match",
+                  "explanation": "The published study mode (Online learning) matches a preference; it does not establish schedule flexibility.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                  ],
+                  "quote": "study mode: Online learning"
+                },
+                {
+                  "criterion": "requirements",
+                  "status": "unknown",
+                  "explanation": "Entry requirements are supplied as evidence, but the learner\u2019s eligibility and admission have not been assessed. Confirm them directly with the provider.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                  ],
+                  "quote": "This course is open to everyone"
+                }
+              ]
+            },
+            {
+              "offering_id": "2627NOE107",
+              "outcome": "needs_information",
+              "findings": [
+                {
+                  "criterion": "budget",
+                  "status": "match",
+                  "explanation": "The published home course fee of GBP 435 is within the GBP 500 budget. Additional expenses and fee-status eligibility are not assessed.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                  ],
+                  "quote": "Home: \u00a3435"
+                },
+                {
+                  "criterion": "source",
+                  "status": "match",
+                  "explanation": "The source currently signals an open or available offering. This does not reserve a place or guarantee admission.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                  ],
+                  "quote": "AVAILABLE"
+                },
+                {
+                  "criterion": "deadline",
+                  "status": "match",
+                  "explanation": "The published deadline (2027-05-24) is after 2026-11-11 in Europe/London. The separate offering-status check must also be considered.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                  ],
+                  "quote": "application deadline: 24 May 2027"
+                },
+                {
+                  "criterion": "course_dates",
+                  "status": "match",
+                  "explanation": "The published course runs from 2027-05-24 to 2027-07-11. These dates alone do not prove applications are open.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                  ],
+                  "quote": "24 May 2027 to 11 Jul 2027"
+                },
+                {
+                  "criterion": "course_dates",
+                  "status": "match",
+                  "explanation": "The course starts on or after the learner\u2019s earliest acceptable start (2026-11-12).",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                  ],
+                  "quote": "24 May 2027 to 11 Jul 2027"
+                },
+                {
+                  "criterion": "availability",
+                  "status": "unknown",
+                  "explanation": "A weekly time budget was supplied, but no valid complete weekly workload range is established. \u201cOnline\u201d or \u201cflexible\u201d does not establish a workload.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                  ],
+                  "quote": "equivalent to 2-3 hours of classroom time"
+                },
+                {
+                  "criterion": "availability",
+                  "status": "unknown",
+                  "explanation": "The complete teaching schedule is not established. The absence of a published weekday cannot establish compatibility with unavailable days.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                  ],
+                  "quote": "equivalent to 2-3 hours of classroom time"
+                },
+                {
+                  "criterion": "mode",
+                  "status": "match",
+                  "explanation": "The published study mode (Online learning) matches a preference; it does not establish schedule flexibility.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                  ],
+                  "quote": "study mode: Online learning"
+                },
+                {
+                  "criterion": "requirements",
+                  "status": "unknown",
+                  "explanation": "Entry requirements are supplied as evidence, but the learner\u2019s eligibility and admission have not been assessed. Confirm them directly with the provider.",
+                  "source_urls": [
+                    "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology"
+                  ],
+                  "quote": "This course is open to everyone"
+                }
+              ]
+            }
+          ],
+          "outcome": "needs_information"
+        }
+      ],
+      "caveats": [
+        "Potential fit describes only the supplied practical constraints and published evidence; it is not a recommendation or admission guarantee. Entry eligibility remains unassessed and is excluded from the practical-fit outcome.",
+        "Fees retain their published category and basis. No exchange rates, fee-status eligibility, funding, accommodation, travel or other extra costs are inferred.",
+        "Deadlines are evaluated against the current date in Europe/London. A date-only deadline today has an unknown cutoff time.",
+        "Online, remote and flexible delivery do not establish compatible teaching hours. Availability findings cover only the constraints supplied and the evidence available.",
+        "Each offering is assessed independently. A course-level potential fit means at least one offering has no unresolved practical constraint; it does not mean every offering fits."
+      ]
+    }
+  }
+}

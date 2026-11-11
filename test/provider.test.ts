@@ -125,6 +125,53 @@ test('durable Agent and Fetch allowance exhaustion prevent new reservations', as
   assert.equal(state.fetch_urls, MAX_FETCH_URLS);
 });
 
+test('11 Nov supplement preserves prior accounting and permits only its finite additional batch', async (t) => {
+  const dir = await directory(t);
+  // Synthetic baseline only. This test never reads or modifies the live allowance ledger.
+  const priorEntry = {
+    id: 'offline-preserved-marker',
+    endpoint: 'fetch',
+    at: '2026-11-10T12:00:00Z',
+    run_id: null,
+    steps: null,
+    reserved_usd: 0,
+    estimated_usd: 0,
+  };
+  await writeFile(
+    join(dir, 'ledger.json'),
+    JSON.stringify({
+      version: 1,
+      build: 'studywindow-drop002',
+      agent_runs: 17,
+      agent_reserved_usd: 5.504,
+      browser_sessions: 28,
+      browser_reserved_usd: 0.28,
+      fetch_urls: 47,
+      active: [],
+      halted: false,
+      estimated_usd: 0,
+      entries: [priorEntry],
+    }),
+  );
+  const budget = new Budget(dir);
+  for (let i = 0; i < 2; i++) await budget.finish(await budget.reserve('agent'));
+  await assert.rejects(budget.reserve('agent'), code('ALLOWANCE_EXHAUSTED'));
+  for (let i = 0; i < 4; i++) await budget.browserFinish(await budget.reserve('browser'), 0);
+  await assert.rejects(budget.reserve('browser'), code('ALLOWANCE_EXHAUSTED'));
+  for (let i = 0; i < 7; i++) await budget.finish(await budget.reserve('fetch'));
+  await assert.rejects(budget.reserve('fetch'), code('ALLOWANCE_EXHAUSTED'));
+  const state = await new Budget(dir).status();
+  assert.equal(state.max_usd, 6.8);
+  assert.equal(state.agent_runs, 19);
+  assert.equal(state.browser_sessions, 32);
+  assert.equal(state.fetch_urls, 54);
+  assert.equal(state.agent_reserved_usd, 6.272);
+  assert.equal(state.browser_reserved_usd, 0.32);
+  assert.ok(state.agent_reserved_usd + state.browser_reserved_usd <= state.max_usd);
+  assert.deepEqual(state.entries[0], priorEntry);
+  assert.deepEqual(state.active, []);
+});
+
 test('corrupt ledger and existing lock block calls without resetting usage', async (t) => {
   const dir = await directory(t);
   await writeFile(join(dir, 'ledger.json'), '{malformed');

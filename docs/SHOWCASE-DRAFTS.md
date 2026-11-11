@@ -1,45 +1,60 @@
-# Showcase drafts — not posted
+# StudyWindow post previews
 
-These drafts require a real accessible build link, final verification, and separate authorization before posting. Replace placeholders with verified URLs. Keep or remove factual claims according to [the final evidence record](../evidence/VERIFICATION.md). Never describe an unverified live journey as complete.
+**Drafts only. Do not post yet.** The candidate's genuine MCP conversation, desktop browser review and 72-second silent walkthrough are complete. Show the owner the finished copy and video for entry-specific approval before publishing. The public repository is linked below; the new candidate has not been pushed.
 
 ## LinkedIn
 
-I’m building StudyWindow for the TinyFish Site to MCP bounty: a practical course-finding workflow for people fitting study around work and life.
+An online course can still be a bad fit for your week.
 
-A relevant course is only the beginning. Is the application deadline still open? Which fee applies? What teaching time is actually published? StudyWindow gives an agent typed tools to search Cambridge PACE, inspect course details, and compare a shortlist against budget, study mode, and availability.
+The fee might fit your budget while the application deadline has passed. The subject might be perfect while the teaching schedule is still unclear.
 
-TinyFish Agent handles the real search, Browser reads expandable course panels deterministically, and Fetch retrieves fresh page evidence. Results keep conflicts and unknowns visible, with source links and retrieval receipts. Online delivery alone is never treated as proof that a schedule fits.
+I built StudyWindow to make those questions easier to check.
 
-Build and verification: [VERIFIED BUILD URL]
+It gives an AI assistant four MCP tools for the Cambridge PACE catalogue: search courses, inspect the details, compare a shortlist and check whether the source still matches the adapter.
 
-[Tag the official TinyFish LinkedIn page using LinkedIn’s actual mention control: https://www.linkedin.com/company/tinyfish-ai/]
+TinyFish operates the search and retrieves the course pages. StudyWindow keeps each offering's fees and deadlines separate, then shows matches, conflicts and unanswered questions with source links.
 
-## TinyFish Discord — `#showcase`
+My favourite detail: it leaves an incomplete schedule incomplete. “Online” never becomes a promise that a course fits your Friday.
 
-**StudyWindow — course discovery that checks practical fit**
+Code and setup:
+https://github.com/himanshu748/studywindow
 
-For working learners, “interesting” and “workable” can be different things. StudyWindow turns the public Cambridge PACE catalogue into typed MCP tools:
+Built for the TinyFish Site to MCP bounty.
 
-- `search_courses`: operate the live catalogue and mode filters, with explicit pagination.
-- `inspect_course`: read fees by category, application deadlines, course dates, requirements, and teaching evidence.
-- `compare_courses`: retrieve fresh details and compute matches, conflicts, and unknowns against the learner’s constraints.
-- `health_check`: check real listing/detail contracts and fail clearly when they break.
+Attach the reviewed walkthrough and select the official [TinyFish company mention](https://www.linkedin.com/company/tinyfish-ai/) through LinkedIn's mention control. Do not paste this instruction into the post.
 
-Agent operates search, Browser opens and reads course panels, and Fetch supplies fresh page evidence. Missing schedules remain unknown. The package includes setup, typed contracts, supported coverage, receipts, and the exact verification record.
+## X
 
-Build: [VERIFIED BUILD URL]  
-Real MCP conversation: [VERIFIED CONVERSATION EVIDENCE URL]
+“Online” doesn't tell you whether a course fits your week.
 
-## Optional X draft
+StudyWindow uses @Tiny_Fish + MCP to compare Cambridge courses by fees, deadlines and published commitments. Missing schedules stay unknown.
 
-StudyWindow helps working learners compare Cambridge courses against budget, deadlines, and available time. TinyFish Agent + Fetch + Browser do the live web work; typed MCP tools return sourced matches, conflicts, and unknowns. “Online” never becomes a guessed schedule fit.
+Code: https://github.com/himanshu748/studywindow
 
-[VERIFIED BUILD URL] [VERIFIED TINYFISH HANDLE]
+Attach the reviewed video. The @Tiny_Fish handle was checked against the official tinyfish.ai outbound X link on 11 November. Recheck the final character count and account before posting. Do not publish this operator note.
 
-## Posting checks
+## TinyFish Discord showcase
 
-- The LinkedIn and Discord drafts are required promotion formats under the observed rulebook; X is optional.
-- Use a real TinyFish mention, not plain text claimed to be a tag.
-- Link only public material that has been authorized, privacy-audited, and verified.
-- Describe actual live/conversation results precisely. Remove or qualify anything still pending.
-- Record post URLs and visible posted state only after posting succeeds. These drafts do not establish compliance.
+**StudyWindow | Find a course that fits your week**
+
+An interesting course is a starting point. The next questions are practical: which offering, which fee, what deadline and what teaching time?
+
+StudyWindow turns Cambridge PACE into four typed MCP tools:
+
+• Search the catalogue and delivery filters.
+• Inspect offering-specific dates, fees and course details.
+• Compare two or three courses against a learner's constraints.
+• Check whether the supported source contracts still hold.
+
+TinyFish Agent operates search. Fetch retrieves fresh evidence, and Browser opens the course panels. The MCP tools return structured facts and explicit failures when the supported source contract breaks.
+
+Every result links back to its source. Missing information stays a question to ask, rather than a guessed match.
+
+Code and setup:
+https://github.com/himanshu748/studywindow
+
+Attach the reviewed walkthrough. Link the final public MCP transcript only after the new candidate and evidence are published. Do not include this operator note in the message.
+
+## Final posting check
+
+Use the same verified source snapshot and claims in the video, README and form. Keep paragraphs separated. Do not claim hosting, admission, fee eligibility, available places, organizer approval or an unobserved complete schedule. Record actual post URLs and visible target-side readbacks after authorized publication. The saved rulebook requires LinkedIn and Discord; verify the real form's X field before dispatch.

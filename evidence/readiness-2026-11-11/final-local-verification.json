@@ -1,0 +1,150 @@
+{
+  "kind": "clean_local_candidate_gate",
+  "created_at": "2026-11-11T14:36:33.125368+00:00",
+  "status": "passed",
+  "is_git_clone": false,
+  "is_live_provider_proof": false,
+  "candidate": "/Users/himanshujha/Documents/Codex/2026-11-03/files-pasted-by-the-user-build/work/studywindow-final-candidate-20261111",
+  "snapshot_manifest": "evidence/readiness-2026-11-11/final-local-source-manifest.json",
+  "input_aggregate_sha256": "b2271f36b88a8e2c9863393ba55b06fcc77ae61ba6f8e9ac12d107c72936f6b2",
+  "source_inputs_unchanged_after_gate": true,
+  "candidate_inputs_unchanged_after_gate": true,
+  "docs_immutable_claim": false,
+  "docs_note": "Docs were copied at candidate creation; the live working tree may change concurrently. Formatting checks apply to the copied docs only.",
+  "environment": {
+    "STUDYWINDOW_LIVE": "0",
+    "api_key_unset": true,
+    "env_file_unset": true,
+    "fetch_tier_unset": true,
+    "isolated_state_dir": "/Users/himanshujha/Documents/Codex/2026-11-03/files-pasted-by-the-user-build/work/studywindow-final-candidate-20261111/.offline-state"
+  },
+  "checks": [
+    {
+      "name": "npm-ci",
+      "commands": [
+        [
+          "npm",
+          "ci",
+          "--no-audit",
+          "--no-fund"
+        ]
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "started_at": "2026-11-11T14:36:19.464376+00:00",
+      "finished_at": "2026-11-11T14:36:21.673844+00:00",
+      "elapsed_seconds": 2.21,
+      "receipt": "evidence/readiness-2026-11-11/final-local-npm-ci.txt"
+    },
+    {
+      "name": "tests",
+      "commands": [
+        [
+          "npm",
+          "test"
+        ]
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "started_at": "2026-11-11T14:36:21.674263+00:00",
+      "finished_at": "2026-11-11T14:36:28.830990+00:00",
+      "elapsed_seconds": 7.157,
+      "receipt": "evidence/readiness-2026-11-11/final-local-tests.txt",
+      "tests": 150,
+      "pass": 150,
+      "fail": 0,
+      "skipped": 0,
+      "cancelled": 0
+    },
+    {
+      "name": "types",
+      "commands": [
+        [
+          "npm",
+          "run",
+          "typecheck"
+        ]
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "started_at": "2026-11-11T14:36:28.833705+00:00",
+      "finished_at": "2026-11-11T14:36:30.141151+00:00",
+      "elapsed_seconds": 1.308,
+      "receipt": "evidence/readiness-2026-11-11/final-local-types.txt"
+    },
+    {
+      "name": "build",
+      "commands": [
+        [
+          "npm",
+          "run",
+          "build"
+        ]
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "started_at": "2026-11-11T14:36:30.141537+00:00",
+      "finished_at": "2026-11-11T14:36:31.380104+00:00",
+      "elapsed_seconds": 1.239,
+      "receipt": "evidence/readiness-2026-11-11/final-local-build.txt"
+    },
+    {
+      "name": "mcp",
+      "commands": [
+        [
+          "npm",
+          "run",
+          "verify:mcp"
+        ]
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "started_at": "2026-11-11T14:36:31.380520+00:00",
+      "finished_at": "2026-11-11T14:36:31.952690+00:00",
+      "elapsed_seconds": 0.572,
+      "receipt": "evidence/readiness-2026-11-11/final-local-mcp.txt"
+    },
+    {
+      "name": "format",
+      "commands": [
+        [
+          "npm",
+          "run",
+          "format:check"
+        ]
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "started_at": "2026-11-11T14:36:31.953060+00:00",
+      "finished_at": "2026-11-11T14:36:33.061477+00:00",
+      "elapsed_seconds": 1.109,
+      "receipt": "evidence/readiness-2026-11-11/final-local-format.txt"
+    },
+    {
+      "name": "js-syntax",
+      "commands": [
+        [
+          "node",
+          "--check",
+          "demo/app.js"
+        ],
+        [
+          "node",
+          "--check",
+          "demo/landing.js"
+        ]
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "started_at": "2026-11-11T14:36:33.061877+00:00",
+      "finished_at": "2026-11-11T14:36:33.103833+00:00",
+      "elapsed_seconds": 0.042,
+      "receipt": "evidence/readiness-2026-11-11/final-local-js-syntax.txt"
+    }
+  ],
+  "claims": [
+    "Dependencies installed cleanly in isolated copy.",
+    "Synthetic offline tests and disabled-live MCP protocol checks only.",
+    "No live repo build, real key, real ledger, account or provider operation."
+  ]
+}

@@ -1,0 +1,15 @@
+Clean local candidate snapshot; not a Git clone or live provider proof.
+cwd: /Users/himanshujha/Documents/Codex/2026-11-03/files-pasted-by-the-user-build/work/studywindow-final-candidate-20261111
+started_at: 2026-11-11T14:36:31.953060+00:00
+STUDYWINDOW_LIVE=0; API key/env file/tier unset; isolated offline state.
+
+$ npm run format:check
+
+> studywindow@0.1.0 format:check
+> prettier --check "src/**/*.ts" "test/**/*.ts" "demo/*.{html,css,js}" "docs/**/*.md" README.md package.json tsconfig.json .prettierrc.json
+
+Checking formatting...
+All matched files use Prettier code style!
+
+exit_code: 0
+finished_at: 2026-11-11T14:36:33.061477+00:00

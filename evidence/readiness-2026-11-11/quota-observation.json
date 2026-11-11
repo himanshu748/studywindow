@@ -1,0 +1,7 @@
+{
+  "observed_at": "2026-11-11T14:30:07.961Z",
+  "source_url": "https://agent.tinyfish.ai/fetch",
+  "date_filter": "Today",
+  "observed_state": "No fetch requests yet. Use the API to extract content from URLs.",
+  "content_requests_seen": 0
+}

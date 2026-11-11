@@ -1,0 +1,15 @@
+{
+  "kind": "pricing_preflight_safely_stopped",
+  "checked_at": "2026-11-11T14:27:30.308604+00:00",
+  "result": "generic_fetch_meter_missing",
+  "agent_rate_usd_per_step": 0.016,
+  "browser_rate_usd_per_minute": 0.002,
+  "fetch_meters": {
+    "hobby_usd_per_url": 0,
+    "builder_usd_per_url": 0.001
+  },
+  "billable_content_operations_started": 0,
+  "ledger_reservations_added": 0,
+  "action": "Validate the active account tier and explicitly select its exact pricing meter; never assume the free rate from an unrelated tier.",
+  "account_balances_or_credentials_included": false
+}

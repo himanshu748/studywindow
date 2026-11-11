@@ -1,0 +1,13 @@
+{
+  "status": "REVIEW_PREVIEW_NOT_AUTHORIZED_OR_POSTED",
+  "linkedin": "An online course can still be a bad fit for your week.\n\nThe fee might fit your budget while the application deadline has passed. The subject might be perfect while the teaching schedule is still unclear.\n\nI built StudyWindow to make those questions easier to check.\n\nIt gives an AI assistant four MCP tools for the Cambridge PACE catalogue: search courses, inspect the details, compare a shortlist and check whether the source still matches the adapter.\n\nTinyFish operates the search and retrieves the course pages. StudyWindow keeps each offering's fees and deadlines separate, then shows matches, conflicts and unanswered questions with source links.\n\nMy favourite detail: it leaves an incomplete schedule incomplete. “Online” never becomes a promise that a course fits your Friday.\n\nCode and setup:\nhttps://github.com/himanshu748/studywindow\n\nBuilt for the TinyFish Site to MCP bounty.",
+  "x": "“Online” doesn't tell you whether a course fits your week.\n\nStudyWindow uses @Tiny_Fish + MCP to compare Cambridge courses by fees, deadlines and published commitments. Missing schedules stay unknown.\n\nCode: https://github.com/himanshu748/studywindow",
+  "discord": "**StudyWindow | Find a course that fits your week**\n\nAn interesting course is a starting point. The next questions are practical: which offering, which fee, what deadline and what teaching time?\n\nStudyWindow turns Cambridge PACE into four typed MCP tools:\n\n• Search the catalogue and delivery filters.\n• Inspect offering-specific dates, fees and course details.\n• Compare two or three courses against a learner's constraints.\n• Check whether the supported source contracts still hold.\n\nTinyFish Agent operates search. Fetch retrieves fresh evidence, and Browser opens the course panels. The MCP tools return structured facts and explicit failures when the supported source contract breaks.\n\nEvery result links back to its source. Missing information stays a question to ask, rather than a guessed match.\n\nCode and setup:\nhttps://github.com/himanshu748/studywindow",
+  "x_raw_characters": 250,
+  "video": "media/studywindow-demo.mp4",
+  "public_repo": "https://github.com/himanshu748/studywindow",
+  "linkedin_native_mention_required": "https://www.linkedin.com/company/tinyfish-ai/",
+  "x_handle_verified_source": "https://www.tinyfish.ai",
+  "x_handle": "@Tiny_Fish",
+  "approval_required_for_all_three": true
+}

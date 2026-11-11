@@ -1,0 +1,158 @@
+{
+  "reviewed_on": "2026-11-11",
+  "timezone": "Asia/Kolkata",
+  "entry": "StudyWindow",
+  "bounty": "Site to MCP",
+  "intended_next_submission_day": "2026-11-12",
+  "readiness": "NOT_READY",
+  "review_scope": "Bounded ordinary public-source suitability research and requirement mapping. No TinyFish execution, publication or submission.",
+  "provider_operations": 0,
+  "spend": 0,
+  "budget_boundary": "StudyWindow's existing $5.80 allowance is exhausted. This review grants no new provider operation, retry or allowance reset.",
+  "official_brief": {
+    "saved_capture": "work/all-bounties/research/current-portal/site-to-mcp-full.txt",
+    "read_on": "2026-11-11",
+    "live_authenticated_recheck_performed_by_this_review": false,
+    "requirements": [
+      "Wrap at least one real website with no public API.",
+      "Expose at least three tools with typed inputs and outputs.",
+      "Show the server being called in a real MCP client conversation.",
+      "Include a test or health check that detects site changes breaking a tool.",
+      "Explain the roles of TinyFish Agent and Fetch."
+    ],
+    "important_limits": [
+      "A successful autonomous search, inspect and compare sequence is StudyWindow's chosen acceptance path, not an exact sequence imposed by the saved brief.",
+      "The saved brief does not establish a universal hosting, source-code licence or video requirement.",
+      "Current portal fields, promotions, eligibility, account state and deadline require final live review."
+    ]
+  },
+  "api_suitability": {
+    "finding": "No documented public PACE catalogue API supplying the required course information was found in this bounded review.",
+    "certainty": "bounded_negative_evidence",
+    "search_queries": [
+      "site:pace.cam.ac.uk \"API\"",
+      "\"pace.cam.ac.uk\" \"public API\"",
+      "\"pace.cam.ac.uk\" \"jsonapi\""
+    ],
+    "observations": [
+      "The visible catalogue exposes website search, filters, counts, pagination and canonical course links.",
+      "The returned official-domain API mentions concerned course curriculum rather than catalogue developer documentation.",
+      "A previously observed internal availability-only AJAX endpoint is acknowledged. It is not automatically a documented public catalogue API."
+    ],
+    "internal_ajax_reverified_on_review_date": false,
+    "website_owner_confirmed_no_api": false,
+    "organizer_confirmed_source_eligibility": false,
+    "not_established": [
+      "That no public or undocumented API exists anywhere.",
+      "That Cambridge permits all automated uses or republication.",
+      "That the organizer has accepted this site's no-public-API rationale."
+    ]
+  },
+  "primary_source_reads": [
+    {
+      "url": "https://www.pace.cam.ac.uk/course-search",
+      "method": "ordinary web reader extraction",
+      "outcome": "readable",
+      "reader_crawl_label": "last week",
+      "observations": [
+        "Keyword and filter controls are visible.",
+        "The extracted catalogue shows 15 of 253 results and course links."
+      ],
+      "limit": "A web reader extraction can use previously crawled content. This is not a new TinyFish run or proof of an uncached origin response."
+    },
+    {
+      "url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain",
+      "method": "ordinary web reader extraction",
+      "outcome": "initial_read_succeeded_followup_timed_out",
+      "reader_crawl_label": "today",
+      "observations": [
+        "Two offerings are visible: 11 January to 28 February 2027, and 12 April to 30 May 2027.",
+        "The reviewed offerings show a GBP 435 Home fee, online delivery and seven-week duration.",
+        "Availability is unresolved: Checking availability..."
+      ],
+      "failure": "A subsequent teaching-section request timed out.",
+      "limit": "Does not establish Browser panel completeness, current seat availability or the TinyFish raw HTML recovery path."
+    },
+    {
+      "url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology",
+      "method": "ordinary web reader extraction",
+      "outcome": "initial_read_succeeded_followup_timed_out",
+      "reader_crawl_label": "today",
+      "observations": [
+        "Three offerings are visible: 26 October to 13 December 2026, 22 February to 11 April 2027, and 24 May to 11 July 2027.",
+        "The reviewed offerings show a GBP 435 Home fee, online delivery and seven-week duration.",
+        "Availability is unresolved: Checking availability..."
+      ],
+      "failure": "A subsequent requirements-section request timed out.",
+      "limit": "Does not establish Browser panel completeness, current seat availability or the TinyFish raw HTML recovery path."
+    },
+    {
+      "url": "https://www.pace.cam.ac.uk/robots.txt",
+      "method": "ordinary web reader and bounded direct HTTP read with no access workaround",
+      "outcome": "current_read_unavailable",
+      "web_reader_result": "URL inaccessible on both bounded attempts.",
+      "direct_http_status": 403,
+      "previous_evidence": "evidence/robots-observed.txt",
+      "previous_evidence_date": "2026-11-03",
+      "previous_finding": "No disallow was observed for /course-search or /courses/. The distinct generic /search restriction was respected.",
+      "limit": "The earlier receipt is not a successful current robots read or a republication licence."
+    },
+    {
+      "url": "https://www.pace.cam.ac.uk/policies-and-reports/general-terms-and-conditions",
+      "method": "ordinary web reader extraction",
+      "outcome": "readable",
+      "reader_crawl_label": "today on follow-up",
+      "observations": [
+        "The page governs course provision and booking.",
+        "Clause 8.4 reserves rights in course content supplied under the terms.",
+        "Course-specific terms are also linked."
+      ],
+      "limit": "This bounded read establishes neither a republication licence nor blanket automation permission. No booking, login, application or course-material download was performed."
+    }
+  ],
+  "existing_evidence_boundary": {
+    "historical_receipts": [
+      "evidence/VERIFICATION.md",
+      "evidence/MCP-CONVERSATION.md",
+      "evidence/live-health-current.json",
+      "evidence/SOURCE-FIELD-CHECKS.md"
+    ],
+    "established_before_this_review": "Individual genuine live tools, source field checks and local product behavior are documented separately. The historical autonomous conversation retains its failed final comparison.",
+    "not_established": "A complete successful autonomous shortlist through the final recovery code.",
+    "public_source_reads_are_tinyfish_proof": false
+  },
+  "planned_recovery_review": {
+    "implementation_status": "being_prepared_by_separate_worker",
+    "allowed_boundary": "Use only fresh same-operation Fetch HTML after a specifically typed transient Browser course-navigation failure, subject to complete required structure and transparent provenance.",
+    "must_preserve": [
+      "Unknown dynamic availability.",
+      "Explicit Browser failure and degraded health when recovery is used.",
+      "Failure on incomplete or contradictory source structure.",
+      "No saved receipt presented as fresh data.",
+      "No new paid replacement session or automatic allowance reset.",
+      "No partial comparison after a course retrieval failure."
+    ],
+    "live_verification_performed": false
+  },
+  "remaining_gates": [
+    "Finish and review local recovery, health, schema and UI verification against final source.",
+    "Recheck current source-access instructions, including robots when available; retain failures honestly.",
+    "Separately authorize and price any new bounded TinyFish test before a real successful multi-tool conversation and final health check.",
+    "Synchronize documentation with final source and verified outcomes, then recheck clean installation and public links.",
+    "Finish the demo and promotion package; obtain applicable authority before publication and verify actual portal requirements.",
+    "Restore the approved in-app browser surface for authenticated brief and final visual interaction checks. The coordinator reported no available browser surface on 11 November. No alternate browser automation was used by this review.",
+    "Recheck current rules, eligibility, original-work rationale, account state, deadline and daily submission ledger.",
+    "Prepare the real form only after readiness review; leave its final prize-entry click to the owner and record target-side confirmation afterward."
+  ],
+  "licence": "unselected; no licence chosen or invented as a mandatory brief condition",
+  "publication_or_outreach_performed": false,
+  "submitted": false,
+  "coordinator_followup": {
+    "checked_at": "2026-11-11T14:24:45.661340+00:00",
+    "method": "restored in-app browser, visible official pages",
+    "robots": "robots.txt read successfully; no disallow for /course-search or /courses/. Earlier reader/HTTP failures remain separate observations.",
+    "brief": "Current authenticated Site to MCP brief matches the saved numbered requirements and criteria; claimed, five builds submitted.",
+    "rulebook": "Current deadline Tue17Nov11:59PM PT; individual original work; LinkedIn tagging TinyFish and Discord showcase required; X globally optional; submissions final.",
+    "limits": "Robots is not a general licence or proof of TinyFish raw HTML panel completeness. Portal form and membership still require final review."
+  }
+}

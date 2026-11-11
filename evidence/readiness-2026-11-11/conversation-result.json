@@ -1,0 +1,20 @@
+{
+  "kind": "genuine_autonomous_mcp_conversation",
+  "checked_at": "2026-11-11T14:39:37.539058+00:00",
+  "client_exit_code": 0,
+  "client": "Codex CLI0.167.0-alpha.4.1",
+  "tools": [
+    "search_courses",
+    "inspect_course",
+    "compare_courses"
+  ],
+  "all_tool_results_ok": true,
+  "course_retrieval_modes": [
+    "browser_expanded",
+    "browser_expanded"
+  ],
+  "automatic_retry": false,
+  "historical_failed_conversations_unchanged": true,
+  "raw_private_trace_published": false,
+  "transcript": "../conversations/candidate-2026-11-11/MCP-CONVERSATION.md"
+}

@@ -1,0 +1,51 @@
+{
+  "ok": true,
+  "data": {
+    "topic": "quasar marmalade xenobotany",
+    "study_mode": null,
+    "source_url": "https://www.pace.cam.ac.uk/course-search?search_api_fulltext=quasar+marmalade+xenobotany&field_subject_categories=All&field_course_type=All&field_method=All",
+    "checked_at": "2026-11-11T14:43:09.295Z",
+    "courses": [],
+    "pagination": {
+      "page": 0,
+      "page_size": 15,
+      "total_results": 0,
+      "returned": 0,
+      "omitted_on_page": 0,
+      "next_page": null,
+      "catalogue_complete": true
+    },
+    "evidence": [
+      {
+        "id": "92c8bb25-7775-4117-a377-d7c070212938",
+        "endpoint": "agent",
+        "source_url": "https://www.pace.cam.ac.uk/course-search?search_api_fulltext=quasar+marmalade+xenobotany",
+        "checked_at": "2026-11-11T14:43:04.859Z",
+        "sha256": "6b471baa8c8f9216aedfb7c5c957c6384808aa0b15efa80958da6601018ca095",
+        "run_id": "033e137d-aeda-4fbe-ac75-d52a0479bb72",
+        "session_id": null,
+        "steps": 6,
+        "reserved_usd": 0.384,
+        "estimated_usd": 0.096,
+        "fresh": true
+      },
+      {
+        "id": "b31c04e4-4e8f-4e95-8a66-ea99f3719f3d",
+        "endpoint": "fetch",
+        "source_url": "https://www.pace.cam.ac.uk/course-search?search_api_fulltext=quasar+marmalade+xenobotany&field_subject_categories=All&field_course_type=All&field_method=All",
+        "checked_at": "2026-11-11T14:43:09.280Z",
+        "sha256": "a1f6d0196f1d9bcec4f3b05a1f2b701b859deb05ae5f4e5a8c3e7e573f0caaba",
+        "run_id": null,
+        "session_id": null,
+        "steps": null,
+        "reserved_usd": 0,
+        "estimated_usd": 0,
+        "fresh": true
+      }
+    ],
+    "warnings": [
+      "Catalogue rows can represent different offerings of the same course; repeated ids refer to the same course page.",
+      "Search returns a bounded source page. Inspect each course before relying on fees, application windows or teaching commitments."
+    ]
+  }
+}

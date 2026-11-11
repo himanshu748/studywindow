@@ -1,6 +1,7 @@
 import { z } from 'zod';
 import { BROWSER_RESERVATION, RESERVED_PER_RUN } from './budget.js';
 import { checkCancelled, StudyError } from './errors.js';
+import { parseFetchTier, type FetchPricingTier } from './config.js';
 
 export type PricingEndpoint = 'agent' | 'browser' | 'fetch';
 export type PricingMetadata = {
@@ -10,6 +11,8 @@ export type PricingMetadata = {
   per: 'step' | 'minute' | 'url';
   checked_at: string;
   rates_as_of: string;
+  meter_label: string;
+  fetch_tier?: FetchPricingTier;
 };
 export interface PricingGuard {
   ensure(endpoint: PricingEndpoint, signal?: AbortSignal): Promise<PricingMetadata>;
@@ -103,7 +106,13 @@ async function boundedBody(
 }
 
 /** Verifies current provider prices before billable work; the cached wallet balance stays private. */
-export function createPricingGuard(key: string, request: typeof fetch = fetch): PricingGuard {
+export function createPricingGuard(
+  key: string,
+  request: typeof fetch = fetch,
+  configuredFetchTier?: FetchPricingTier,
+): PricingGuard {
+  // Account tier is explicit operator configuration; wallet prices never choose it for us.
+  const fetchTier = parseFetchTier(configuredFetchTier);
   let cached: Snapshot | undefined;
 
   async function snapshot(caller?: AbortSignal): Promise<Snapshot> {
@@ -197,12 +206,15 @@ export function createPricingGuard(key: string, request: typeof fetch = fetch): 
       const current = await snapshot(signal);
       checkCancelled(signal);
       const contract = contracts[endpoint];
+      const label =
+        endpoint === 'fetch' && fetchTier !== undefined
+          ? fetchTier === 'hobby'
+            ? 'TinyFish Fetch (Hobby)'
+            : 'TinyFish Fetch (Builder)'
+          : contract.label;
       const meters = current.wallet.rates.meters.filter(
         (meter) =>
-          typeof meter === 'object' &&
-          meter !== null &&
-          'label' in meter &&
-          meter.label === contract.label,
+          typeof meter === 'object' && meter !== null && 'label' in meter && meter.label === label,
       );
       if (meters.length !== 1)
         throw new StudyError(
@@ -232,6 +244,8 @@ export function createPricingGuard(key: string, request: typeof fetch = fetch): 
         per: contract.per,
         checked_at: new Date(current.checkedAt).toISOString(),
         rates_as_of: current.wallet.rates.as_of,
+        meter_label: label,
+        ...(endpoint === 'fetch' && fetchTier !== undefined ? { fetch_tier: fetchTier } : {}),
       };
     },
   };

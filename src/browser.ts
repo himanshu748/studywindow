@@ -6,7 +6,7 @@ import { join } from 'node:path';
 import type { Config } from './config.js';
 import { Budget, BROWSER_RESERVATION } from './budget.js';
 import { ORIGIN, courseUrl, validateCatalogueUrl } from './urls.js';
-import { StudyError, checkCancelled } from './errors.js';
+import { BrowserNavigationError, StudyError, checkCancelled } from './errors.js';
 import { RawCourse } from './extract.js';
 import { createPricingGuard } from './pricing.js';
 import { Receipt, type ReceiptData } from './schemas.js';
@@ -329,6 +329,15 @@ export async function expandCourseWithBrowser(
         'Browser work exceeded the 120-second bound. Session termination was attempted.',
       );
     if (error instanceof StudyError) throw error;
+    if (stage === 'navigate_course' && error instanceof ExhaustedCourseNavigation)
+      throw new BrowserNavigationError({
+        stage: 'navigate_course',
+        source_url: url,
+        network_code: error.networkCode,
+        checked_at: new Date().toISOString(),
+        session_id: sessionId ?? null,
+        attempts: 3,
+      });
     if (['validate_course', 'expand_dates', 'expand_information', 'read_dom'].includes(stage)) {
       throw new StudyError(
         'SITE_CHANGED',
@@ -395,6 +404,25 @@ export async function readSessionBody(response: Response): Promise<string> {
   return Buffer.concat(chunks).toString('utf8');
 }
 
+function transientNavigationCode(error: unknown) {
+  if (!(error instanceof Error)) return undefined;
+  const codes = [...error.message.matchAll(/net::(ERR_[A-Z_]+)\b/g)].map((match) => match[1]);
+  if (codes.length !== 1) return undefined;
+  const code = codes[0];
+  if (
+    code === 'ERR_EMPTY_RESPONSE' ||
+    code === 'ERR_CONNECTION_CLOSED' ||
+    code === 'ERR_CONNECTION_RESET' ||
+    code === 'ERR_NETWORK_CHANGED'
+  )
+    return code;
+  return undefined;
+}
+class ExhaustedCourseNavigation extends Error {
+  constructor(readonly networkCode: NonNullable<ReturnType<typeof transientNavigationCode>>) {
+    super(`Public course navigation exhausted three same-session attempts: net::${networkCode}.`);
+  }
+}
 /** Retry only transient, read-only document navigation within the SAME allocated session. */
 export async function navigatePublicCourse(
   page: Pick<Page, 'goto'>,
@@ -408,14 +436,9 @@ export async function navigatePublicCourse(
       return await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 20000 });
     } catch (error) {
       checkCancelled(signal);
-      const message = error instanceof Error ? error.message : '';
-      if (
-        attempt === 2 ||
-        !/net::ERR_(?:EMPTY_RESPONSE|CONNECTION_CLOSED|CONNECTION_RESET|NETWORK_CHANGED)\b/.test(
-          message,
-        )
-      )
-        throw error;
+      const networkCode = transientNavigationCode(error);
+      if (!networkCode) throw error;
+      if (attempt === 2) throw new ExhaustedCourseNavigation(networkCode);
       await new Promise<void>((resolve, reject) => {
         const abort = () => {
           clearTimeout(timer);

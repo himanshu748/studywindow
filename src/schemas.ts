@@ -120,6 +120,31 @@ export const Offering = z.object({
   missing_fields: z.array(z.string()),
   conflicts: z.array(z.string()),
 });
+export const BrowserNavigationFailure = z
+  .object({
+    stage: z.literal('navigate_course'),
+    source_url: z.url(),
+    network_code: z.enum([
+      'ERR_EMPTY_RESPONSE',
+      'ERR_CONNECTION_CLOSED',
+      'ERR_CONNECTION_RESET',
+      'ERR_NETWORK_CHANGED',
+    ]),
+    checked_at: z.iso.datetime(),
+    session_id: z
+      .string()
+      .regex(/^(?:br|tf)-[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/)
+      .nullable(),
+    attempts: z.literal(3),
+  })
+  .strict();
+export const CourseRetrieval = z.discriminatedUnion('mode', [
+  z.object({ mode: z.literal('browser_expanded') }),
+  z.object({
+    mode: z.literal('fresh_fetch_fallback'),
+    browser_failure: BrowserNavigationFailure,
+  }),
+]);
 export const Course = z.object({
   id: z.string(),
   title: z.string().min(1),
@@ -136,6 +161,8 @@ export const Course = z.object({
   missing_fields: z.array(z.string()),
   warnings: z.array(z.string()),
   evidence: z.array(Receipt).min(1),
+  // Optional so genuine historical observations retain their original schema and evidence.
+  retrieval: CourseRetrieval.optional(),
 });
 export const SearchOutput = z.object({
   topic: z.string(),
@@ -202,9 +229,9 @@ export const ComparisonOutput = z.object({
   caveats: z.array(z.string()),
 });
 export const HealthOutput = z.object({
-  status: z.literal('healthy'),
+  status: z.enum(['healthy', 'degraded']),
   checked_at: z.iso.datetime(),
-  checks: z.array(z.object({ name: z.string(), passed: z.literal(true), detail: z.string() })),
+  checks: z.array(z.object({ name: z.string(), passed: z.boolean(), detail: z.string() })),
   evidence: z.array(Receipt),
   coverage: z.string(),
 });

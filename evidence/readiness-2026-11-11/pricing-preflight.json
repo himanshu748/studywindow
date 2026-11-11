@@ -1,0 +1,37 @@
+{
+  "kind": "authorized_rate_preflight",
+  "checked_at": "2026-11-11T14:30:45.341Z",
+  "verified_account_tier": "hobby",
+  "rates": [
+    {
+      "endpoint": "agent",
+      "currency": "USD",
+      "unit_amount_usd": 0.016,
+      "per": "step",
+      "checked_at": "2026-11-11T14:30:45.339Z",
+      "rates_as_of": "2026-11-11T14:21:28.235Z",
+      "meter_label": "TinyFish Agent"
+    },
+    {
+      "endpoint": "browser",
+      "currency": "USD",
+      "unit_amount_usd": 0.002,
+      "per": "minute",
+      "checked_at": "2026-11-11T14:30:45.339Z",
+      "rates_as_of": "2026-11-11T14:21:28.235Z",
+      "meter_label": "TinyFish Browser"
+    },
+    {
+      "endpoint": "fetch",
+      "currency": "USD",
+      "unit_amount_usd": 0,
+      "per": "url",
+      "checked_at": "2026-11-11T14:30:45.339Z",
+      "rates_as_of": "2026-11-11T14:21:28.235Z",
+      "meter_label": "TinyFish Fetch (Hobby)",
+      "fetch_tier": "hobby"
+    }
+  ],
+  "account_balance_excluded": true,
+  "billable_work_started": false
+}

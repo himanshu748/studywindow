@@ -1,0 +1,12 @@
+Clean local candidate snapshot; not a Git clone or live provider proof.
+cwd: /Users/himanshujha/Documents/Codex/2026-11-03/files-pasted-by-the-user-build/work/studywindow-final-candidate-20261111
+started_at: 2026-11-11T14:36:33.061877+00:00
+STUDYWINDOW_LIVE=0; API key/env file/tier unset; isolated offline state.
+
+$ node --check demo/app.js
+
+exit_code: 0
+$ node --check demo/landing.js
+
+exit_code: 0
+finished_at: 2026-11-11T14:36:33.103833+00:00

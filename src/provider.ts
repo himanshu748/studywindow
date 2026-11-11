@@ -53,7 +53,7 @@ export class TinyFish implements WebProvider {
     private request: typeof fetch = fetch,
   ) {
     this.budget = new Budget(config.stateDir);
-    this.pricing = createPricingGuard(config.key, request);
+    this.pricing = createPricingGuard(config.key, request, config.fetchTier);
     this.expandCourse = (url, panels, signal) => {
       this.enabled();
       return expandCourseWithBrowser(this.config, this.budget, url, panels, signal, this.pricing);

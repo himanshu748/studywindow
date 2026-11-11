@@ -3,14 +3,14 @@ import { join } from 'node:path';
 import { randomUUID } from 'node:crypto';
 import { StudyError } from './errors.js';
 import { z } from 'zod';
-// Original $5 plus approved $0.50 and $0.30 extensions; retain every prior reservation.
-// The latest grant permits one new Agent run, three Browser sessions and four Fetch URLs.
-export const MAX_USD = 5.8,
-  MAX_AGENT_RUNS = 17,
+// Original $5 plus approved $0.50, $0.30 and 11 Nov $1 supplements; retain prior reservations.
+// The finite 11 Nov batch adds at most two 20-step Agent runs, four Browser sessions and seven Fetch URLs.
+export const MAX_USD = 6.8,
+  MAX_AGENT_RUNS = 19,
   STEP_CAP = 20,
   RESERVED_PER_RUN = 0.384,
-  MAX_FETCH_URLS = 47,
-  MAX_BROWSER_SESSIONS = 28,
+  MAX_FETCH_URLS = 54,
+  MAX_BROWSER_SESSIONS = 32,
   BROWSER_RESERVATION = 0.01;
 const Ledger = z.object({
   version: z.literal(1),

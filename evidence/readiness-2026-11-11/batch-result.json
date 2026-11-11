@@ -1,0 +1,25 @@
+{
+  "kind": "authorized_one_batch_complete",
+  "checked_at": "2026-11-11T14:46:01.471Z",
+  "new_operations": {
+    "agent": 2,
+    "browser": 4,
+    "fetch_urls": 7
+  },
+  "cumulative_counts": {
+    "agent": 19,
+    "browser": 32,
+    "fetch_urls": 54
+  },
+  "new_reserved_usd": 0.808,
+  "cumulative_reserved_usd": 6.592,
+  "reservation_is_not_settled_charge": true,
+  "active_operations": 0,
+  "billable_calls_halted": true,
+  "fetch_cap_exhausted": true,
+  "historical_reservation_entries_unchanged": true,
+  "other_bounty_ledgers_not_modified": true,
+  "all_planned_checks_passed": true,
+  "live_recovery_fallback_exercised": false,
+  "automatic_repeat": false
+}

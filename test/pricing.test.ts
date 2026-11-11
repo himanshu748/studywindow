@@ -3,6 +3,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createPricingGuard } from '../src/pricing.js';
 import { BROWSER_RESERVATION, RESERVED_PER_RUN } from '../src/budget.js';
+import type { FetchPricingTier } from '../src/config.js';
 
 const key = 'offline-pricing-placeholder-key';
 const code = (expected: string) => (error: unknown) => {
@@ -35,6 +36,147 @@ function response(value: unknown, status = 200) {
     headers: { 'Content-Type': 'application/json' },
   });
 }
+function tierWallet() {
+  const data = wallet();
+  data.rates.meters[2]!.label = 'TinyFish Fetch (Hobby)';
+  data.rates.meters.push({
+    label: 'TinyFish Fetch (Builder)',
+    unit_amount: '0.001',
+    currency: 'USD',
+    per: 'url',
+  });
+  return data;
+}
+
+test('tier-specific meters never imply an account tier when the operator omitted it', async () => {
+  for (const data of [tierWallet(), { ...wallet(), rates: { ...wallet().rates, meters: [] } }])
+    await assert.rejects(
+      createPricingGuard(key, async () => response(data)).ensure('fetch'),
+      code('PROVIDER_FAILURE'),
+    );
+  const data = tierWallet();
+  data.rates.meters.at(-1)!.unit_amount = '0';
+  await assert.rejects(
+    createPricingGuard(key, async () => response(data)).ensure('fetch'),
+    code('PROVIDER_FAILURE'),
+  );
+});
+
+test('explicit Hobby selects its exact meter and returns only safe tier provenance', async () => {
+  const guard = createPricingGuard(key, async () => response(tierWallet()), 'hobby');
+  const observed = await guard.ensure('fetch');
+  assert.equal(observed.unit_amount_usd, 0);
+  assert.equal(observed.meter_label, 'TinyFish Fetch (Hobby)');
+  assert.equal(observed.fetch_tier, 'hobby');
+  assert.doesNotMatch(JSON.stringify(observed), /available_balance|1\.23|offline-pricing/);
+  const agent = await guard.ensure('agent');
+  assert.equal(agent.meter_label, 'TinyFish Agent');
+  assert.equal(agent.fetch_tier, undefined);
+  assert.equal((await guard.ensure('browser')).unit_amount_usd, 0.002);
+});
+
+test('explicit Builder at its current nonzero price exceeds the unchanged zero Fetch ceiling', async () => {
+  const data = tierWallet();
+  // Neither a free Hobby meter nor an available generic free meter overrides explicit Builder.
+  data.rates.meters.push({
+    label: 'TinyFish Fetch',
+    unit_amount: '0',
+    currency: 'USD',
+    per: 'url',
+  });
+  await assert.rejects(
+    createPricingGuard(key, async () => response(data), 'builder').ensure('fetch'),
+    code('PRICING_CHANGED'),
+  );
+});
+
+test('selection ignores unrelated tier defects but never aliases or substitutes the selected meter', async () => {
+  const data = tierWallet();
+  data.rates.meters.at(-1)!.unit_amount = 'NaN';
+  data.rates.meters.push({ ...data.rates.meters.at(-1)! });
+  data.rates.meters.push({
+    label: 'TinyFish Fetch',
+    unit_amount: '9',
+    currency: 'GBP',
+    per: 'step',
+  });
+  assert.equal(
+    (await createPricingGuard(key, async () => response(data), 'hobby').ensure('fetch'))
+      .unit_amount_usd,
+    0,
+  );
+  for (const label of [
+    'TinyFish Fetch',
+    'TinyFish Fetch(Hobby)',
+    'tinyfish fetch (hobby)',
+    'TinyFish Fetch (Builder)',
+  ]) {
+    const missing = tierWallet();
+    missing.rates.meters[2]!.label = label;
+    await assert.rejects(
+      createPricingGuard(key, async () => response(missing), 'hobby').ensure('fetch'),
+      code('PROVIDER_FAILURE'),
+    );
+  }
+  const generic = wallet();
+  generic.rates.meters.push({
+    label: 'TinyFish Fetch (Hobby)',
+    unit_amount: 'bad',
+    currency: 'GBP',
+    per: 'step',
+  });
+  const observed = await createPricingGuard(key, async () => response(generic)).ensure('fetch');
+  assert.equal(observed.meter_label, 'TinyFish Fetch');
+  assert.equal(observed.fetch_tier, undefined);
+});
+
+test('selected tier meters reject duplicates, malformed amounts, wrong units/currency and increases', async () => {
+  for (const tier of ['hobby', 'builder'] as const) {
+    for (const defect of [
+      'missing',
+      'duplicate',
+      'amount',
+      'unit',
+      'currency',
+      'increase',
+    ] as const) {
+      const data = tierWallet();
+      const index = tier === 'hobby' ? 2 : data.rates.meters.length - 1;
+      const meter = data.rates.meters[index]!;
+      meter.unit_amount = '0';
+      if (defect === 'missing') data.rates.meters.splice(index, 1);
+      if (defect === 'duplicate') data.rates.meters.push({ ...meter });
+      if (defect === 'amount') meter.unit_amount = 'NaN';
+      if (defect === 'unit') meter.per = 'minute';
+      if (defect === 'currency') meter.currency = 'GBP';
+      if (defect === 'increase') meter.unit_amount = '0.0001';
+      await assert.rejects(
+        createPricingGuard(key, async () => response(data), tier).ensure('fetch'),
+        code(defect === 'increase' ? 'PRICING_CHANGED' : 'PROVIDER_FAILURE'),
+      );
+    }
+    const free = tierWallet();
+    free.rates.meters[tier === 'hobby' ? 2 : free.rates.meters.length - 1]!.unit_amount = '0';
+    assert.equal(
+      (await createPricingGuard(key, async () => response(free), tier).ensure('fetch')).fetch_tier,
+      tier,
+    );
+  }
+});
+
+test('invalid runtime tier configuration fails before even a pricing request', () => {
+  let calls = 0;
+  const request: typeof fetch = async () => {
+    calls++;
+    return response(tierWallet());
+  };
+  for (const tier of ['', 'Hobby', 'free', 'auto', ' hobby ', null, 1])
+    assert.throws(
+      () => createPricingGuard(key, request, tier as FetchPricingTier),
+      code('INVALID_INPUT'),
+    );
+  assert.equal(calls, 0);
+});
 
 test('all supported endpoints verify USD rates and return only safe pricing metadata', async () => {
   let calls = 0;

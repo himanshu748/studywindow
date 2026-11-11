@@ -659,6 +659,25 @@ function offeringCard(offering) {
   if (conflicts) card.append(conflicts);
   return card;
 }
+function courseRetrievalNotice(course) {
+  if (course.retrieval?.mode !== 'fresh_fetch_fallback') return null;
+  const notice = el('aside', 'retrieval-notice');
+  notice.setAttribute('aria-label', 'Retrieval limitation');
+  notice.append(
+    el('strong', null, 'Read from fresh page HTML'),
+    el(
+      'p',
+      null,
+      'Browser navigation failed. These details came from a fresh Fetch of this same course page. Live availability could not be checked.',
+    ),
+    el(
+      'p',
+      'small-meta',
+      `Browser failure: ${course.retrieval.browser_failure.network_code} · ${timestamp(course.retrieval.browser_failure.checked_at)}`,
+    ),
+  );
+  return notice;
+}
 function renderCourse(course, saved = false) {
   markSectionSource('detail', saved);
   $('detail-section').hidden = false;
@@ -676,6 +695,8 @@ function renderCourse(course, saved = false) {
   );
   overview.append(time, sourceLink(course.url, 'Open Cambridge course page ↗'));
   container.append(overview);
+  const retrievalNotice = courseRetrievalNotice(course);
+  if (retrievalNotice) container.append(retrievalNotice);
   container.append(
     offeringTabs(
       course.offerings.map((o) => ({ label: date(o.start_date), value: o })),
@@ -749,6 +770,8 @@ function renderComparison(data, saved = false, input = null) {
       el('h3', null, course.title),
       sourceLink(course.url, 'Cambridge source ↗'),
     );
+    const retrievalNotice = courseRetrievalNotice(course);
+    if (retrievalNotice) card.append(retrievalNotice);
     const offerings = result.offerings.map((offering) => {
       const detail = course.offerings.find((o) => o.id === offering.offering_id);
       return {
@@ -764,7 +787,7 @@ function renderComparison(data, saved = false, input = null) {
           el(
             'span',
             null,
-            detail ? `${date(detail.start_date)} — ${date(detail.end_date)}` : 'Course offering',
+            detail ? `${date(detail.start_date)} to ${date(detail.end_date)}` : 'Course offering',
           ),
           badge(outcomeStatus(offering.outcome), outcomeLabels[offering.outcome]),
         );
@@ -854,10 +877,28 @@ function renderHealth(data, saved = false) {
       `${saved ? 'RECORDED CHECK' : 'LIVE CHECK'} · ${timestamp(data.checked_at)}`,
     ),
   );
+  if (data.status === 'degraded') {
+    const notice = el('aside', 'retrieval-notice');
+    notice.append(
+      el('strong', null, 'Source check needs attention'),
+      el(
+        'p',
+        null,
+        'Some source checks failed. Fresh page HTML may still be readable, but browser access and dynamic availability have not been confirmed.',
+      ),
+    );
+    container.append(notice);
+  }
   const checks = el('ul', 'health-checks');
   for (const check of data.checks || []) {
     const row = el('li');
-    row.append(el('strong', null, `✓ ${check.name}`), el('p', null, check.detail));
+    const passed = check.passed === true;
+    const label = passed ? 'Passed' : check.passed === false ? 'Failed' : 'Not verified';
+    row.className = passed ? 'check-passed' : 'check-failed';
+    row.append(
+      el('strong', null, `${label}: ${check.name.replaceAll('_', ' ')}`),
+      el('p', null, check.detail),
+    );
     checks.append(row);
   }
   container.append(
@@ -930,6 +971,8 @@ async function openSaved() {
       syncSelectionChecks();
       renderComparison(comparison.result.data, true, comparisonInput());
     }
+    const health = items.filter((i) => i.tool === 'health_check').at(-1);
+    if (health) renderHealth(health.result.data, true);
     showMessage(
       'Explore this recorded psychology shortlist. Open a recorded inspection or search for your own subject.',
       false,

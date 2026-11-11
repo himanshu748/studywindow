@@ -1,0 +1,30 @@
+Clean local candidate snapshot; not a Git clone or live provider proof.
+cwd: /Users/himanshujha/Documents/Codex/2026-11-03/files-pasted-by-the-user-build/work/studywindow-final-candidate-20261111
+started_at: 2026-11-11T14:36:31.380520+00:00
+STUDYWINDOW_LIVE=0; API key/env file/tier unset; isolated offline state.
+
+$ npm run verify:mcp
+
+> studywindow@0.1.0 verify:mcp
+> node dist/verify-mcp.js
+
+{
+  "kind": "offline_protocol_validation",
+  "passed": true,
+  "tools": [
+    "compare_courses",
+    "health_check",
+    "inspect_course",
+    "search_courses"
+  ],
+  "checks": [
+    "official stdio initialize and list",
+    "typed inputs and outputs advertised",
+    "all four real entry points reject disabled live retrieval",
+    "invalid limit rejected"
+  ],
+  "conversation_evidence": false
+}
+
+exit_code: 0
+finished_at: 2026-11-11T14:36:31.952690+00:00

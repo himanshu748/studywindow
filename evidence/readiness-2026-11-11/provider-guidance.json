@@ -1,0 +1,20 @@
+{
+  "kind": "sanitized_provider_guidance",
+  "recorded_date": "2026-11-11",
+  "support_reference": "T-1827",
+  "reply_received_at": "2026-11-08T08:22:41Z",
+  "source": "TinyFish Support reply read in the connected mailbox on 11 November 2026; private headers and raw correspondence excluded.",
+  "paraphrase": [
+    "Support reported both historical Browser workers started normally without worker errors; no new jobs were launched by support.",
+    "Support observed intermittent failed and successful Cambridge responses within seconds. The underlying source-side cause was not established.",
+    "Support recommended spacing ordinary requests and said the same page Fetch result can be used when Browser navigation fails."
+  ],
+  "scope": [
+    "Vendor recovery guidance, not independent root-cause evidence.",
+    "Does not prove the candidate implementation or a new live conversation succeeds.",
+    "Does not authorize new provider operations, spending, bypasses, publishing or bounty submission."
+  ],
+  "candidate_policy": "Use only fresh HTML already retrieved for the exact same course URL, after a typed transient Browser navigation failure. Require all supported fields and panels; keep dynamic availability unknown. Health must expose degraded Browser navigation. Never substitute saved data or fixtures.",
+  "live_candidate_verified": false,
+  "private_metadata_included": false
+}

@@ -1602,6 +1602,23 @@ summary:focus-visible,
   color: var(--muted);
   margin-top: 3px;
 }
+.retrieval-notice {
+  margin: 18px 0;
+  padding: 16px 18px;
+  border: 1px solid var(--rule);
+  border-left: 3px solid currentColor;
+  border-radius: 8px;
+  background: var(--surface);
+  font-size: 12px;
+  line-height: 1.6;
+}
+.retrieval-notice p {
+  margin: 6px 0 0;
+}
+.health-checks .check-failed {
+  border-left: 3px solid currentColor;
+  padding-left: 12px;
+}
 .app-footer {
   display: flex;
   justify-content: space-between;

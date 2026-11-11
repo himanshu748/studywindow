@@ -1,0 +1,141 @@
+{
+  "tool": "search_courses",
+  "input": {
+    "topic": "psychology",
+    "study_mode": "online",
+    "page": 0,
+    "limit": 15
+  },
+  "result": {
+    "ok": true,
+    "data": {
+      "topic": "psychology",
+      "study_mode": "online",
+      "source_url": "https://www.pace.cam.ac.uk/course-search?search_api_fulltext=psychology&field_subject_categories=All&field_course_type=All&field_method=31",
+      "checked_at": "2026-11-11T14:33:46.804Z",
+      "courses": [
+        {
+          "id": "undergraduate-award-certificate-cognitive-psychology",
+          "title": "Undergraduate award: Certificate in Cognitive Psychology",
+          "url": "https://www.pace.cam.ac.uk/courses/undergraduate-award-certificate-cognitive-psychology",
+          "start_date": "2026-10-09",
+          "end_date": "2027-06-09",
+          "date_quote": "09 Oct 2026 to 09 Jun 2027",
+          "study_mode": "Online learning",
+          "course_type": "Undergraduate courses"
+        },
+        {
+          "id": "undergraduate-award-certificate-sociology-politics-and-psychology",
+          "title": "Undergraduate award: Certificate in Sociology, Politics and Psychology",
+          "url": "https://www.pace.cam.ac.uk/courses/undergraduate-award-certificate-sociology-politics-and-psychology",
+          "start_date": "2026-10-09",
+          "end_date": "2027-06-09",
+          "date_quote": "09 Oct 2026 to 09 Jun 2027",
+          "study_mode": "Online learning",
+          "course_type": "Undergraduate courses"
+        },
+        {
+          "id": "introduction-cognitive-psychology-and-neuropsychology",
+          "title": "Introduction to Cognitive Psychology and Neuropsychology",
+          "url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology",
+          "start_date": "2026-10-26",
+          "end_date": "2026-12-13",
+          "date_quote": "26 Oct 2026 to 13 Dec 2026",
+          "study_mode": "Online learning",
+          "course_type": "Short online courses"
+        },
+        {
+          "id": "psychological-approaches-executive-coaching",
+          "title": "Psychological approaches for executive coaching",
+          "url": "https://www.pace.cam.ac.uk/courses/psychological-approaches-executive-coaching",
+          "start_date": "2027-01-11",
+          "end_date": "2027-02-28",
+          "date_quote": "11 Jan 2027 to 28 Feb 2027",
+          "study_mode": "Online learning",
+          "course_type": "Short online courses"
+        },
+        {
+          "id": "learning-and-memory-brain",
+          "title": "Learning and memory in the brain",
+          "url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain",
+          "start_date": "2027-01-11",
+          "end_date": "2027-02-28",
+          "date_quote": "11 Jan 2027 to 28 Feb 2027",
+          "study_mode": "Online learning",
+          "course_type": "Short online courses"
+        },
+        {
+          "id": "introduction-cognitive-psychology-and-neuropsychology",
+          "title": "Introduction to Cognitive Psychology and Neuropsychology",
+          "url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology",
+          "start_date": "2027-02-22",
+          "end_date": "2027-04-11",
+          "date_quote": "22 Feb 2027 to 11 Apr 2027",
+          "study_mode": "Online learning",
+          "course_type": "Short online courses"
+        },
+        {
+          "id": "learning-and-memory-brain",
+          "title": "Learning and memory in the brain",
+          "url": "https://www.pace.cam.ac.uk/courses/learning-and-memory-brain",
+          "start_date": "2027-04-12",
+          "end_date": "2027-05-30",
+          "date_quote": "12 Apr 2027 to 30 May 2027",
+          "study_mode": "Online learning",
+          "course_type": "Short online courses"
+        },
+        {
+          "id": "introduction-cognitive-psychology-and-neuropsychology",
+          "title": "Introduction to Cognitive Psychology and Neuropsychology",
+          "url": "https://www.pace.cam.ac.uk/courses/introduction-cognitive-psychology-and-neuropsychology",
+          "start_date": "2027-05-24",
+          "end_date": "2027-07-11",
+          "date_quote": "24 May 2027 to 11 Jul 2027",
+          "study_mode": "Online learning",
+          "course_type": "Short online courses"
+        }
+      ],
+      "pagination": {
+        "page": 0,
+        "page_size": 15,
+        "total_results": 8,
+        "returned": 8,
+        "omitted_on_page": 0,
+        "next_page": null,
+        "catalogue_complete": true
+      },
+      "evidence": [
+        {
+          "id": "57bc2f7d-2547-426e-a31a-9a9f8319f327",
+          "endpoint": "agent",
+          "source_url": "https://www.pace.cam.ac.uk/course-search?search_api_fulltext=psychology&field_method=31",
+          "checked_at": "2026-11-11T14:33:42.043Z",
+          "sha256": "9c07759e0645893976159dcd2864d2cd34552252ed93705d28ba03190e41dda3",
+          "run_id": "6474d475-9de2-41d6-9f9c-acc7ce49d97a",
+          "session_id": null,
+          "steps": 13,
+          "reserved_usd": 0.384,
+          "estimated_usd": 0.208,
+          "fresh": true
+        },
+        {
+          "id": "27c45c6c-b682-4a44-b61c-78eef22a7380",
+          "endpoint": "fetch",
+          "source_url": "https://www.pace.cam.ac.uk/course-search?search_api_fulltext=psychology&field_subject_categories=All&field_course_type=All&field_method=31",
+          "checked_at": "2026-11-11T14:33:46.777Z",
+          "sha256": "002211bf381b85d22554954ecc61bb0398e6684e6af0a86cc3828e8f93913dc0",
+          "run_id": null,
+          "session_id": null,
+          "steps": null,
+          "reserved_usd": 0,
+          "estimated_usd": 0,
+          "fresh": true
+        }
+      ],
+      "warnings": [
+        "Catalogue rows can represent different offerings of the same course; repeated ids refer to the same course page.",
+        "Search returns a bounded source page. Inspect each course before relying on fees, application windows or teaching commitments."
+      ]
+    }
+  }
+}

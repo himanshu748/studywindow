@@ -4,7 +4,11 @@ Find a continuing-education course that fits your interests, budget, application
 
 A course being online does not establish that it fits a working learner’s week. A future start date does not establish that applications are open. StudyWindow keeps those distinctions visible, alongside source links and retrieval receipts.
 
-> Local preview ready. Live search and inspection are verified; a complete autonomous comparison remains unverified because source navigation is intermittent. See the [verification record](evidence/VERIFICATION.md) before live use or submission.
+> Fresh verification passed on 11 November: autonomous search, inspection and comparison through MCP, a healthy source canary and a valid empty-result search. The entry is unsubmitted; promotion and final portal checks remain. See the [preparation record](docs/NOV12-READINESS.md) and [actual conversation](evidence/conversations/candidate-2026-11-11/MCP-CONVERSATION.md).
+
+[![Watch the StudyWindow walkthrough](media/studywindow-thumbnail.jpg)](media/studywindow-demo.mp4)
+
+[72-second walkthrough](media/studywindow-demo.mp4), silent and captioned. It uses actual product captures and a clearly labelled export of the genuine 11 November MCP conversation. Saved examples keep their original timestamps.
 
 This is an original local build for TinyFish Bounty Drop 002’s **Site to MCP** bounty. The implementation uses TinyFish **Agent**, **Fetch**, and **Browser** for substantive parts of the supported workflow: search interaction, fresh page evidence, and deterministic course-panel retrieval. Current verification, credit accounting, and claim/submission status belong in [the verification record](evidence/VERIFICATION.md); a build or a saved receipt alone is not proof that the complete live journey passed.
 
@@ -26,18 +30,19 @@ Open [the landing page](http://127.0.0.1:4387), then use **Explore a recorded ex
 
 `verify:mcp` connects a real SDK client over stdio, advertises the four schemas, and exercises disabled-live failure paths. It makes no TinyFish calls. It is a protocol test, **not** a model-driven conversation. Offline CI is configured for Node.js 22 and 24, but hosted jobs have not executed because of an account restriction. The recorded local checks are separate evidence; neither is a live-provider check.
 
-Keep the existing API key in a private file outside this directory, readable only by your account. The parser accepts unquoted `KEY=value` lines:
+Keep the existing API key in a private file outside this directory, readable only by your account. The parser accepts allowlisted, unquoted `KEY=value` lines; credentials remain server-side:
 
 ```dotenv
 TINYFISH_API_KEY=your-existing-key
 ```
 
-Do not put that real file in source control, a browser bundle, a screenshot, or an evidence package. Set its permissions to `0600`. Then explicitly enable live work in the server process:
+Do not put that real file in source control, a browser bundle, a screenshot, or an evidence package. Set its permissions to `0600`. Verify the account's current Fetch tier and quota before live use. The examples use an observed Hobby tier. `STUDYWINDOW_FETCH_TIER=hobby|builder` selects that exact wallet meter; it does not change the account tier. Omit it only for an account returning the older generic Fetch meter. The unchanged $0 Fetch ceiling blocks a paid Builder rate. Then explicitly enable live work in the server process:
 
 ```sh
 export STUDYWINDOW_ENV_FILE=/absolute/path/to/private/credentials.env
 export STUDYWINDOW_STATE_DIR=/absolute/path/to/private/studywindow/state
 export STUDYWINDOW_LIVE=1
+export STUDYWINDOW_FETCH_TIER=hobby
 npm run demo
 ```
 
@@ -68,7 +73,8 @@ Claude Desktop configuration:
       "env": {
         "STUDYWINDOW_ENV_FILE": "/absolute/path/to/private/credentials.env",
         "STUDYWINDOW_STATE_DIR": "/absolute/path/to/private/studywindow/state",
-        "STUDYWINDOW_LIVE": "1"
+        "STUDYWINDOW_LIVE": "1",
+        "STUDYWINDOW_FETCH_TIER": "hobby"
       }
     }
   }
@@ -87,28 +93,31 @@ tool_timeout_sec = 900
 STUDYWINDOW_ENV_FILE = "/absolute/path/to/private/credentials.env"
 STUDYWINDOW_STATE_DIR = "/absolute/path/to/private/studywindow/state"
 STUDYWINDOW_LIVE = "1"
+STUDYWINDOW_FETCH_TIER = "hobby"
 ```
 
 An example learner prompt is: “Find psychology courses at Cambridge PACE. Inspect promising options, then compare two with a GBP 500 tuition budget and six available study hours each week. Explain expired deadlines, conflicts, and missing schedule information.” This is a suggested prompt, not a claimed conversation transcript.
 
 ## Tools and cost limits
 
-| Tool              | Purpose                                                                     | Essential TinyFish work                                                              |
-| ----------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| `search_courses`  | Operate the catalogue search and study-mode filter; return one bounded page | One Agent run, followed by a fresh Fetch of the resulting page                       |
-| `inspect_course`  | Read offering dates, fees, deadline, requirements, and teaching evidence    | Fresh Fetch plus one bounded isolated Browser session opening the lazy course panels |
-| `compare_courses` | Retrieve two or three distinct courses and compare their practical fit      | Fresh Fetch and Browser inspection of every course; deterministic local comparison   |
-| `health_check`    | Detect missing filter, listing, or course-detail contracts                  | Fresh catalogue Fetch plus a live detail canary using Fetch and Browser              |
+| Tool              | Purpose                                                                     | Essential TinyFish work                                                                                                 |
+| ----------------- | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| `search_courses`  | Operate the catalogue search and study-mode filter; return one bounded page | One Agent run, followed by a fresh Fetch of the resulting page                                                          |
+| `inspect_course`  | Read offering dates, fees, deadline, requirements, and teaching evidence    | Fresh Fetch plus one bounded Browser session; strictly checked same-page HTML recovery for transient navigation failure |
+| `compare_courses` | Retrieve two or three distinct courses and compare their practical fit      | Fresh retrieval of every course with explicit transport provenance; deterministic local comparison                      |
+| `health_check`    | Detect missing filter, listing, or course-detail contracts                  | Fresh catalogue Fetch plus a live detail canary using Fetch and Browser                                                 |
 
 See [typed contracts and examples](docs/TOOLS.md) and [architecture and trust boundaries](docs/ARCHITECTURE.md).
 
+If Browser navigation ends in a recognized transient network error, the candidate can read the same course's already-retrieved fresh Fetch HTML only when all required panels and fields are present. It returns `retrieval.mode: fresh_fetch_fallback`, records the Browser failure and leaves dynamic availability unknown. It does not make another Fetch, substitute saved data, or recover from access, authentication, TLS, cancellation or structural failures. The health check reports this condition as `degraded`. This recovery has offline tests. The fresh 11 November batch succeeded through normal Browser expansion and did not exercise the recovery branch live.
+
 After a local adapter failure, an explicit `resume_agent_run_id` can continue completed search work from the same private build within one hour. It verifies the original run against its retained receipt and accounting, starts no new Agent run, and still requires fresh Fetch HTML. The original Agent timestamp remains visible with a continuation warning. The normal search path never switches to this recovery mode automatically.
 
-The build allowance is **at most $5.80 of existing credits**: the original $5 plus explicitly approved extensions of $0.50 on 4 November and $0.30 on 5 November for separate bounded conversation attempts. The latest grant permits one additional Agent run, three Browser sessions and four Fetch URLs; all counts share the original ledger. All earlier reservations remain counted. After explicit approval to raise the per-run bound, new Agent requests enforce `max_steps: 20` and a 150-second provider duration cap. The durable ledger conservatively reserves **24 billed steps × $0.016 = $0.384 per new run**, allowing for observed accounting overhead. The **17-run ceiling is a secondary limit**; the aggregate $5.80 reservation check can stop work earlier. Earlier lower-cap reservations, including the pilot and failed attempts, retain their recorded amounts and are not reset or recalculated. Authentication failures, cancellations, timeouts, and failed runs retain their reservations. Unexpected accounting above 24 steps blocks further Agent calls. Runs are never retried blindly.
+The build allowance is **at most $6.80 of existing credits**. The original $5 plus $0.50 and $0.30 extensions were consumed under the preserved $5.80 controls. On 11 November the owner approved another $1 for one finite validation batch: at most two new Agent runs, four Browser sessions and seven Fetch URLs. The cumulative caps are 19 Agent runs, 32 Browser sessions and 54 Fetch URLs; all counts share the original ledger. This is not permission to repeat a failed batch or spend an unused remainder later. All earlier reservations remain counted. After explicit approval to raise the per-run bound, new Agent requests enforce `max_steps: 20` and a 150-second provider duration cap. The durable ledger conservatively reserves **24 billed steps × $0.016 = $0.384 per new run**, allowing for observed accounting overhead. The **19-run ceiling is a secondary limit**; the aggregate $6.80 reservation check can stop work earlier. Earlier lower-cap reservations, including the pilot and failed attempts, retain their recorded amounts and are not reset or recalculated. Authentication failures, cancellations, timeouts, and failed runs retain their reservations. Unexpected accounting above 24 steps blocks further Agent calls. Runs are never retried blindly.
 
-Course inspection uses isolated TinyFish Browser sessions at the observed $0.002-per-minute rate. Each session reserves **$0.01**, with at most **28 sessions**, a 120-second operation bound, and a 30-second provider inactivity timeout. Agent and Browser reservations share the same aggregate **$5.80 ceiling**. Connections are closed and session deletion is attempted in `finally`; reservations remain counted even after failure or cancellation. Earlier failed Agent and Browser experiments retain their original usage. The configured Browser uses the documented direct connection option (`proxy_config.enabled: false`); earlier proxy failures remain preserved as diagnostics rather than being hidden.
+Course inspection uses isolated TinyFish Browser sessions at the observed $0.002-per-minute rate. Each session reserves **$0.01**, with at most **32 sessions**, a 120-second operation bound, and a 30-second provider inactivity timeout. Agent and Browser reservations share the same aggregate **$6.80 ceiling**. Connections are closed and session deletion is attempted in `finally`; reservations remain counted even after failure or cancellation. Earlier failed Agent and Browser experiments retain their original usage. The configured Browser uses the documented direct connection option (`proxy_config.enabled: false`); earlier proxy failures remain preserved as diagnostics rather than being hidden.
 
-Fetch uses `ttl: 0` and is free under [TinyFish’s pricing observed for this build](https://www.tinyfish.ai/pricing); the application still caps it at **47 URLs**. Two provider operations may be active at once. These application limits are separate from TinyFish’s account quotas. They do not create or enable billing, auto-reload, or new credits. Reserved cost is a conservative ceiling; step-based estimates and observed wallet changes must be reported separately.
+Fetch uses `ttl: 0` and is free under [TinyFish’s pricing observed for this build](https://www.tinyfish.ai/pricing); the application still caps it at **54 URLs**. Two provider operations may be active at once. These application limits are separate from TinyFish’s account quotas. They do not create or enable billing, auto-reload, or new credits. Reserved cost is a conservative ceiling; step-based estimates and observed wallet changes must be reported separately.
 
 ## Supported coverage and honest limits
 

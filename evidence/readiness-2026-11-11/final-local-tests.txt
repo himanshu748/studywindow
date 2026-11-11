@@ -1,0 +1,773 @@
+Clean local candidate snapshot; not a Git clone or live provider proof.
+cwd: /Users/himanshujha/Documents/Codex/2026-11-03/files-pasted-by-the-user-build/work/studywindow-final-candidate-20261111
+started_at: 2026-11-11T14:36:21.674263+00:00
+STUDYWINDOW_LIVE=0; API key/env file/tier unset; isolated offline state.
+
+$ npm test
+
+> studywindow@0.1.0 test
+> tsx --test test/*.test.ts
+
+TAP version 13
+# Subtest: Browser request policy restricts origin, methods, navigation paths and private networks
+ok 1 - Browser request policy restricts origin, methods, navigation paths and private networks
+  ---
+  duration_ms: 0.761208
+  ...
+# Subtest: Browser catalogue navigation rejects unsupported query keys
+ok 2 - Browser catalogue navigation rejects unsupported query keys
+  ---
+  duration_ms: 0.096291
+  ...
+# Subtest: only the verified course-status POST may load read-only availability
+ok 3 - only the verified course-status POST may load read-only availability
+  ---
+  duration_ms: 0.30425
+  ...
+# Subtest: CDP URL validation accepts vendor WSS only and excludes credentials or fragment
+ok 4 - CDP URL validation accepts vendor WSS only and excludes credentials or fragment
+  ---
+  duration_ms: 0.190625
+  ...
+# Subtest: isolated Browser opens bounded controls, returns DOM observations and terminates its session
+ok 5 - isolated Browser opens bounded controls, returns DOM observations and terminates its session
+  ---
+  duration_ms: 24.030209
+  ...
+# Subtest: installed route guard checks POST data before allowing course-status requests
+ok 6 - installed route guard checks POST data before allowing course-status requests
+  ---
+  duration_ms: 7.726458
+  ...
+# Subtest: blocked, missing and changed course structure do not return success and still delete the session
+ok 7 - blocked, missing and changed course structure do not return success and still delete the session
+  ---
+  duration_ms: 27.992709
+  ...
+# Subtest: only exhausted known transient course navigation emits safe typed recovery metadata
+ok 8 - only exhausted known transient course navigation emits safe typed recovery metadata
+  ---
+  duration_ms: 2526.039584
+  ...
+# Subtest: TLS, unknown or mixed network failures and post-navigation errors cannot become recovery signals
+ok 9 - TLS, unknown or mixed network failures and post-navigation errors cannot become recovery signals
+  ---
+  duration_ms: 22.916417
+  ...
+# Subtest: a create-session network error cannot be reclassified as failed course navigation
+ok 10 - a create-session network error cannot be reclassified as failed course navigation
+  ---
+  duration_ms: 2.342541
+  ...
+# Subtest: invalid expanded DOM and unexpected navigation do not trigger an Agent or new Browser session
+ok 11 - invalid expanded DOM and unexpected navigation do not trigger an Agent or new Browser session
+  ---
+  duration_ms: 7.038292
+  ...
+# Subtest: after successful pricing verification, Browser start failures are classified without retries or refunds
+ok 12 - after successful pricing verification, Browser start failures are classified without retries or refunds
+  ---
+  duration_ms: 12.326917
+  ...
+# Subtest: failed Browser pricing preflight creates no session and spends no reservation
+ok 13 - failed Browser pricing preflight creates no session and spends no reservation
+  ---
+  duration_ms: 3.970625
+  ...
+# Subtest: client cancellation before Browser start performs no network request or reservation
+ok 14 - client cancellation before Browser start performs no network request or reservation
+  ---
+  duration_ms: 0.787958
+  ...
+# Subtest: cancellation of an allocated session closes CDP, deletes remotely and preserves its reservation
+ok 15 - cancellation of an allocated session closes CDP, deletes remotely and preserves its reservation
+  ---
+  duration_ms: 2.986416
+  ...
+# Subtest: Browser session cap and aggregate Agent/Browser reservation remain durable
+ok 16 - Browser session cap and aggregate Agent/Browser reservation remain durable
+  ---
+  duration_ms: 52.028083
+  ...
+# Subtest: an accounting halt blocks all new billable Browser sessions
+ok 17 - an accounting halt blocks all new billable Browser sessions
+  ---
+  duration_ms: 3.294541
+  ...
+# Subtest: session envelope is bounded while streaming even when Content-Length is absent
+ok 18 - session envelope is bounded while streaming even when Content-Length is absent
+  ---
+  duration_ms: 4.857541
+  ...
+# Subtest: practical fit preserves explicit unknown eligibility without guaranteeing admission
+ok 19 - practical fit preserves explicit unknown eligibility without guaranteeing admission
+  ---
+  duration_ms: 72.139208
+  ...
+# Subtest: missing fee cannot produce an affordability match
+ok 20 - missing fee cannot produce an affordability match
+  ---
+  duration_ms: 0.777625
+  ...
+# Subtest: home and overseas fee categories are never inferred or swapped
+ok 21 - home and overseas fee categories are never inferred or swapped
+  ---
+  duration_ms: 1.75225
+  ...
+# Subtest: foreign budget currency remains unknown without invented exchange rates
+ok 22 - foreign budget currency remains unknown without invented exchange rates
+  ---
+  duration_ms: 0.288333
+  ...
+# Subtest: annual or unknown fee bases cannot assert total affordability
+ok 23 - annual or unknown fee bases cannot assert total affordability
+  ---
+  duration_ms: 4.540709
+  ...
+# Subtest: conflicting applicable fees cannot silently choose the cheaper one
+ok 24 - conflicting applicable fees cannot silently choose the cheaper one
+  ---
+  duration_ms: 0.478166
+  ...
+# Subtest: expired, today, and missing deadlines are distinct
+ok 25 - expired, today, and missing deadlines are distinct
+  ---
+  duration_ms: 0.751167
+  ...
+# Subtest: deadline calculation follows London calendar date, including summer-time midnight
+ok 26 - deadline calculation follows London calendar date, including summer-time midnight
+  ---
+  duration_ms: 0.349917
+  ...
+# Subtest: closed status overrides future deadline and date
+ok 27 - closed status overrides future deadline and date
+  ---
+  duration_ms: 0.363167
+  ...
+# Subtest: future dates without open status remain uncertain
+ok 28 - future dates without open status remain uncertain
+  ---
+  duration_ms: 0.374583
+  ...
+# Subtest: started and ended offerings do not assume late entry
+ok 29 - started and ended offerings do not assume late entry
+  ---
+  duration_ms: 0.411
+  ...
+# Subtest: reversed source dates and explicit conflicts require resolution
+ok 30 - reversed source dates and explicit conflicts require resolution
+  ---
+  duration_ms: 0.58125
+  ...
+# Subtest: unknown teaching data cannot infer compatibility from online mode
+ok 31 - unknown teaching data cannot infer compatibility from online mode
+  ---
+  duration_ms: 0.219667
+  ...
+# Subtest: workload range distinguishes certain excess from possible excess
+ok 32 - workload range distinguishes certain excess from possible excess
+  ---
+  duration_ms: 0.596333
+  ...
+# Subtest: published unavailable weekday conflicts; incomplete noncollision remains unknown
+ok 33 - published unavailable weekday conflicts; incomplete noncollision remains unknown
+  ---
+  duration_ms: 0.806083
+  ...
+# Subtest: earliest start and latest end constraints are inclusive and enforced
+ok 34 - earliest start and latest end constraints are inclusive and enforced
+  ---
+  duration_ms: 0.458834
+  ...
+# Subtest: invalid availability window is rejected
+ok 35 - invalid availability window is rejected
+  ---
+  duration_ms: 0.211083
+  ...
+# Subtest: mode matches supported labels only and remains independent of schedule
+ok 36 - mode matches supported labels only and remains independent of schedule
+  ---
+  duration_ms: 0.660208
+  ...
+# Subtest: multiple offerings retain distinct outcomes; a later feasible offering may fit
+ok 37 - multiple offerings retain distinct outcomes; a later feasible offering may fit
+  ---
+  duration_ms: 0.298458
+  ...
+# Subtest: hostile page instructions remain quoted data and never change comparison rules
+ok 38 - hostile page instructions remain quoted data and never change comparison rules
+  ---
+  duration_ms: 0.199917
+  ...
+# Subtest: Fetch tier stays absent by default and accepts only explicit supported operator values
+ok 39 - Fetch tier stays absent by default and accepts only explicit supported operator values
+  ---
+  duration_ms: 0.504375
+  ...
+# Subtest: env-file Fetch tier follows existing environment precedence and fails closed when invalid
+ok 40 - env-file Fetch tier follows existing environment precedence and fails closed when invalid
+  ---
+  duration_ms: 4.913167
+  ...
+# Subtest: TinyFish applies explicit Fetch tier configuration before dispatching any content request
+ok 41 - TinyFish applies explicit Fetch tier configuration before dispatching any content request
+  ---
+  duration_ms: 11.182791
+  ...
+# Subtest: date parsing handles English names and rejects impossible dates
+ok 42 - date parsing handles English names and rejects impossible dates
+  ---
+  duration_ms: 1.791542
+  ...
+# Subtest: fees preserve category, currency, decimal value and annual versus full-course basis
+ok 43 - fees preserve category, currency, decimal value and annual versus full-course basis
+  ---
+  duration_ms: 0.847667
+  ...
+# Subtest: malformed currency amounts fail loudly instead of partially matching a lower fee
+ok 44 - malformed currency amounts fail loudly instead of partially matching a lower fee
+  ---
+  duration_ms: 0.235708
+  ...
+# Subtest: search validates distinct topic inputs and exposes truncation rather than catalogue completeness
+ok 45 - search validates distinct topic inputs and exposes truncation rather than catalogue completeness
+  ---
+  duration_ms: 21.056833
+  ...
+# Subtest: search mode selection and supported filter contract are verified
+ok 46 - search mode selection and supported filter contract are verified
+  ---
+  duration_ms: 2.386625
+  ...
+# Subtest: unfiltered searches reject hidden mode, subject and course-type filters
+ok 47 - unfiltered searches reject hidden mode, subject and course-type filters
+  ---
+  duration_ms: 3.272042
+  ...
+# Subtest: valid empty catalogue is distinguishable from malformed empty content
+ok 48 - valid empty catalogue is distinguishable from malformed empty content
+  ---
+  duration_ms: 1.24475
+  ...
+# Subtest: changed topic, row count or row link fails explicitly
+ok 49 - changed topic, row count or row link fails explicitly
+  ---
+  duration_ms: 1.242209
+  ...
+# Subtest: pagination must advance by exactly one and remain on the supported source
+ok 50 - pagination must advance by exactly one and remain on the supported source
+  ---
+  duration_ms: 7.713625
+  ...
+# Subtest: course identity and expected lazy structure are required
+ok 51 - course identity and expected lazy structure are required
+  ---
+  duration_ms: 4.327459
+  ...
+# Subtest: raw observations extract fees, deadline, weekly workload and preserve incomplete schedules
+ok 52 - raw observations extract fees, deadline, weekly workload and preserve incomplete schedules
+  ---
+  duration_ms: 14.498833
+  ...
+# Subtest: alternative course date ranges remain unknown and conflicting instead of selecting the first range
+ok 53 - alternative course date ranges remain unknown and conflicting instead of selecting the first range
+  ---
+  duration_ms: 2.945667
+  ...
+# Subtest: a deadline after course end preserves the contradiction and cannot produce a potential fit
+ok 54 - a deadline after course end preserves the contradiction and cannot produce a potential fit
+  ---
+  duration_ms: 17.787084
+  ...
+# Subtest: missing or contradictory fee/date information is recorded without guessing a value
+ok 55 - missing or contradictory fee/date information is recorded without guessing a value
+  ---
+  duration_ms: 0.422417
+  ...
+# Subtest: two different deadlines inside one field remain conflicting rather than choosing the first
+ok 56 - two different deadlines inside one field remain conflicting rather than choosing the first
+  ---
+  duration_ms: 0.771
+  ...
+# Subtest: online and classroom-equivalent hours do not imply total study workload
+ok 57 - online and classroom-equivalent hours do not imply total study workload
+  ---
+  duration_ms: 3.326666
+  ...
+# Subtest: hostile instructions are absent from summaries and cannot overwrite structured facts
+ok 58 - hostile instructions are absent from summaries and cannot overwrite structured facts
+  ---
+  duration_ms: 0.359416
+  ...
+# Subtest: course identifiers and URLs reject private networks, credentials, encoded paths and unrelated destinations
+ok 59 - course identifiers and URLs reject private networks, credentials, encoded paths and unrelated destinations
+  ---
+  duration_ms: 0.184667
+  ...
+# Subtest: current zero-result status requires its matching topic-specific empty heading
+ok 60 - current zero-result status requires its matching topic-specific empty heading
+  ---
+  duration_ms: 1.413416
+  ...
+# Subtest: visible zero-result component works when Fetch omits the visually hidden status
+ok 61 - visible zero-result component works when Fetch omits the visually hidden status
+  ---
+  duration_ms: 2.313917
+  ...
+# Subtest: exhausted transient navigation uses only literal current Fetch facts and its actual receipt
+ok 62 - exhausted transient navigation uses only literal current Fetch facts and its actual receipt
+  ---
+  duration_ms: 38.66575
+  ...
+# Subtest: health marks same-Fetch recovery degraded with a failed Browser check and no Browser receipt
+ok 63 - health marks same-Fetch recovery degraded with a failed Browser check and no Browser receipt
+  ---
+  duration_ms: 18.964625
+  ...
+# Subtest: ordinary provider, auth, access, TLS, robots, timeout, structure and cancellation errors never recover
+ok 64 - ordinary provider, auth, access, TLS, robots, timeout, structure and cancellation errors never recover
+  ---
+  duration_ms: 18.935459
+  ...
+# Subtest: cancellation after the Browser failure prevents even otherwise permitted HTML recovery
+ok 65 - cancellation after the Browser failure prevents even otherwise permitted HTML recovery
+  ---
+  duration_ms: 0.635833
+  ...
+# Subtest: recovery refuses stale, mismatched, non-Fetch, altered and otherwise invalid receipts
+ok 66 - recovery refuses stale, mismatched, non-Fetch, altered and otherwise invalid receipts
+  ---
+  duration_ms: 8.199667
+  ...
+# Subtest: literal extraction rejects wrong identity, headings, incomplete fields and absent requested content
+ok 67 - literal extraction rejects wrong identity, headings, incomplete fields and absent requested content
+  ---
+  duration_ms: 19.697417
+  ...
+# Subtest: nonempty HTML with unsupported numeric facts still fails recovery instead of returning partial detail
+ok 68 - nonempty HTML with unsupported numeric facts still fails recovery instead of returning partial detail
+  ---
+  duration_ms: 9.34925
+  ...
+# Subtest: matching optional identity metadata is accepted, while login pages remain excluded
+ok 69 - matching optional identity metadata is accepted, while login pages remain excluded
+  ---
+  duration_ms: 1.158334
+  ...
+# Subtest: literal extraction retains all supported offerings and rejects a fourth instead of truncating
+ok 70 - literal extraction retains all supported offerings and rejects a fourth instead of truncating
+  ---
+  duration_ms: 3.463292
+  ...
+# Subtest: comparison preserves per-course fallback provenance and unknown source availability
+ok 71 - comparison preserves per-course fallback provenance and unknown source availability
+  ---
+  duration_ms: 14.986458
+  ...
+# Subtest: transient document GET errors retry at most twice in the same caller session
+ok 72 - transient document GET errors retry at most twice in the same caller session
+  ---
+  duration_ms: 5169.63775
+  ...
+# Subtest: HTTP access refusal, TLS errors and unsupported URLs never trigger navigation retries
+ok 73 - HTTP access refusal, TLS errors and unsupported URLs never trigger navigation retries
+  ---
+  duration_ms: 1.246917
+  ...
+# Subtest: cancellation during retry backoff prevents another document request
+ok 74 - cancellation during retry backoff prevents another document request
+  ---
+  duration_ms: 2.787334
+  ...
+# Subtest: tier-specific meters never imply an account tier when the operator omitted it
+ok 75 - tier-specific meters never imply an account tier when the operator omitted it
+  ---
+  duration_ms: 26.469458
+  ...
+# Subtest: explicit Hobby selects its exact meter and returns only safe tier provenance
+ok 76 - explicit Hobby selects its exact meter and returns only safe tier provenance
+  ---
+  duration_ms: 1.787834
+  ...
+# Subtest: explicit Builder at its current nonzero price exceeds the unchanged zero Fetch ceiling
+ok 77 - explicit Builder at its current nonzero price exceeds the unchanged zero Fetch ceiling
+  ---
+  duration_ms: 0.479292
+  ...
+# Subtest: selection ignores unrelated tier defects but never aliases or substitutes the selected meter
+ok 78 - selection ignores unrelated tier defects but never aliases or substitutes the selected meter
+  ---
+  duration_ms: 1.748916
+  ...
+# Subtest: selected tier meters reject duplicates, malformed amounts, wrong units/currency and increases
+ok 79 - selected tier meters reject duplicates, malformed amounts, wrong units/currency and increases
+  ---
+  duration_ms: 1.401959
+  ...
+# Subtest: invalid runtime tier configuration fails before even a pricing request
+ok 80 - invalid runtime tier configuration fails before even a pricing request
+  ---
+  duration_ms: 0.080709
+  ...
+# Subtest: all supported endpoints verify USD rates and return only safe pricing metadata
+ok 81 - all supported endpoints verify USD rates and return only safe pricing metadata
+  ---
+  duration_ms: 0.201625
+  ...
+# Subtest: cache expires at 60 seconds and retains the original check timestamp until refreshed
+ok 82 - cache expires at 60 seconds and retains the original check timestamp until refreshed
+  ---
+  duration_ms: 0.61975
+  ...
+# Subtest: price increases block the affected endpoint; lower rates remain conservative
+ok 83 - price increases block the affected endpoint; lower rates remain conservative
+  ---
+  duration_ms: 0.451917
+  ...
+# Subtest: free Fetch is allowed with zero balance, while billable endpoints require their full reservation
+ok 84 - free Fetch is allowed with zero balance, while billable endpoints require their full reservation
+  ---
+  duration_ms: 0.5215
+  ...
+# Subtest: missing, duplicated, malformed and unit-mismatched meters fail closed
+ok 85 - missing, duplicated, malformed and unit-mismatched meters fail closed
+  ---
+  duration_ms: 3.647083
+  ...
+# Subtest: numeric meter values and wallet values are validated without depending on numeric strings
+ok 86 - numeric meter values and wallet values are validated without depending on numeric strings
+  ---
+  duration_ms: 0.174958
+  ...
+# Subtest: authentication and quota responses are sanitized, classified and never retried
+ok 87 - authentication and quota responses are sanitized, classified and never retried
+  ---
+  duration_ms: 0.636375
+  ...
+# Subtest: missing key and pre-cancelled caller reject before any wallet request
+ok 88 - missing key and pre-cancelled caller reject before any wallet request
+  ---
+  duration_ms: 0.089375
+  ...
+# Subtest: cancellation applies even when a valid snapshot is cached
+ok 89 - cancellation applies even when a valid snapshot is cached
+  ---
+  duration_ms: 0.13975
+  ...
+# Subtest: 10-second deadline is enforced and no automatic timeout retry is made
+ok 90 - 10-second deadline is enforced and no automatic timeout retry is made
+  ---
+  duration_ms: 0.141
+  ...
+# Subtest: oversized bodies are stopped during streaming without a trusted Content-Length
+ok 91 - oversized bodies are stopped during streaming without a trusted Content-Length
+  ---
+  duration_ms: 0.616125
+  ...
+# Subtest: caller cancellation while streaming cancels the reader and remains distinct from timeout
+ok 92 - caller cancellation while streaming cancels the reader and remains distinct from timeout
+  ---
+  duration_ms: 0.629083
+  ...
+# Subtest: invalid JSON, broken streams and transport failures expose no raw diagnostics
+ok 93 - invalid JSON, broken streams and transport failures expose no raw diagnostics
+  ---
+  duration_ms: 0.684708
+  ...
+# Subtest: durable budget is shared across instances and failed calls do not refund reservations
+ok 94 - durable budget is shared across instances and failed calls do not refund reservations
+  ---
+  duration_ms: 16.838167
+  ...
+# Subtest: concurrent ledger transactions fail closed and never exceed the reservation cap
+ok 95 - concurrent ledger transactions fail closed and never exceed the reservation cap
+  ---
+  duration_ms: 5.060667
+  ...
+# Subtest: durable Agent and Fetch allowance exhaustion prevent new reservations
+ok 96 - durable Agent and Fetch allowance exhaustion prevent new reservations
+  ---
+  duration_ms: 39.01825
+  ...
+# Subtest: 11 Nov supplement preserves prior accounting and permits only its finite additional batch
+ok 97 - 11 Nov supplement preserves prior accounting and permits only its finite additional batch
+  ---
+  duration_ms: 15.093417
+  ...
+# Subtest: corrupt ledger and existing lock block calls without resetting usage
+ok 98 - corrupt ledger and existing lock block calls without resetting usage
+  ---
+  duration_ms: 1.241583
+  ...
+# Subtest: provider disabled or missing credentials rejects before any HTTP call or reservation
+ok 99 - provider disabled or missing credentials rejects before any HTTP call or reservation
+  ---
+  duration_ms: 1.539541
+  ...
+# Subtest: failed pricing preflight prevents Agent starts and Fetch requests without spending reservations
+ok 100 - failed pricing preflight prevents Agent starts and Fetch requests without spending reservations
+  ---
+  duration_ms: 14.929583
+  ...
+# Subtest: after successful pricing verification, Agent start failures are sanitized without retry or refund
+ok 101 - after successful pricing verification, Agent start failures are sanitized without retry or refund
+  ---
+  duration_ms: 14.487958
+  ...
+# Subtest: Fetch sends a fresh bounded main-content request and saves a sanitized evidence receipt
+ok 102 - Fetch sends a fresh bounded main-content request and saves a sanitized evidence receipt
+  ---
+  duration_ms: 3.392542
+  ...
+# Subtest: off-domain input rejects before network and Fetch rejects off-domain or unexpected redirects
+ok 103 - off-domain input rejects before network and Fetch rejects off-domain or unexpected redirects
+  ---
+  duration_ms: 2.966208
+  ...
+# Subtest: Fetch source timeout, blocked source, missing page and changed selector remain distinct
+ok 104 - Fetch source timeout, blocked source, missing page and changed selector remain distinct
+  ---
+  duration_ms: 6.87025
+  ...
+# Subtest: malformed envelopes, invalid JSON and oversized responses fail explicitly
+ok 105 - malformed envelopes, invalid JSON and oversized responses fail explicitly
+  ---
+  duration_ms: 4.246041
+  ...
+# Subtest: Agent is always capped, unauthenticated, single-run and validates output locally
+ok 106 - Agent is always capped, unauthenticated, single-run and validates output locally
+  ---
+  duration_ms: 5.625291
+  ...
+# Subtest: Agent rejects schema-invalid results and attempts cancellation without retrying the run
+ok 107 - Agent rejects schema-invalid results and attempts cancellation without retrying the run
+  ---
+  duration_ms: 3.061875
+  ...
+# Subtest: explicit continuation corroborates a completed build run without a second Agent start or reservation
+ok 108 - explicit continuation corroborates a completed build run without a second Agent start or reservation
+  ---
+  duration_ms: 4.362125
+  ...
+# Subtest: continuation rejects unknown, mismatched, stale or altered records without starting paid work
+ok 109 - continuation rejects unknown, mismatched, stale or altered records without starting paid work
+  ---
+  duration_ms: 19.624792
+  ...
+# Subtest: client cancellation attempts remote POST cancellation and preserves its reserved allowance
+ok 110 - client cancellation attempts remote POST cancellation and preserves its reserved allowance
+  ---
+  duration_ms: 1507.921417
+  ...
+# Subtest: unexpected step accounting blocks future Agent calls
+ok 111 - unexpected step accounting blocks future Agent calls
+  ---
+  duration_ms: 6.5755
+  ...
+# Subtest: missing final step accounting also blocks further billable calls pending reconciliation
+ok 112 - missing final step accounting also blocks further billable calls pending reconciliation
+  ---
+  duration_ms: 4.9965
+  ...
+# Subtest: provider schema dialect retains property names and nested types while local constraints stay local
+ok 113 - provider schema dialect retains property names and nested types while local constraints stay local
+  ---
+  duration_ms: 0.174042
+  ...
+# Subtest: invalid topic, duplicate canonical courses and off-domain courses reject before provider work
+ok 114 - invalid topic, duplicate canonical courses and off-domain courses reject before provider work
+  ---
+  duration_ms: 2.676292
+  ...
+# Subtest: search requires genuine Agent-operated workflow before fresh Fetch and emits both receipts
+ok 115 - search requires genuine Agent-operated workflow before fresh Fetch and emits both receipts
+  ---
+  duration_ms: 8.472916
+  ...
+# Subtest: Agent navigation must match requested topic, mode, page and default category filters
+ok 116 - Agent navigation must match requested topic, mode, page and default category filters
+  ---
+  duration_ms: 0.56825
+  ...
+# Subtest: real form title suffix and content anchor defer to fresh HTML identity and form checks
+ok 117 - real form title suffix and content anchor defer to fresh HTML identity and form checks
+  ---
+  duration_ms: 2.151125
+  ...
+# Subtest: explicit search continuation retains original Agent evidence and still requires fresh Fetch
+ok 118 - explicit search continuation retains original Agent evidence and still requires fresh Fetch
+  ---
+  duration_ms: 1.139042
+  ...
+# Subtest: valid empty user search succeeds while blocked or unoperated search cannot fall back
+ok 119 - valid empty user search succeeds while blocked or unoperated search cannot fall back
+  ---
+  duration_ms: 1.044167
+  ...
+# Subtest: inspection retrieves Fetch identity first and requires all requested detail panels
+ok 120 - inspection retrieves Fetch identity first and requires all requested detail panels
+  ---
+  duration_ms: 9.351334
+  ...
+# Subtest: required Browser expansion supplies detail provenance and never starts an Agent fallback
+ok 121 - required Browser expansion supplies detail provenance and never starts an Agent fallback
+  ---
+  duration_ms: 3.77925
+  ...
+# Subtest: Browser failure is returned directly without a second provider path or substitute data
+ok 122 - Browser failure is returned directly without a second provider path or substitute data
+  ---
+  duration_ms: 0.429666
+  ...
+# Subtest: unsupported number of offerings rejects before any billable Browser request
+ok 123 - unsupported number of offerings rejects before any billable Browser request
+  ---
+  duration_ms: 0.528875
+  ...
+# Subtest: Browser course dates must agree with the independently fetched offering labels
+ok 124 - Browser course dates must agree with the independently fetched offering labels
+  ---
+  duration_ms: 0.335125
+  ...
+# Subtest: Browser identity and structured observations must agree with the fetched course
+ok 125 - Browser identity and structured observations must agree with the fetched course
+  ---
+  duration_ms: 1.65075
+  ...
+# Subtest: blocked navigation may return empty observations and maps to SITE_BLOCKED before completeness checks
+ok 126 - blocked navigation may return empty observations and maps to SITE_BLOCKED before completeness checks
+  ---
+  duration_ms: 0.463959
+  ...
+# Subtest: comparison freshly reacquires each course and stops without partial results on failure
+ok 127 - comparison freshly reacquires each course and stops without partial results on failure
+  ---
+  duration_ms: 1.294625
+  ...
+# Subtest: cancellation passes through to provider and prevents starting the next comparison course
+ok 128 - cancellation passes through to provider and prevents starting the next comparison course
+  ---
+  duration_ms: 0.638458
+  ...
+# Subtest: health performs live-provider canary operations and labels its supported coverage
+ok 129 - health performs live-provider canary operations and labels its supported coverage
+  ---
+  duration_ms: 4.752625
+  ...
+# Subtest: empty canary and loss of deadline evidence produce unhealthy errors, not healthy success
+ok 130 - empty canary and loss of deadline evidence produce unhealthy errors, not healthy success
+  ---
+  duration_ms: 2.065084
+  ...
+# Subtest: health rejects missing or ambiguous offering dates and contradictory deadlines
+ok 131 - health rejects missing or ambiguous offering dates and contradictory deadlines
+  ---
+  duration_ms: 2.753667
+  ...
+# Subtest: health rejects an unexpectedly filtered catalogue before inspecting the canary course
+ok 132 - health rejects an unexpectedly filtered catalogue before inspecting the canary course
+  ---
+  duration_ms: 0.376541
+  ...
+# Subtest: safe structured failures preserve provider categories and reject unknown tools
+ok 133 - safe structured failures preserve provider categories and reject unknown tools
+  ---
+  duration_ms: 0.137167
+  ...
+# Subtest: official SDK connection advertises typed tools, rejects invalid calls and returns structured success
+ok 134 - official SDK connection advertises typed tools, rejects invalid calls and returns structured success
+  ---
+  duration_ms: 60.765375
+  ...
+# Subtest: official MCP cancellation reaches the server provider AbortSignal
+ok 135 - official MCP cancellation reaches the server provider AbortSignal
+  ---
+  duration_ms: 1.842584
+  ...
+# Subtest: browser error-page titles are provider failures rather than proof of source access denial
+ok 136 - browser error-page titles are provider failures rather than proof of source access denial
+  ---
+  duration_ms: 0.215042
+  ...
+# Subtest: known entry wording becomes factual concise guidance without declaring eligibility
+ok 137 - known entry wording becomes factual concise guidance without declaring eligibility
+  ---
+  duration_ms: 5.864709
+  ...
+# Subtest: must and should English conditions preserve the published strength
+ok 138 - must and should English conditions preserve the published strength
+  ---
+  duration_ms: 1.724458
+  ...
+# Subtest: negated or counterclaimed entry phrases do not produce positive eligibility facts
+ok 139 - negated or counterclaimed entry phrases do not produce positive eligibility facts
+  ---
+  duration_ms: 0.203583
+  ...
+# Subtest: unknown qualification conditions remain source-directed, not invented degrees or admissions judgments
+ok 140 - unknown qualification conditions remain source-directed, not invented degrees or admissions judgments
+  ---
+  duration_ms: 0.113416
+  ...
+# Subtest: classroom-equivalent and separate self-study stay distinct without inventing a total
+ok 141 - classroom-equivalent and separate self-study stay distinct without inventing a total
+  ---
+  duration_ms: 1.698292
+  ...
+# Subtest: qualified flexibility and recording support are not inferred from online or flexible alone
+ok 142 - qualified flexibility and recording support are not inferred from online or flexible alone
+  ---
+  duration_ms: 0.17625
+  ...
+# Subtest: direct overall weekly workload is bounded and supported by a short excerpt
+ok 143 - direct overall weekly workload is bounded and supported by a short excerpt
+  ---
+  duration_ms: 1.388833
+  ...
+# Subtest: partial, negated, contradictory or impossible weekly ranges do not become a total
+ok 144 - partial, negated, contradictory or impossible weekly ranges do not become a total
+  ---
+  duration_ms: 0.854625
+  ...
+# Subtest: hostile panel instructions cannot be copied into summaries or create recognized claims
+ok 145 - hostile panel instructions cannot be copied into summaries or create recognized claims
+  ---
+  duration_ms: 0.572833
+  ...
+# Subtest: quotes never exceed eight words and absent teaching remains explicitly missing
+ok 146 - quotes never exceed eight words and absent teaching remains explicitly missing
+  ---
+  duration_ms: 0.667667
+  ...
+# Subtest: only explicit positive teaching schedules produce weekdays
+ok 147 - only explicit positive teaching schedules produce weekdays
+  ---
+  duration_ms: 5.026209
+  ...
+# Subtest: weekday table labels require an explicit teaching activity
+ok 148 - weekday table labels require an explicit teaching activity
+  ---
+  duration_ms: 1.927875
+  ...
+# Subtest: negated, optional, assignment and example weekday mentions never create conflicts
+ok 149 - negated, optional, assignment and example weekday mentions never create conflicts
+  ---
+  duration_ms: 1.021917
+  ...
+# Subtest: unknown days and hostile instructions remain unparsed while distinct explicit classes are retained
+ok 150 - unknown days and hostile instructions remain unparsed while distinct explicit classes are retained
+  ---
+  duration_ms: 0.196458
+  ...
+1..150
+# tests 150
+# suites 0
+# pass 150
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 6190.059334
+
+exit_code: 0
+finished_at: 2026-11-11T14:36:28.830990+00:00
