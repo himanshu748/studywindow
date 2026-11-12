@@ -1,0 +1,53 @@
+{
+  "kind": "target_verified_bounty_submission",
+  "entry": "StudyWindow",
+  "bounty": "Site to MCP",
+  "status": "SUBMITTED_IN_REVIEW_QUEUE",
+  "date": "2026-11-12",
+  "timezone": "Asia/Kolkata",
+  "confirmed_at": "2026-11-12T06:04:03.408455+00:00",
+  "actor": "owner",
+  "owner_reported_final_click": true,
+  "agent_final_submit_clicked": false,
+  "portal_confirmation": {
+    "success_heading": "Bounty submitted",
+    "success_message": "Your build is now in the TinyFish review queue. You can track its status from your profile.",
+    "card_submitted_date": "Nov 12, 2026",
+    "card_state": "IN REVIEW",
+    "build_url": "https://github.com/himanshu748/studywindow",
+    "exact_notes_retained": true,
+    "notes_characters": 1679,
+    "notes_sha256": "a25d6bb0d0a2fe57bd347b1797cf5eae6b3a28a6b2d7e63d458f3aa39d63436c",
+    "media_filename": "studywindow-demo.mp4",
+    "media_link_retained": true,
+    "media_url": "https://peaceful-lion-524.convex.cloud/api/storage/3be72887-a58a-4349-8592-c67effe38d31"
+  },
+  "submitted_social_fields": {
+    "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:activity:7526313409307594753/",
+    "x_url": "https://x.com/jhahimanshu653/status/2120543770492207135",
+    "basis": "Exact URLs were read back in the prepared form before owner submission. The claims card exposes build, notes and media rather than these two fields."
+  },
+  "discord": {
+    "url": "https://discord.com/channels/1200506685236711554/1570112823139242015",
+    "published_and_verified": "2026-11-11",
+    "current_day_readback": "Login required; owner could not sign in. Prior genuine publication/playback receipt retained; no fresh readback claimed.",
+    "reposted": false
+  },
+  "daily_slot_used": true,
+  "eligible_for_dispatch": false,
+  "resubmission_allowed": false,
+  "replacement_allowed": false,
+  "organizer_approval": "PENDING_UNCONFIRMED",
+  "awards_or_points_granted_not_claimed": true,
+  "private_UI_captures_outside_public_repository": true,
+  "prepared_form_receipt": "final-form-check.json",
+  "supersedes": [
+    "11November READY review for dispatch eligibility",
+    "12November prepared-form/owner-handoff status"
+  ],
+  "provider_operations_started": 0,
+  "wallet_reads": 0,
+  "new_reservations": 0,
+  "billing_changes": false,
+  "public_outreach_repeated": false
+}

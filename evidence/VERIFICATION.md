@@ -1,10 +1,14 @@
 # StudyWindow verification
 
-## 11 November verified candidate
+## 12 November owner submission confirmed
+
+**SUBMITTED / IN REVIEW.** The owner made the final click; the portal displayed Bounty submitted and its card shows Submitted Nov 12, retaining the GitHub link, exact 1,679-character notes and `studywindow-demo.mp4`. [Confirmation](submission-2026-11-12/submission-confirmation.json). Approval remains pending. The India-day slot is used; never resubmit or replace this entry. No provider/wallet operation, new reservation or repeated promotion occurred. The public source remains the tested `ccf70ab` runtime plus documentation/evidence-only follow-ups.
+
+## Historical preparation: 11 November verified candidate
 
 [Independent final readiness review](readiness-2026-11-11/ready-review.json): **READY for 12 November submission preparation**, subject to on-day checks and the owner's final click. No form or submission is established by this review.
 
-**Technical checks and all three video promotions passed; claimed and unsubmitted, pending on-day portal review and the owner's final click.** The [actual Codex MCP conversation](conversations/candidate-2026-11-11/MCP-CONVERSATION.md) completed search, model-selected inspection and two-course comparison successfully. All three course observations used normal Browser expansion. The same finite batch produced a [healthy source canary](readiness-2026-11-11/live-health.json) and a [valid empty-result search](readiness-2026-11-11/live-empty-search.json). The new fresh Fetch recovery has offline tests but was not exercised live.
+**At the 11 November checkpoint, technical checks and all three video promotions passed; the entry was claimed and unsubmitted.** The [actual Codex MCP conversation](conversations/candidate-2026-11-11/MCP-CONVERSATION.md) completed search, model-selected inspection and two-course comparison successfully. All three course observations used normal Browser expansion. The same finite batch produced a [healthy source canary](readiness-2026-11-11/live-health.json) and a [valid empty-result search](readiness-2026-11-11/live-empty-search.json). The new fresh Fetch recovery has offline tests but was not exercised live.
 
 The [clean local candidate gate](readiness-2026-11-11/final-local-verification.json) passed clean npm ci, 150 tests, types, build, stdio protocol, format and both demo JS syntax checks. It is an isolated copy, not a Git clone. The [file manifest](readiness-2026-11-11/final-local-source-manifest.json) records exact inputs. The later saved-health display addition is checked separately; no backend source changed after the live conversation started. [Independent review](readiness-2026-11-11/independent-review.json).
 

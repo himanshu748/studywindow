@@ -1,6 +1,6 @@
 # Site to MCP submission package
 
-**READY for submission preparation. Claimed and unsubmitted; on-day portal checks and the owner's final click remain.** This package targets the next eligible day, 12 November 2026. Funding Radar used the 11 November slot. The owner makes the final prize-entry click after the shared gates close.
+**SUBMITTED / IN REVIEW, 12 November 2026.** The owner made the final prize-entry click. The portal confirmed its review queue and retained the exact notes, public build link and video. [Submission receipt](../evidence/submission-2026-11-12/submission-confirmation.json). Approval remains pending. The 12 November India-day slot is used; do not resubmit or replace this entry.
 
 [Independent final readiness review](../evidence/readiness-2026-11-11/ready-review.json) closed the build and promotion gates.
 
@@ -33,8 +33,8 @@ The exact local form notes are in [submission-draft.json](../evidence/readiness-
 
 1. The reviewed silent walkthrough, public package and approved post copy are complete and published. The source licence remains unselected; no hosted deployment is claimed.
 2. StudyWindow-specific publication was explicitly approved and completed. [LinkedIn, X and TinyFish Discord receipts](../evidence/readiness-2026-11-11/promotion-confirmation.json) retain exact links and video/tag confirmations. Do not repeat these posts.
-3. On 12 November or a later eligible day, verify current Student membership, claim/submission state, rulebook, exact form requirements, links and media. One confirmed entry per India calendar day; preserve all submitted entries.
-4. Prepare the real form only once every shared gate passes. Hand the final prize-entry click to the owner and record submitted/in-review only after target-side confirmation.
+3. On 12 November, Student membership, claimed/unsubmitted state, unused daily slot, live brief/rulebook, public repository/source link, LinkedIn/X posts and the actual form limits were checked. Discord required login; its actual 11 November publication/playback receipt was retained and the fresh-readback limit disclosed.
+4. The owner submitted the prepared form. The success dialog and submitted card established IN REVIEW; prepared-form records remain historical. No repeat submission, replacement or further promotion is allowed.
 
 The authenticated brief and rulebook were rechecked on 11 November. The cutoff remains 17 November 2026 at 23:59 America/Los_Angeles, equivalent to 18 November at 13:29 Asia/Kolkata. LinkedIn tagging TinyFish and Discord showcase sharing are required; X is globally optional, subject to the actual form. Submission is final and only the top three builds are approved. No approval, award or placement is claimed.
 

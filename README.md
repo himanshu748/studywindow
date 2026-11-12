@@ -4,7 +4,7 @@ Find a continuing-education course that fits your interests, budget, application
 
 A course being online does not establish that it fits a working learner’s week. A future start date does not establish that applications are open. StudyWindow keeps those distinctions visible, alongside source links and retrieval receipts.
 
-> Fresh verification passed on 11 November: autonomous search, inspection and comparison through MCP, a healthy source canary and a valid empty-result search. The entry is unsubmitted; all three video promotions are published and final portal checks remain. See the [preparation record](docs/NOV12-READINESS.md) and [actual conversation](evidence/conversations/candidate-2026-11-11/MCP-CONVERSATION.md).
+> Fresh verification passed on 11 November: autonomous search, inspection and comparison through MCP, a healthy source canary and a valid empty-result search. The owner submitted the entry on 12 November; the portal confirms **IN REVIEW**, with approval pending. [Submission confirmation](evidence/submission-2026-11-12/submission-confirmation.json). All three video promotions are published. See the [preparation record](docs/NOV12-READINESS.md) and [actual conversation](evidence/conversations/candidate-2026-11-11/MCP-CONVERSATION.md).
 
 [![Watch the StudyWindow walkthrough](media/studywindow-thumbnail.jpg)](media/studywindow-demo.mp4)
 
@@ -145,6 +145,6 @@ The [11 November actual MCP conversation](evidence/conversations/candidate-2026-
 
 [Verification](evidence/VERIFICATION.md) distinguishes implementation, offline tests, genuine TinyFish live calls, actual MCP conversation evidence, public deployment, and claim/submission state. [Submission notes](docs/SUBMISSION.md) map the bounty requirements to evidence and outstanding gates. [Published promotion](docs/SHOWCASE-DRAFTS.md) records the verified LinkedIn, X and TinyFish Discord video posts.
 
-The bounty was claimed through the authenticated platform during the build; it has **not** been submitted. Submissions are final. The technical live checks are complete. Required promotion is complete. Current form/account/link checks and the owner's final click remain submission gates. The reviewed source is published in [this GitHub repository](https://github.com/himanshu748/studywindow). No hosted deployment or prize-entry submission is claimed.
+The owner submitted the bounty on **12 November 2026**. The portal displayed **Bounty submitted** and the card shows **IN REVIEW**, retaining the exact reviewer notes, GitHub link and video. [Confirmation](evidence/submission-2026-11-12/submission-confirmation.json). Approval and awards remain pending/unconfirmed. Submissions are final: this entry is permanently excluded from repeat submission or replacement. No hosted deployment is claimed.
 
 No source-code license has been selected. The [MIT proposal](docs/PROPOSED-LICENSE.txt) is a draft for review, not an applied license. Cambridge content, TinyFish services, and their names and trademarks retain their respective rights.

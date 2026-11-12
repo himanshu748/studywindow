@@ -1,6 +1,6 @@
 # StudyWindow: 12 November preparation
 
-**READY for submission preparation on 12 November 2026.** The [independent final review](../evidence/readiness-2026-11-11/ready-review.json) found no remaining mandatory build or promotion blocker. StudyWindow is claimed and unsubmitted. Funding Radar used the 11 November slot; no StudyWindow prize-entry form was prepared that day. Normal on-day account, rule, link and form checks and the owner's final click remain required.
+**SUBMITTED / IN REVIEW on 12 November 2026.** The owner completed the prepared form's final click. [Portal confirmation](../evidence/submission-2026-11-12/submission-confirmation.json) supersedes the prior READY and handoff states. Approval remains pending; the daily slot is used and this entry must never be resubmitted or replaced. The independent build review and preparation evidence below retain their original scope.
 
 ## What now works
 
@@ -38,7 +38,7 @@ The batch consumed exactly those operation counts and retained **$0.808 in new r
 1. The reviewed 72-second silent edited-screenshot walkthrough is finished. The published-package source and media readback also passed. The finished video and spaced copy were shown to, and approved by, the owner. No generated narration or alternate TTS is used.
 2. The verified source and video were pushed at `ccf70ab2d8c44905c61926287ce167e16a6dcda8`. The [anonymous fresh-clone gate](../evidence/readiness-2026-11-11/public-clone-verification.json) passed at that exact public source commit: clean install, build, 150 tests, stdio protocol and 11 keyless demo routes. Later documentation-only corrections are outside its pinned README snapshot; source/test/demo/package/media files are unchanged.
 3. The owner approved StudyWindow-specific LinkedIn, X and TinyFish Discord publication. All three posts are published with the reviewed video and target-side readbacks; [confirmation](../evidence/readiness-2026-11-11/promotion-confirmation.json). Do not post them again.
-4. On the eligible day, recheck membership, claim/submission state, exact form, deadline, source/working links and required assets. Preserve every submitted entry and the one-per-India-day limit.
-5. Prepare the real form only when all shared gates pass. The owner makes the final prize-entry click. Confirm submitted/in-review only from the portal after that action.
+4. On 12 November, membership, claimed/unsubmitted state, actual form, deadline, public source/build links and LinkedIn/X media were rechecked. Discord required login; the actual prior-day share receipt was retained and that current-readback limit was disclosed.
+5. The owner made the final prize-entry click. The portal confirmed Bounty submitted and the card shows Submitted Nov 12 / IN REVIEW, with notes, build and video retained. No further dispatch of this entry is permitted.
 
 Mobile viewport emulation did not apply in the in-app browser: requesting 390×844 still returned 1280×720. No alternate automation was used. OS-level reduced-motion emulation remains unverified; existing reduced-motion rules were preserved. The source licence remains unselected.
